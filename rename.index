@@ -4,15 +4,15 @@
 		<name>Rename</name>
 		<description>The content from the core rulebooks.</description>
 		<author url="https://www.urbandictionary.com/define.php?term=GOAT">Guzufu</author>
-		<update version="1.0">
+		<update version="0.0.1">
 			<file name="rename.index" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core.index" />
 		</update>
 	</info>
 	<files>
-		<file name="internal.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/internal.xml" />
 
-		<file name="dungeon-masters-guide.index" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/dungeon-masters-guide.index" />
-		<file name="monster-manual.index" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/monster-manual.index" />
-		<file name="players-handbook.index" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook.index" />
+		<file name="crusader.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/dungeon-masters-guide.index" />
+		<file name="runecaster.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/monster-manual.index" />
+		<file name="duskblade.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook.index" /> 
+		<file name="mistblade.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook.index" />
 	</files>
 </index>
