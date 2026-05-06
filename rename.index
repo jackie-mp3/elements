@@ -10,9 +10,9 @@
 	</info>
 	<files>
 
-		<file name="crusader.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/dungeon-masters-guide.index" />
-		<file name="runecaster.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/monster-manual.index" />
-		<file name="duskblade.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook.index" /> 
-		<file name="mistblade.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook.index" />
+		<file name="crusader.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/crusader/crusader.xml" />
+		<file name="runecaster.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/runecaster/runecaster.xml" />
+		<file name="duskblade.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/duskblade/duskblade.xml" /> 
+		<file name="mistblade.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/mistblade/mistblade.xml" />
 	</files>
 </index>
