@@ -264,7 +264,7 @@
 		<sheet display="false">
 		</sheet>
 		<rules>
-			<select type="Proficiency" name="Saving Throw Proficiency (Iron Will)" supports="Saving Throw,Crusader,Iron Will,Crusader" number="1" requirements="!ID_HB_MULTICLASS_CRUSADER"/>
+			<select type="Proficiency" name="Saving Throw Proficiency (Iron Will)" supports="Saving Throw,Crusader,Iron will" number="1" requirements="!ID_HB_MULTICLASS_CRUSADER"/>
 		</rules>
 	</element>
 
