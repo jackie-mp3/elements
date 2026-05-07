@@ -4,10 +4,10 @@
     <description>The Skill Definitions for Each Class</description>
     <author url="https://www.urbandictionary.com/define.php?term=GOAT">Guzufu</author>
     <update version="0.0.1">
-      <file name="skills.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook-2024/feats/feats-general.xml"/>
+      <file name="skills.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/skills/skills.xml"/>
   </update>
 </info>
-  <element name="Acrobatics" type="Proficiency" source="Aurora Legacy Essentials" id="ID_PROFICIENCY_SKILL_ACROBATICS">
+  	<element name="Acrobatics" type="Proficiency" source="Aurora Legacy Essentials" id="ID_PROFICIENCY_SKILL_ACROBATICS">
 		<supports>ID_HB_CLASS_MISTBLADE,Mistblade</supports>
 		<description>
 			<p>Your Dexterity (Acrobatics) check covers your attempt to stay on your feet in a tricky situation, such as when you’re trying to run across a sheet of ice, balance on a tightrope, or stay upright on a rocking ship’s deck. The GM might also call for a Dexterity (Acrobatics) check to see if you can perform acrobatic stunts, including dives, rolls, somersaults, and flips.</p>
