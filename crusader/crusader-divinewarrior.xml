@@ -44,9 +44,12 @@
 		<description>
 			<p>The power of the divine flows through you and empowers you with the ability to protect and heal your allies. When you critically hit against an enemy, you can choose one ally within 30 feet. The ally regains a number of hit points equal to the Weak Point damage dealt. You can use this feature a number of times per long rest equal to your proficiency bonus.</p>
 		</description>
-		<sheet alt="Empowered Protection" action="Bonus Action" usage="{{bonus:proficiency}}/Long Rest">>
+		<sheet alt="Empowered Protection" action="Bonus Action" usage="{{EmProt:LR}}/Long Rest">>
 			<description>When you make a weapon attack against an abberation, fey, fiend or undead, you can add an additional 1d8 radiant or necrotic damage (your choice) to the target. In addition, your Weak Point damage type is changed from your weapon type to either radiant or necrotic (your choice).</description>
 		</sheet>
+		<rules>
+			<stat name="EmProt:LR" value="proficiency" bonus="proficiency" />
+		</rules>
 	</element>
 
 	<element name="Level 11: Fearless Call" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_DIVINE_WARRIOR_FEARLESS_CALL">
