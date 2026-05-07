@@ -10,7 +10,7 @@
 	</info>
 
 	<element name="Clan of the Blademaster" type="Archetype" source="Homebrew" id="ID_HB_ARCHETYPE_CRUSADER_BLADEMASTER">
-		<supports>CRUSADER Subclass</supports>
+		<supports>Crusader Subclass</supports>
 		<description>
 			<p class="flavor">Protect others with talented swordsmanship</p>
 			<p>Blademasters are the epitome of using offence as their best defence. They are just as capable of defending their allies as any other crusader but they do so with talented bladework to quickly and efficiently dispatch their foes.</p>
