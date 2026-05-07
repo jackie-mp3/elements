@@ -284,8 +284,8 @@
 			<p>You are unstoppable while in combat. You reduce all damage you take by an amount equal to your Constitution modifier. In addition, any damage you deal with a weapon that you are proficient with deals additional damage equal to your Constitution modifier.</p>
 		</description>
 		<sheet alt="Juggernaut"/>
-			<description>You reduce all damage you take by {{retaliation:mod}}. In addition, any damage you deal with a weapon that you are proficient with deals an additional {{retaliation:mod}} damage.</description>
-		</sheet>
+		<description>You reduce all damage you take by {{retaliation:mod}}. In addition, any damage you deal with a weapon that you are proficient with deals an additional {{retaliation:mod}} damage.</description>
+	</sheet>
 	</element>
 
 	<element name="Level 17: Hidden Strength" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_CRUSADER_HIDDEN_STRENGTH">
