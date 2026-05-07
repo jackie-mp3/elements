@@ -263,6 +263,9 @@
 		</description>
 		<sheet display="false">
 		</sheet>
+		<rules>
+			<select type="Proficiency" name="Saving Throw Proficiency (Iron Will)" supports="Saving Throw,Crusader" number="1" requirements="!ID_HB_MULTICLASS_CRUSADER"/>
+		</rules>
 	</element>
 
 	<element name="Level 13: Retaliation" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_CRUSADER_RETALIATION">
