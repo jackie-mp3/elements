@@ -167,6 +167,7 @@
 		<supports>Saving Throw,Crusader</supports>
 		<rules>
 			<stat name="strength:save:proficiency" value="proficiency" bonus="proficiency" alt="Proficiency" />
+			<if (name="strength:save:proficiency" value="proficiency")=true, value="expertise" />
 		</rules>
 	</element>
 
