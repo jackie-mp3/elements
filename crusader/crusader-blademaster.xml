@@ -1,1 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Clan of the Blademaster</name>
+		<description>The Blademaster subclass for the Crusader.</description>
+		<author url="https://GOAT.com">Guzufu</author>
+		<update version="0.0.1">
+			<file name="crusader-blademaster.xml" url="" />
+		</update>
+	</info>
 
+	<element name="Clan of the Blademaster" type="Archetype" source="Homebrew" id="ID_HB_ARCHETYPE_CRUSADER_BLADEMASTER">
+		<supports>CRUSADER Subclass</supports>
+		<description>
+			<p class="flavor">Protect others with talented swordsmanship</p>
+			<p>Blademasters are the epitome of using offence as their best defence. They are just as capable of defending their allies as any other crusader but they do so with talented bladework to quickly and efficiently dispatch their foes.</p>
+			<div element="ID_HB_ARCHETYPE_FEATURE_CRUSADER_BLADEMASTER_BLADED_DEFENCE"/>
+			<div element="ID_HB_ARCHETYPE_FEATURE_CRUSADER_BLADEMASTER_WISDOM_OF_THE_BLADE"/>
+			<div element="ID_HB_ARCHETYPE_FEATURE_CRUSADER_BLADEMASTER_AURA_OF_SHARPNESS"/>
+			<div element="ID_HB_ARCHETYPE_FEATURE_CRUSADER_BLADEMASTER_CHAINED_ASSAULT"/>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_BLADEMASTER_BLADED_DEFENCE" level="3"/>
+			<grant type="Archetype Feature" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_BLADEMASTER_WISDOM_OF_THE_BLADE" level="7"/>
+			<grant type="Archetype Feature" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_BLADEMASTER_AURA_OF_SHARPNESS" level="11"/>
+			<grant type="Archetype Feature" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_BLADEMASTER_CHAINED_ASSAULT" level="15"/>
+		</rules>
+	</element>
+
+	<element name="Level 3: Bladed Defence" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_BLADEMASTER_BLADED_DEFENCE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_BLADEMASTER_BLADED_DEFENCE</requirements>
+		<description>
+			<p>You know how and where to strike to weaken an enemy and make them less dangerous when striking. When you hit a creature with your first melee attack on your turn, attacks that creature makes until the start of your next turn has a penalty to damage rolls equal to your Strength modifier.</p>
+		</description>
+		<sheet alt="Bladed Defence">
+			<description>When you hit a creature with your first melee attack on your turn, attacks that creature makes until the start of your next turn have a {{strength:modifier}} penalty to damage rolls.</description>
+		</sheet>
+	</element>
+  
+	<element name="Level 7: Wisdom of the Blade" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_BLADEMASTER_WISDOM_OF_THE_BLADE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_BLADEMASTER_WISDOM_OF_THE_BLADE</requirements>
+		<description>
+			<p>Your training and wisdom grants you greater boons both in and out of combat. You gain proficiency in one of the following skills; Animal Handling, Insight, Medicine, Perception, Survival. In addition, you also gain proficiency in Wisdom saving throws.</p>
+		</description>
+		<sheet display="false">
+		<rules>
+			<select type="Proficiency" name="Wisdom of the Blade (Blademaster)" supports="Skill,Blademaster" number="1" requirements="!ID_HB_MULTICLASS_CRUSADER"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" requirements="!ID_HB_MULTICLASS_CRUSADER"/>
+		</rules>
+	</element>
+
+	<element name="Level 11: Aura of Sharpness" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_BLADEMASTER_AURA_OF_SHARPNESS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_BLADEMASTER_AURA_OF_SHARPNESS</requirements>
+		<description>
+			<p>You carry a powerful aura that improves your allies damage as well as your own. Whenever a creature within your Crusader Ward, including yourself, makes an attack with a weapon that does piercing or slashing damage, they can add a bonus to damage equal to your Strength modifier.</p>
+		</description>
+		<sheet alt="Aura of Sharpness">
+      <description>Whenever a creature within your Crusader Ward, including yourself, makes an attack with a weapon that does piercing or slashing damage, they can add {{strength:modifier}} damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 15: Chained Assualt" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_BLADEMASTER_CHAINED_ASSAULT">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_BLADEMASTER_CHAINED_ASSAULT</requirements>
+		<description>
+			<p>You are a master of pushing the advantage of a fight. After you hit a creature with the Attack action on your turn, you can make one additional melee attack against the same creature as part of the same action.</p>
+		</description>
+		<sheet alt="Chained Assault">
+			<description>After you hit a creature with the Attack action on your turn, you can make one additional melee attack against the same creature as part of the same action.</description>
+		</sheet>
+	</element>
+	
+	<!--Feature Replacement Grants-->
+	<element name="Bladed Defence Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_BLADEMASTER_BLADED_DEFENCE" />
+	<element name="Wisdom of the Blade Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_BLADEMASTER_WISDOM_OF_THE_BLADE" />
+	<element name="Aura of Sharpness Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_BLADEMASTER_AURA_OF_SHARPNESS" />
+	<element name="Chained Assault Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_BLADEMASTER_CHAINED_ASSAULT" />
+</elements>
