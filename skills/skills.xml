@@ -18,7 +18,7 @@
 	</element>
 
 	<element name="Animal Handling" type="Proficiency" source="Aurora Legacy Essentials" id="ID_PROFICIENCY_SKILL_ANIMALHANDLING">
-		<supports>Skill,Mistblade</supports>
+		<supports>Skill,Mistblade,Blademaster</supports>
 		<description>
 			<p>When there is any question whether you can calm down a domesticated animal, keep a mount from getting spooked, or intuit an animal’s intentions, the GM might call for a Wisdom (Animal Handling) check. You also make a Wisdom (Animal Handling) check to control your mount when you attempt a risky maneuver.</p>
 		</description>
@@ -63,7 +63,7 @@
 	</element>
 
 	<element name="Insight" type="Proficiency" source="Aurora Legacy Essentials" id="ID_PROFICIENCY_SKILL_INSIGHT">
-		<supports>Skill,Mistblade,Duskblade,Runecaster</supports>
+		<supports>Skill,Mistblade,Duskblade,Runecaster,Blademaster</supports>
 		<description>
 			<p>Your Wisdom (Insight) check decides whether you can determine the true intentions of a creature, such as when searching out a lie or predicting someone’s next move. Doing so involves gleaning clues from body language, speech habits, and changes in mannerisms.</p>
 		</description>
@@ -93,7 +93,7 @@
 	</element>
 
 	<element name="Medicine" type="Proficiency" source="Aurora Legacy Essentials" id="ID_PROFICIENCY_SKILL_MEDICINE">
-		<supports>Skill,Mistblade,Duskblade,Runecaster,Crusader</supports>
+		<supports>Skill,Mistblade,Duskblade,Runecaster,Crusader,Blademaster</supports>
 		<description>
 			<p>A Wisdom (Medicine) check lets you try to stabilize a dying companion or diagnose an illness.</p>
 		</description>
@@ -113,7 +113,7 @@
 	</element>
 
 	<element name="Perception" type="Proficiency" source="Aurora Legacy Essentials" id="ID_PROFICIENCY_SKILL_PERCEPTION">
-		<supports>Skill,Crusader</supports>
+		<supports>Skill,Crusader,Blademaster</supports>
 		<description>
 			<p>Your Wisdom (Perception) check lets you spot, hear, or otherwise detect the presence of something. It measures your general awareness of your surroundings and the keenness of your senses. For example, you might try to hear a conversation through a closed door, eavesdrop under an open window, or hear monsters moving stealthily in the forest. Or you might try to spot things that are obscured or easy to miss, whether they are orcs lying in ambush on a road, thugs hiding in the shadows of an alley, or candlelight under a closed secret door.</p>
 		</description>
@@ -153,7 +153,7 @@
 	</element>
 
 	<element name="Survival" type="Proficiency" source="Aurora Legacy Essentials" id="ID_PROFICIENCY_SKILL_SURVIVAL">
-		<supports>Skill,Mistblade,Duskblade,Runecaster,Crusader</supports>
+		<supports>Skill,Mistblade,Duskblade,Runecaster,Crusader,Blademaster</supports>
 		<description>
 			<p>The GM might ask you to make a Wisdom (Survival) check to follow tracks, hunt wild game, guide your group through frozen wastelands, identify signs that owlbears live nearby, predict the weather, or avoid quicksand and other natural hazards.</p>
 		</description>
