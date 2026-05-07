@@ -44,7 +44,7 @@
 		<description>
 			<p>The power of the divine flows through you and empowers you with the ability to protect and heal your allies. When you critically hit against an enemy, you can choose one ally within 30 feet. The ally regains a number of hit points equal to the Weak Point damage dealt. You can use this feature a number of times per long rest equal to your proficiency bonus.</p>
 		</description>
-		<sheet alt="Empowered Protection" action="Bonus Action" usage="{{proficiency:bonus}}/Long Rest">>
+		<sheet alt="Empowered Protection" action="Bonus Action" usage="{{bonus:proficiency}}/Long Rest">>
 			<description>When you make a weapon attack against an abberation, fey, fiend or undead, you can add an additional 1d8 radiant or necrotic damage (your choice) to the target. In addition, your Weak Point damage type is changed from your weapon type to either radiant or necrotic (your choice).</description>
 		</sheet>
 	</element>
@@ -55,7 +55,7 @@
 			<p>When you activate your Crusader Ward, all creatures within 30 feet who have less than half of their hit points regain hit points equal to 1d6 plus your Crusader level.</p>
 		</description>
 		<sheet alt="Fearless Call">
-      <description>When you activate your Crusader Ward, all creatures within 30 feet who have less than half of their hit points regain {{crusader:level}} hit points.</description>
+      <description>When you activate your Crusader Ward, all creatures within 30 feet who have less than half of their hit points regain {{level:crusader}} hit points.</description>
 		</sheet>
 	</element>
 
@@ -65,10 +65,12 @@
 			<p>You are a paragon of defending the divine and your faith as well as your allies. When a creature takes damage within 30 feet of you, you can use your reaction to force the creature that dealt the damage to make a wisdom saving throw. Charisma is used as the basis of the DC of this save. On a failed save, the creature takes radiant or necrotic damage (your choice) equal to the amount dealt and on a successful save, the creature takes half damage. Once you have used this feature, you cannot use it again until you finish a long rest.</p>
 		</description>
 		<sheet alt="Divine Retribution" action="Reaction" usage="1/Long Rest">>>
-			<description>When a creature takes damage within 30 feet of you, you can use your reaction to force the creature that dealt the damage to make a DC {{divine retribution:save}} wisdom saving throw. On a failed save, the creature takes radiant or necrotic damage (your choice) equal to the amount dealt and on a successful save, the creature takes half damage.</description>
+			<description>When a creature takes damage within 30 feet of you, you can use your reaction to force the creature that dealt the damage to make a DC {{divine retribution:dc}} wisdom saving throw. On a failed save, the creature takes radiant or necrotic damage (your choice) equal to the amount dealt and on a successful save, the creature takes half damage.</description>
 		</sheet>
     <rules>
-      <stat name="divine retribution:save" value="charisma:spellcasting:dc" bonus="base" />
+      <stat name="divine retribution:dc" value="8" bonus="base" />
+	  <stat name="divine retribution:dc" value="proficiency" bonus="proficiency" />
+	  <stat name="divine retribution:dc" value="charisma:modifier" bonus="ability" />
     </rules>
 	</element>
 	
