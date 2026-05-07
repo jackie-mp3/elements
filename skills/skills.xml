@@ -204,4 +204,47 @@
 			<stat name="charisma:save:proficiency" value="proficiency" bonus="proficiency" alt="Proficiency" />
 		</rules>
 	</element>
+
+	<!-- Saving Throw Expertise -->
+	<element name="Saving Throw Expertise (Strength)" type="Proficiency" source="Aurora Legacy Essentials" id="ID_EXPERTISE_SAVINGTHROW_STRENGTH">
+		<supports>Iron Will,Crusader</supports>
+		<rules>
+			<stat name="strength:save:proficiency" value="proficiency" bonus="double" alt="Proficiency" />
+		</rules>
+	</element>
+
+	<element name="Saving Throw Expertise (Dexterity)" type="Proficiency" source="Aurora Legacy Essentials" id="ID_EXPERTISE_SAVINGTHROW_DEXTERITY">
+		<supports>Iron Will,Crusader</supports>
+		<rules>
+			<stat name="dexterity:save:proficiency" value="proficiency" bonus="double" alt="Proficiency" />
+		</rules>
+	</element>
+
+	<element name="Saving Throw Expertise (Constitution)" type="Proficiency" source="Aurora Legacy Essentials" id="ID_EXPERTISE_SAVINGTHROW_CONSTITUTION">
+		<supports>Iron Will,Crusader</supports>
+		<rules>
+			<stat name="constitution:save:proficiency" value="proficiency" bonus="double" alt="Proficiency" />
+		</rules>
+	</element>
+
+	<element name="Saving Throw Expertise (Intelligence)" type="Proficiency" source="Aurora Legacy Essentials" id="ID_EXPERTISE_SAVINGTHROW_INTELLIGENCE">
+		<supports>Iron Will,Crusader</supports>
+		<rules>
+			<stat name="intelligence:save:proficiency" value="proficiency" bonus="double" alt="Proficiency" />
+		</rules>
+	</element>
+
+	<element name="Saving Throw Expertise (Wisdom)" type="Proficiency" source="Aurora Legacy Essentials" id="ID_EXPERTISE_SAVINGTHROW_WISDOM">
+		<supports>Iron Will,Crusader</supports>
+		<rules>
+			<stat name="wisdom:save:proficiency" value="proficiency" bonus="double" alt="Proficiency" />
+		</rules>
+	</element>
+
+	<element name="Saving Throw Expertise (Charisma)" type="Proficiency" source="Aurora Legacy Essentials" id="ID_EXPERTISE_SAVINGTHROW_CHARISMA">
+		<supports>Iron Will,Crusader</supports>
+		<rules>
+			<stat name="charisma:save:proficiency" value="proficiency" bonus="double" alt="Proficiency" />
+		</rules>
+	</element>
 </elements>
