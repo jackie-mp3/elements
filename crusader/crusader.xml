@@ -222,8 +222,11 @@
 			<p class="indent">Once you have used this feature, you cannot use it again until you finish a short or long rest.</p>
 		</description>
 		<sheet alt="Rallying Cry" action="Action" usage="1/Short Rest">
-			<description>You make a loud battle cry to all allied creatures within 60 feet that can hear you. Creatures that hear your battle cry gain temporary hit points equal to 1d12+{{crusader:level}} and gain a Heroic Inspiration if they lack it.</description>
+			<description>You make a loud battle cry to all allied creatures within 60 feet that can hear you. Creatures that hear your battle cry gain temporary hit points equal to 1d12+{{rallying:cry}} and gain a Heroic Inspiration if they lack it.</description>
 		</sheet>
+		<rules>
+			<stat name="rallying:cry" value="level:crusader"/>
+		</rules>
 	</element>
 
 	<element name="Level 5: Weak Point" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_CRUSADER_WEAK_POINT">
@@ -236,7 +239,6 @@
 			<description>When you make an attack with a melee weapon that you are proficient with, you can add {{weak point:damage}} damage of your weapon’s damage type to the damage rolls. You can only add this extra damage once per turn.</description>
 		</sheet>
 		<rules>
-			
 			<stat name="weak point:damage" value="2d8" bonus="base" />
 			<stat name="weak point:damage" value="3d8" level="9" bonus="base" />
 			<stat name="weak point:damage" value="4d8" level="13" bonus="base" />
@@ -261,9 +263,6 @@
 		</description>
 		<sheet display="false">
 		</sheet>
-		<rules>
-			<select type="Proficiency" name="Iron Will (Crusader 9)" supports="ID_PROFICIENCY_SAVINGTHROW_STRENGTH|ID_PROFICIENCY_SAVINGTHROW_DEXTERITY|ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION|ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE|ID_PROFICIENCY_SAVINGTHROW_WISDOM|ID_PROFICIENCY_SAVINGTHROW_CHARISMA" />
-		</rules>
 	</element>
 
 	<element name="Level 13: Retaliation" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_CRUSADER_RETALIATION">
@@ -272,8 +271,11 @@
 			<p>You put your heart into each and every strike. You can add a bonus to damage rolls made with weapons with which you are proficient equal to your Constitution modifier. In addition, when you make an attack of opportunity, you can take two attacks instead of one.</p>
 		</description>
 		<sheet alt="Retaliation">
-			<description>You can add {{modifier:constitution}} extra damage to rolls made with weapons with which you are proficient with. In addition, when you make an attack of opportunity, you can take two attacks instead of one.</description>
+			<description>You can add {{retaliation:mod}} extra damage to rolls made with weapons with which you are proficient with. In addition, when you make an attack of opportunity, you can take two attacks instead of one.</description>
 		</sheet>
+		<rules>
+			<stat name="retaliation:mod" value="constitution:modifier"/>
+		</rules>
 	</element>
 
 	<element name="Level 14: Juggernaut" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_CRUSADER_JUGGERNAUT">
@@ -282,7 +284,7 @@
 			<p>You are unstoppable while in combat. You reduce all damage you take by an amount equal to your Constitution modifier. In addition, any damage you deal with a weapon that you are proficient with deals additional damage equal to your Constitution modifier.</p>
 		</description>
 		<sheet alt="Juggernaut"/>
-			<description>You reduce all damage you take by {{modifier:constitution}}. In addition, any damage you deal with a weapon that you are proficient with deals an additional {{modifier:constitution}} damage.</description>
+			<description>You reduce all damage you take by {{retaliation:mod}}. In addition, any damage you deal with a weapon that you are proficient with deals an additional {{retaliation:mod}} damage.</description>
 	</element>
 
 	<element name="Level 17: Hidden Strength" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_CRUSADER_HIDDEN_STRENGTH">
