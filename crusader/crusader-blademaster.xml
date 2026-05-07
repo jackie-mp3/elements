@@ -43,7 +43,7 @@
 		<description>
 			<p>Your training and wisdom grants you greater boons both in and out of combat. You gain proficiency in one of the following skills; Animal Handling, Insight, Medicine, Perception, Survival. In addition, you also gain proficiency in Wisdom saving throws.</p>
 		</description>
-		<sheet display="false">
+		<sheet display="false" />
 		<rules>
 			<select type="Proficiency" name="Wisdom of the Blade (Blademaster)" supports="Skill,Blademaster" number="1" requirements="!ID_HB_MULTICLASS_CRUSADER"/>
       <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" requirements="!ID_HB_MULTICLASS_CRUSADER"/>
