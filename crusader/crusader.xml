@@ -1,1 +1,335 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Crusader</name>
+		<description>The Crusader Homebrew Class.</description>
+		<author url="https://www.urbandictionary.com/define.php?term=GOAT">Guzufu</author>
+		<update version="0.0.1">
+			<file name="crusader.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/crusader/crusader.xml" />
+		</update>
+	</info>
 
+	<element name="Crusader" type="Class" source="Homebrew" id="ID_HB_CLASS_CRUSADER">
+		<description>
+			<p>Crusaders are the embodiment of honour and virtue in martial combat. All across the land, scattered homes of crusader knights train for the betterment of the communities in which they serve. They stand tall as paragons of justice, beacons of strength and they have more than earned that reputation.</p>
+			<p class="indent">Crusaders utilise the strength and rigidness of armor and shield and the power of sword or maul to defend civilisation against the vile and vicious monsters known to infest the lands. Most crusaders come from so-called Crusader Clans, small outposts lead by a battlemaster who teach students how to defend others and when to push their advantage to slay the enemies of civilisation.</p>
+      <p class="indent">Each crusader clan has their own techniques and tactics, some relying on more offensive techniques and taking the fight directly to their enemies, others combining their defensive fighting with magic to create a shield against both martial and magical dangers. Despite their differences, the one thing that joins all crusaders is the desire to fight and protect all under their care.</p>
+			<div class="sidebar">
+				<h5>CORE CRUSADER TRAITS</h5>
+				<table>
+					<tr><td><b>Primary Ability</b></td><td class="left">Strength</td></tr>
+					<tr><td><b>Hit Point Die</b></td><td class="left">D12 per Crusader level</td></tr>
+					<tr><td><b>Saving Throw Proficiencies</b></td><td class="left">Strength and Constitution</td></tr>
+					<tr><td><b>Skill Proficiencies</b></td><td class="left"><i>Choose 2:</i> Athletics, History, Insight, Intimidation, Investigation, Medicine, Perception, Religion or Survival</td></tr>
+					<tr><td><b>Weapon Proficiencies</b></td><td class="left">Simple weapons and Martial weapons</td></tr>
+					<tr><td><b>Armor Training</b></td><td class="left">Light, Medium and Heavy armor and Shields</td></tr>
+					<tr><td><b>Starting Equipment</b></td><td class="left"><i> Choose A, B:</i> (A) Longsword, Javelin, Chain Mail and Shield or (B) 110 GP</td></tr>
+				</table>
+			</div>
+			<h4>BECOMING A CRUSADER ...</h4>
+			<h5 style="margin-top:-2em">AS A LEVEL 1 CHARACTER</h5>
+			<ul style="margin-top:-1em; margin-bottom: 0.5em">
+				<li>Gain all the traits in the Core Crusader Traits table.</li>
+				<li>Gain the Crusader's level 1 features, which are listed in the Crusader Features table.</li>
+			</ul>
+			<h5 style="margin-top: 0px">AS A MULTICLASS CHARACTER</h5>
+			<ul style="margin-top:-1em">
+				<li>Gain the following traits from the Core Crusader Traits table: Hit Point Die, proficiency with Martial weapons, and training with Light and Medium armor and Shields.</li>
+				<li>Gain the Crusader's level 1 features, which are listed in the Crusader Features table.</li>
+			</ul>
+			<h5>CRUSADER FEATURES</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td>Proficiency Bonus</td><td class="left">Features</td><td>Weak Point</td></tr>
+				</thead>
+				<tr><td> 1</td><td>+2</td><td class="left">Relentless, Weapon Mastery</td><td>-</td></tr>
+				<tr><td> 2</td><td>+2</td><td class="left">Crusader Ward, Fighting Style</td><td>-</td></tr>
+				<tr><td> 3</td><td>+2</td><td class="left">Crusader Subclass</td><td><td>-</td></tr>
+				<tr><td> 4</td><td>+2</td><td class="left">Ability Score Improvement</td><td>-</td></tr>
+				<tr><td> 5</td><td>+3</td><td class="left">Rallying Cry, Weak Point</td><td>2d8</td></tr>
+				<tr><td> 6</td><td>+3</td><td class="left">Protective Spirit</td><td>2d8</td></tr>
+				<tr><td> 7</td><td>+3</td><td class="left">Subclass feature</td><td>2d8</td></tr>
+				<tr><td> 8</td><td>+3</td><td class="left">Ability Score Improvement</td><td>2d8</td></tr>
+				<tr><td> 9</td><td>+4</td><td class="left">Iron Will, Crusader Ward Improvement</td><td>3d8</td></tr>
+				<tr><td>10</td><td>+4</td><td class="left">Ability Score Improvement</td><td>3d8</td></tr>
+				<tr><td>11</td><td>+4</td><td class="left">Subclass Feature</td><td>3d8</td></tr>
+				<tr><td>12</td><td>+4</td><td class="left">Ability Score Improvement</td><td>3d8</td></tr>
+				<tr><td>13</td><td>+5</td><td class="left">Retaliation</td><td>4d8</td></tr>
+				<tr><td>14</td><td>+5</td><td class="left">Juggernaut</td><td>4d8</td></tr>
+				<tr><td>15</td><td>+5</td><td class="left">Subclass feature</td><td>4d8</td></tr>
+				<tr><td>16</td><td>+5</td><td class="left">Ability Score Improvement</td><td>4d8</td></tr>
+				<tr><td>17</td><td>+6</td><td class="left">Hidden Strength</td><td>5d8</td></tr>
+				<tr><td>18</td><td>+6</td><td class="left">Crusader Ward Improvement</td><td>5d8</td></tr>
+				<tr><td>19</td><td>+6</td><td class="left">Epic Boon</td><td>5d8</td></tr>
+				<tr><td>20</td><td>+6</td><td class="left">Impervious</td><td>5d8</td></tr>
+			</table>
+			<h4>CRUSADER CLASS FEATURES</h4>
+			<p>As a Crusader, you gain the following class features when you reach the specified Crusader levels. These features are listed in the Crusader Features table.</p>
+			<div element="ID_HB_CLASS_FEATURE_CRUSADER_RELENTLESS" />
+			<div element="ID_HB_CLASS_FEATURE_CRUSADER_WEAPON_MASTERY" />
+      <div element="ID_HB_CLASS_FEATURE_CRUSADER_CRUSADER_WARD" />
+			<div element="ID_HB_CLASS_FEATURE_CRUSADER_FIGHTING_STYLE" />
+			<div element="ID_HB_CLASS_FEATURE_CRUSADER_CRUSADER_SUBCLASS" />
+			<div element="ID_HB_CLASS_FEATURE_CRUSADER_ABILITY_SCORE_IMPROVEMENT" />
+			<div element="ID_HB_CLASS_FEATURE_CRUSADER_RALLYING_CRY" />
+			<div element="ID_HB_CLASS_FEATURE_CRUSADER_WEAK_POINT" />
+			<div element="ID_HB_CLASS_FEATURE_CRUSADER_PROTECTIVE_SPIRIT" />
+			<div element="ID_HB_CLASS_FEATURE_CRUSADER_IRON_WILL" />
+			<div element="ID_HB_CLASS_FEATURE_CRUSADER_CRUSADER_WARD_IMPROVEMENT" />
+			<div element="ID_HB_CLASS_FEATURE_CRUSADER_RETALIATION" />
+      <div element="ID_HB_CLASS_FEATURE_CRUSADER_JUGGERNAUT" />
+      <div element="ID_HB_CLASS_FEATURE_CRUSADER_HIDDEN_STRENGTH" />
+			<div element="ID_HB_CLASS_FEATURE_CRUSADER_EPIC_BOON" />
+			<div element="ID_HB_CLASS_FEATURE_CRUSADER_IMPERVIOUS" />
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="short">A Warrior of Honour and Glory</set>
+			<set name="hd">d12</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" requirements="!ID_HB_MULTICLASS_CRUSADER"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_HB_MULTICLASS_CRUSADER"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" requirements="!ID_HB_MULTICLASS_CRUSADER"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_HB_MULTICLASS_CRUSADER"/>
+			<select type="Proficiency" name="Skill Proficiency (Crusader)" supports="Skill, Crusader" number="2" requirements="!ID_HB_MULTICLASS_CRUSADER"/>
+
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_CRUSADER_FIGHTING_STYLE" />
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_CRUSADER_SECOND_WIND" />
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_CRUSADER_WEAPON_MASTERY" />
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_CRUSADER_ACTION_SURGE" level="2"/>
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_CRUSADER_TACTICAL_MIND" level="2"/>
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_CRUSADER_CRUSADER_SUBCLASS" level="3"/>
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_CRUSADER_ABILITY_SCORE_IMPROVEMENT" level="4"/>
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_CRUSADER_EXTRA_ATTACK" level="5"/>
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_CRUSADER_TACTICAL_SHIFT" level="5"/>
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_CRUSADER_INDOMITABLE" level="9"/>
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_CRUSADER_TACTICAL_MASTER" level="9"/>
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_CRUSADER_TWO_EXTRA_ATTACKS" level="11" />
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_CRUSADER_STUDIED_ATTACKS" level="13"/>
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_CRUSADER_EPIC_BOON" level="19"/>
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_CRUSADER_THREE_EXTRA_ATTACKS" level="20" />
+		</rules>
+		<multiclass id="ID_HB_MULTICLASS_CRUSADER">
+			<prerequisite>Strength 13 or Dexterity 13</prerequisite>
+			<requirements>(([str:13]||[dex:13]),!(ID_HB_PHB_CLASS_CRUSADER||ID_HB_PHB_MULTICLASS_CRUSADER))||ID_INTERNAL_GRANTS_MULTICLASS_UNLOCKER</requirements>
+			<setters>
+				<set name="multiclass proficiencies">Martial weapons, Light armor, Medium armor, Shields</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+			</rules>
+		</multiclass>
+	</element>
+
+	<element name="Level 1: Fighting Style" type="Class Feature" source="Player’s Handbook (2024)" id="ID_HB_CLASS_FEATURE_CRUSADER_FIGHTING_STYLE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_FIGHTING_STYLE</requirements>
+		<description>
+			<p>You have honed your martial prowess and gain a Fighting Style feat of your choice. Defense is recommended.</p>
+			<p class="indent">Whenever you gain a Crusader level, you can replace the feat you chose with a different Fighting Style feat.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_FIGHTING_STYLE_FEATURE" />
+			<select type="Feat" name="Fighting Style (Crusader 1)" supports="Fighting Style" />
+		</rules>
+	</element>
+
+	<element name="Level 1: Second Wind" type="Class Feature" source="Player’s Handbook (2024)" id="ID_HB_CLASS_FEATURE_CRUSADER_SECOND_WIND">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_SECOND_WIND</requirements>
+		<description>
+			<p>You have a limited well of physical and mental stamina that you can draw on. As a Bonus Action, you can use it to regain Hit Points equal to 1d10 plus your Crusader level.</p>
+			<p class="indent">You can use this feature twice. You regain one expended use when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest. </p>
+			<p class="indent">When you reach certain Crusader levels, you gain more uses of this feature, as shown in the Second Wind column of the Crusader Features table.</p>
+		</description>
+		<sheet alt="Second Wind" action="Bonus Action" usage="{{second wind:usage}}/Long Rest">
+			<description>You regain 1d10+{{level:fighter}} HPs. &#13;
+			You regain one expended use when you finish a Short Rest.</description>
+			<description level="5">You regain 1d10+{{level:fighter}} HPs, and can move up to {{speed}} without provoking Opportunity Attacks. &#13;
+			You regain one expended use when you finish a Short Rest.</description>
+		</sheet>
+		<rules>
+			<stat name="second wind:usage" value="2" bonus="base" />
+			<stat name="second wind:usage" value="3" level="4" bonus="base" />
+			<stat name="second wind:usage" value="4" level="10" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Level 1: Weapon Mastery" type="Class Feature" source="Player’s Handbook (2024)" id="ID_HB_CLASS_FEATURE_CRUSADER_WEAPON_MASTERY">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_WEAPON_MASTERY</requirements>
+		<description>
+			<p>Your training with weapons allows you to use the mastery properties of three kinds of Simple or Martial weapons of your choice. Whenever you finish a Long Rest, you can practice weapon drills and change one of those weapon choices.</p>
+			<p class="indent">When you reach certain Crusader levels, you gain the ability to use the mastery properties of more kinds of weapons, as shown in the Weapon Mastery column of the Crusader Features table. </p>
+		</description>
+		<sheet alt="Weapon Mastery">
+			<description>Whenever you finish a Long Rest, you can change one of the weapons you previously chosen for a different one. </description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Weapon Mastery (Crusader 1)" level="1" supports="Weapon Mastery" number="3"/>
+			<select type="Class Feature" name="Weapon Mastery (Crusader 4)" level="4" supports="Weapon Mastery" />
+			<select type="Class Feature" name="Weapon Mastery (Crusader 10)" level="10" supports="Weapon Mastery" />
+			<select type="Class Feature" name="Weapon Mastery (Crusader 16)" level="16" supports="Weapon Mastery" />
+		</rules>
+	</element>
+
+	<element name="Level 2: Action Surge" type="Class Feature" source="Player’s Handbook (2024)" id="ID_HB_CLASS_FEATURE_CRUSADER_ACTION_SURGE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_ACTION_SURGE</requirements>
+		<description>
+			<p>You can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action, except for the Magic action.</p>
+			<p class="indent">Once you use this feature, you can't do so again until you finish a Short or Long Rest. Starting at level 17, you can use it twice before a rest, but only once on a turn.</p>
+		</description>
+		<sheet alt="Action Surge" usage="1/Short Rest">
+			<description>On your turn, you can take one additional action on top of your regular action, except for the Magic action.</description>
+			<description usage="2/Short Rest" level="17">On your turn, you can take one additional action on top of your regular action, except for the Magic action.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 2: Tactical Mind" type="Class Feature" source="Player’s Handbook (2024)" id="ID_HB_CLASS_FEATURE_CRUSADER_TACTICAL_MIND">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_TACTICAL_MIND</requirements>
+		<description>
+			<p>You have a mind for tactics on and off the battlefield. When you fail an ability check, you can expend a use of your Second Wind to push yourself toward success. Rather than regaining Hit Points, you roll 1d10 and add the number rolled to the ability check, potentially turning it into a success. If the check still fails, this use of Second Wind isn't expended.</p>
+		</description>
+		<sheet alt="Tactical Mind" usage="Second Wind">
+			<description>When you fail an ability check, you can expend a use of your Second Wind to roll 1d10 and add the number to the ability check. If the check fails, this use of Second Wind isn't expended.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 3: Crusader Subclass" type="Class Feature" source="Player’s Handbook (2024)" id="ID_HB_CLASS_FEATURE_CRUSADER_CRUSADER_SUBCLASS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_CRUSADER_SUBCLASS</requirements>
+		<description>
+			<p>You gain a Crusader subclass of your choice. A subclass is a specialization that grants you features at certain Crusader levels. For the rest of your career, you gain each of your subclass's features that are of your Crusader level or lower.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype" name="Crusader Subclass" supports="Martial Archetype||Crusader Subclass" level="3" />
+		</rules>
+	</element>
+
+	<element name="Level 4: Ability Score Improvement" type="Class Feature" source="Player’s Handbook (2024)" id="ID_HB_CLASS_FEATURE_CRUSADER_ABILITY_SCORE_IMPROVEMENT">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_ABILITY_SCORE_IMPROVEMENT</requirements>
+		<compendium display="false" />
+		<description>
+			<p>You gain the Ability Score Improvement feat or another feat of your choice for which you qualify. You gain this feature again at Crusader levels 6, 8, 12, 14 and 16.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat" name="Ability Score Improvement (Crusader 4)" level="4" />
+			<select type="Feat" name="Ability Score Improvement (Crusader 6)" level="6" />
+			<select type="Feat" name="Ability Score Improvement (Crusader 8)" level="8" />
+			<select type="Feat" name="Ability Score Improvement (Crusader 12)" level="12" />
+			<select type="Feat" name="Ability Score Improvement (Crusader 14)" level="14" />
+			<select type="Feat" name="Ability Score Improvement (Crusader 16)" level="16" />
+		</rules>
+	</element>
+
+	<element name="Level 5: Extra Attack" type="Class Feature" source="Player’s Handbook (2024)" id="ID_HB_CLASS_FEATURE_CRUSADER_EXTRA_ATTACK">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_EXTRA_ATTACK</requirements>
+		<description>
+			<p>You can attack twice instead of once whenever you take the Attack action on your turn.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="extra attack:count" value="2" bonus="extra attack" />
+		</rules>
+	</element>
+
+	<element name="Level 5: Tactical Shift" type="Class Feature" source="Player’s Handbook (2024)" id="ID_HB_CLASS_FEATURE_CRUSADER_TACTICAL_SHIFT">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_TACTICAL_SHIFT</requirements>
+		<description>
+			<p>Whenever you activate your Second Wind with a Bonus Action, you can move up to half your speed without provoking Opportunity Attacks.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+
+	<element name="Level 9: Indomitable" type="Class Feature" source="Player’s Handbook (2024)" id="ID_HB_CLASS_FEATURE_CRUSADER_INDOMITABLE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_INDOMITABLE</requirements>
+		<description>
+			<p>If you fail a saving throw, you can reroll it with a bonus equal to your Crusader level. You must use the new roll, and you can't use this feature again until you finish a Long Rest.</p>
+			<p class="indent">You can use this feature twice before a Long Rest starting at level 13 and three times before a Long Rest starting at level 17.</p>
+		</description>
+		<sheet alt="Indomitable" usage="{{indomitable:usage}}/Long Rest">
+			<description>You can reroll a saving throw that you fail with a +{{indomitable:bonus}} bonus. If you do so, you must use the new roll.</description>
+		</sheet>
+		<rules>
+			<stat name="indomitable:usage" value="1" level="9" bonus="base" />
+			<stat name="indomitable:usage" value="2" level="13" bonus="base" />
+			<stat name="indomitable:usage" value="3" level="17" bonus="base" />
+			<stat name="indomitable:bonus" value="level:fighter" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Level 9: Tactical Master" type="Class Feature" source="Player’s Handbook (2024)" id="ID_HB_CLASS_FEATURE_CRUSADER_TACTICAL_MASTER">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_TACTICAL_MASTER</requirements>
+		<description>
+			<p>When you attack with a weapon whose mastery property you can use, you can replace that property with the Push, Sap or Slow property for that attack.</p>
+		</description>
+		<sheet alt="Tactical Master">
+			<description>When you attack with a weapon whose mastery property you can use, you can replace that property with the Push, Sap or Slow property for that attack.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 11: Two Extra Attacks" type="Class Feature" source="Player’s Handbook (2024)" id="ID_HB_CLASS_FEATURE_CRUSADER_TWO_EXTRA_ATTACKS">
+		<requirements>!(ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_EXTRA_ATTACK||ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_TWO_EXTRA_ATTACKS)</requirements>
+		<description>
+			<p>You can attack three times instead of once whenever you take the Attack action on your turn.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="extra attack:count" value="3" bonus="extra attack" />
+		</rules>
+	</element>
+
+	<element name="Level 13: Studied Attacks" type="Class Feature" source="Player’s Handbook (2024)" id="ID_HB_CLASS_FEATURE_CRUSADER_STUDIED_ATTACKS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_STUDIED_ATTACKS</requirements>
+		<description>
+			<p>You study your opponents and learn from each attack you make. If you make an attack roll against a creature and miss, you have Advantage on your next attack roll against that creature before the end of your next turn.</p>
+		</description>
+		<sheet alt="Studied Attacks">
+			<description>When you miss with an attack roll, you have Advantage on your next attack roll against that creature before the end of your next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 19: Epic Boon" type="Class Feature" source="Player’s Handbook (2024)" id="ID_HB_CLASS_FEATURE_CRUSADER_EPIC_BOON">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_EPIC_BOON</requirements>
+		<description>
+			<p>You gain an Epic Boon feat or another feat of your choice for which you qualify. Boon of Combat Prowess is recommended.</p>
+		</description>
+		<sheet display="false">
+		</sheet>
+		<rules>
+			<select type="Feat" name="Epic Boon (Crusader 19)" level="19" />
+		</rules>
+	</element>
+
+	<element name="Level 20: Three Extra Attacks" type="Class Feature" source="Player’s Handbook (2024)" id="ID_HB_CLASS_FEATURE_CRUSADER_THREE_EXTRA_ATTACKS">
+		<requirements>!(ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_EXTRA_ATTACK||ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_TWO_EXTRA_ATTACKS||ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_THREE_EXTRA_ATTACKS)</requirements>
+		<description>
+			<p>You can attack four times instead of once whenever you take the Attack action on your turn.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="extra attack:count" value="4" bonus="extra attack" />
+		</rules>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Fighting Style Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_FIGHTING_STYLE" />
+	<element name="Second Wind Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_SECOND_WIND" />
+	<element name="Weapon Mastery Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_WEAPON_MASTERY" />
+	<element name="Action Surge Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_ACTION_SURGE" />
+	<element name="Tactical Mind Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_TACTICAL_MIND" />
+	<element name="Crusader Subclass Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_CRUSADER_SUBCLASS" />
+	<element name="Ability Score Improvement Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_ABILITY_SCORE_IMPROVEMENT" />
+	<element name="Extra Attack Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_EXTRA_ATTACK" />
+	<element name="Tactical Shift Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_TACTICAL_SHIFT" />
+	<element name="Indomitable Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_INDOMITABLE" />
+	<element name="Tactical Master Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_TACTICAL_MASTER" />
+	<element name="Two Extra Attacks Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_TWO_EXTRA_ATTACKS" />
+	<element name="Studied Attacks Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_STUDIED_ATTACKS" />
+	<element name="Epic Boon Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_EPIC_BOON" />
+	<element name="Three Extra Attacks Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_THREE_EXTRA_ATTACKS" />
+</elements>
