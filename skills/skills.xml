@@ -235,14 +235,14 @@
 	</element>
 
 	<element name="Saving Throw Expertise (Wisdom)" type="Proficiency" source="Aurora Legacy Essentials" id="ID_EXPERTISE_SAVINGTHROW_WISDOM">
-		<supports>Iron Will,</supports>
+		<supports>Saving Throw</supports>
 		<rules>
 			<stat name="wisdom:save:proficiency" value="proficiency" bonus="double" alt="Proficiency" />
 		</rules>
 	</element>
 
 	<element name="Saving Throw Expertise (Charisma)" type="Proficiency" source="Aurora Legacy Essentials" id="ID_EXPERTISE_SAVINGTHROW_CHARISMA">
-		<supports>Iron Will,</supports>
+		<supports>Saving Throw,ID_CLASS_BARD,Bard,ID_CLASS_PALADIN,Paladin,ID_CLASS_SORCERER,Sorcerer,ID_CLASS_WARLOCK,Warlock</supports>
 		<rules>
 			<stat name="charisma:save:proficiency" value="proficiency" bonus="double" alt="Proficiency" />
 		</rules>
