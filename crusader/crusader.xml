@@ -40,7 +40,7 @@
 			<h5>CRUSADER FEATURES</h5>
 			<table class="class-features">
 				<thead>
-					<tr><td class="col-5">Level</td><td>Proficiency Bonus</td><td class="left">Features</td><td>Weak Point</td></tr>
+					<tr><td> class="col-5">Level</td><td>Proficiency Bonus</td><td class="left">Features</td><td>Weak Point</td></tr>
 				</thead>
 				<tr><td> 1</td><td>+2</td><td class="left">Relentless, Weapon Mastery</td><td>-</td></tr>
 				<tr><td> 2</td><td>+2</td><td class="left">Crusader Ward, Fighting Style</td><td>-</td></tr>
@@ -266,41 +266,39 @@
 		</rules>
 	</element>
 
-	<element name="Level 9: Tactical Master" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_CRUSADER_TACTICAL_MASTER">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_TACTICAL_MASTER</requirements>
+	<element name="Level 13: Retaliation" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_CRUSADER_RETALIATION">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_RETALIATION</requirements>
 		<description>
-			<p>When you attack with a weapon whose mastery property you can use, you can replace that property with the Push, Sap or Slow property for that attack.</p>
+			<p>You put your heart into each and every strike. You can add a bonus to damage rolls made with weapons with which you are proficient equal to your Constitution modifier. In addition, when you make an attack of opportunity, you can take two attacks instead of one.</p>
 		</description>
-		<sheet alt="Tactical Master">
-			<description>When you attack with a weapon whose mastery property you can use, you can replace that property with the Push, Sap or Slow property for that attack.</description>
+		<sheet alt="Retaliation">
+			<description>You can add {{modifier:constitution}} extra damage to rolls made with weapons with which you are proficient with. In addition, when you make an attack of opportunity, you can take two attacks instead of one.</description>
 		</sheet>
 	</element>
 
-	<element name="Level 11: Two Extra Attacks" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_CRUSADER_TWO_EXTRA_ATTACKS">
-		<requirements>!(ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_EXTRA_ATTACK||ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_TWO_EXTRA_ATTACKS)</requirements>
+	<element name="Level 14: Juggernaut" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_CRUSADER_JUGGERNAUT">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_JUGGERNAUT</requirements>
 		<description>
-			<p>You can attack three times instead of once whenever you take the Attack action on your turn.</p>
+			<p>You are unstoppable while in combat. You reduce all damage you take by an amount equal to your Constitution modifier. In addition, any damage you deal with a weapon that you are proficient with deals additional damage equal to your Constitution modifier.</p>
 		</description>
-		<sheet display="false" />
-		<rules>
-			<stat name="extra attack:count" value="3" bonus="extra attack" />
-		</rules>
+		<sheet alt="Juggernaut"/>
+			<description>You reduce all damage you take by {{modifier:constitution}}. In addition, any damage you deal with a weapon that you are proficient with deals an additional {{modifier:constitution}} damage.</description>
 	</element>
 
-	<element name="Level 13: Studied Attacks" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_CRUSADER_STUDIED_ATTACKS">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_STUDIED_ATTACKS</requirements>
+	<element name="Level 17: Hidden Strength" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_CRUSADER_HIDDEN_STRENGTH">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_HIDDEN_STRENGTH</requirements>
 		<description>
-			<p>You study your opponents and learn from each attack you make. If you make an attack roll against a creature and miss, you have Advantage on your next attack roll against that creature before the end of your next turn.</p>
+			<p>You can dig deep when times grow tough. While you are under half of your maximum hp, all attacks you make with weapons that you are proficient with are made at advantage.</p>
 		</description>
-		<sheet alt="Studied Attacks">
-			<description>When you miss with an attack roll, you have Advantage on your next attack roll against that creature before the end of your next turn.</description>
+		<sheet alt="Hidden Strength">
+			<description>While you are under half of your maximum hp, all attacks you make with weapons that you are proficient with are made at advantage.</description>
 		</sheet>
 	</element>
 
 	<element name="Level 19: Epic Boon" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_CRUSADER_EPIC_BOON">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_EPIC_BOON</requirements>
 		<description>
-			<p>You gain an Epic Boon feat or another feat of your choice for which you qualify. Boon of Combat Prowess is recommended.</p>
+			<p>You gain an Epic Boon feat or another feat of your choice for which you qualify.</p>
 		</description>
 		<sheet display="false">
 		</sheet>
@@ -309,31 +307,30 @@
 		</rules>
 	</element>
 
-	<element name="Level 20: Three Extra Attacks" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_CRUSADER_THREE_EXTRA_ATTACKS">
-		<requirements>!(ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_EXTRA_ATTACK||ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_TWO_EXTRA_ATTACKS||ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_THREE_EXTRA_ATTACKS)</requirements>
+	<element name="Level 20: Impervious" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_CRUSADER_IMPERVIOUS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_IMPERVIOUS</requirements>
 		<description>
-			<p>You can attack four times instead of once whenever you take the Attack action on your turn.</p>
+			<p>Upon reaching 20th level, you have become a paragon for defending and protecting your allies and you are able to resist even the forces of death for a time. As a bonus action, you can choose to prepare yourself against attack. For the next minute, you gain resistance to all incoming damage that you take. In addition, if you are reduced to 0 hit points while this is active, you are instead on 1 hit point and conscious. Once you use this feature, you must complete a long rest before you use it again.</p>
 		</description>
-		<sheet display="false" />
-		<rules>
-			<stat name="extra attack:count" value="4" bonus="extra attack" />
-		</rules>
+		<sheet alt="Impervious" action="Bonus Action" usage="1/Long Rest">
+			<description>You can choose to prepare yourself against attack. For the next minute, you gain resistance to all incoming damage that you take. In addition, if you are reduced to 0 hit points while this is active, you are instead on 1 hit point and conscious. </description>
+		</sheet>
 	</element>
 
 	<!--Feature Replacement Grants-->
-	<element name="Fighting Style Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_FIGHTING_STYLE" />
-	<element name="Second Wind Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_SECOND_WIND" />
+	<element name="Relentless Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_RELENTLESS" />
 	<element name="Weapon Mastery Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_WEAPON_MASTERY" />
-	<element name="Action Surge Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_ACTION_SURGE" />
-	<element name="Tactical Mind Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_TACTICAL_MIND" />
+	<element name="Crusader Ward Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_CRUSADER_WARD" />
+	<element name="Fighting Style Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_FIGHTING_STYLE" />
 	<element name="Crusader Subclass Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_CRUSADER_SUBCLASS" />
 	<element name="Ability Score Improvement Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_ABILITY_SCORE_IMPROVEMENT" />
-	<element name="Extra Attack Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_EXTRA_ATTACK" />
-	<element name="Tactical Shift Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_TACTICAL_SHIFT" />
-	<element name="Indomitable Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_INDOMITABLE" />
-	<element name="Tactical Master Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_TACTICAL_MASTER" />
-	<element name="Two Extra Attacks Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_TWO_EXTRA_ATTACKS" />
-	<element name="Studied Attacks Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_STUDIED_ATTACKS" />
+	<element name="Rallying Cry Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_RALLYING_CRY" />
+	<element name="Weak Point Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_WEAK_POINT" />
+	<element name="Protective Spirit Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_PROTECTIVE_SPIRIT" />
+	<element name="Iron Will Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_IRON_WILL" />
+	<element name="Retaliation Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_RETALIATION" />
+	<element name="Juggernaut Attacks Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_JUGGERNAUT" />
+	<element name="Hidden Strength" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_HIDDEN_STRENGTH" />
 	<element name="Epic Boon Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_EPIC_BOON" />
-	<element name="Three Extra Attacks Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_THREE_EXTRA_ATTACKS" />
+	<element name="Impervious" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_IMPERVIOUS" />
 </elements>
