@@ -259,7 +259,7 @@
 		<description>
 			<p>Choose two saving throws. You gain proficiency if you do not already have it. If you already have proficiency in the saving throw you choose, you instead double your proficiency bonus for those saving throws.</p>
 		</description>
-		<sheet display="false" />
+		<sheet display="false">
 		</sheet>
 		<rules>
 			<select type="Proficiency" name="Iron Will (Crusader 9)" supports="ID_PROFICIENCY_SAVINGTHROW_STRENGTH|ID_PROFICIENCY_SAVINGTHROW_DEXTERITY|ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION|ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE|ID_PROFICIENCY_SAVINGTHROW_WISDOM|ID_PROFICIENCY_SAVINGTHROW_CHARISMA" />
