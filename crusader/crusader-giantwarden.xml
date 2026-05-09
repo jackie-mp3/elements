@@ -37,13 +37,13 @@
 		</description>
 		<sheet display="false" />
     <rules>
-			<select type="Archetype Feature" name="Rune Warden" supports="Runes1" />
+			<select type="Archetype Feature" name="Rune Warden" supports="Warden" />
 		</rules>
 	</element>
 
   <!-- Rune Options 1 -->
 	<element name="Hill Rune" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_GIANT_WARDEN_RUNE_WARDEN_HILL_RUNE">
-		<supports>Runes1</supports>
+		<supports>Warden</supports>
 		<description>
 			<p>As a bonus action, you use the magic of the Hill Rune to grow in size. Your size increases to Large and your range on melee attacks increases by 5 feet. These benefits last for one minute and cannot be used again until you finish a short or long rest.</p>
 		</description>
@@ -53,7 +53,7 @@
 	</element>
 
 	<element name="Stone Rune" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_GIANT_WARDEN_RUNE_WARDEN_STONE_RUNE">
-		<supports>Runes1</supports>
+		<supports>Warden</supports>
 		<description>
 			<p>As a bonus action, you imbue your weapon with powerful magic. Whenever you make your first attack on your turn, you can choose to attempt to overwhelm the target and knock them prone. They must make a Strength saving throw against your save DC (8 + your proficiency bonus + your strength modifier) or be knocked prone. This effect lasts for one minute and cannot be used again until you finish a short or long rest.</p>
 		</description>
@@ -72,7 +72,7 @@
 		<description>
 			<p>You embody the ancient magic and power of the giants and can use these to great effect. When you use your Rallying Cry, all creatures that are affected also gain advantage on their next attack roll that they make.</p>
 		</description>
-		<sheet alt="Giant Call"">
+		<sheet alt="Giant Call">
       <description>When you use your Rallying Cry, all creatures that are affected also gain advantage on their next attack roll that they make.</description>
     </sheet>
 	</element>
@@ -84,13 +84,13 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Archetype Feature" name="Runic Power" supports="Runes1,Runes2" />
+			<select type="Archetype Feature" name="Runic Power" supports="Warden||Power" />
 		</rules>
 	</element>
 
   <!-- Rune Options 2 -->
 	<element name="Fire Rune" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_GIANT_WARDEN_RUNE_WARDEN_FIRE_RUNE">
-		<supports>Runes2</supports>
+		<supports>Power</supports>
 		<description>
 			<p>Your weapon burns with powerful flame. As a bonus action, you imbue the magic of this rune into a weapon that you are holding. For the next minute, attacks made with that weapon deal an additional 1d6 fire damage. In addition, when a creature hit by the weapon move 5 feet or more willingly before the start of your next turn, they take another 1d6 fire damage. This effect lasts for one minute and cannot be used again until you finish a short or long rest.</p>
 		</description>
@@ -100,7 +100,7 @@
 	</element>
 
   <element name="Frost Rune" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_GIANT_WARDEN_RUNE_WARDEN_FROST_RUNE">
-		<supports>Runes2</supports>
+		<supports>Power</supports>
 		<description>
 			<p>As a bonus action, you empower your armour with the chilling cold of the Frost Giants. When a creature deals damage to you with a melee attack, their movement speed is reduced to 0 until the start of your next turn. This effect lasts for one minute and cannot be used again until you finish a short or long rest.</p>
 		</description>
@@ -116,13 +116,13 @@
 		</description>
 		<sheet display="false" />
     <rules>
-			<select type="Archetype Feature" name="Rune Master" supports="Runes1,Runes2,Runes3" />
+			<select type="Archetype Feature" name="Rune Master" supports="Warden||Power||Master" />
 		</rules>
 	</element>
 
   <!-- Rune Options 3 -->
 	<element name="Cloud Rune" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_GIANT_WARDEN_RUNE_WARDEN_CLOUD_RUNE">
-		<supports>Runes3</supports>
+		<supports>Master</supports>
 		<description>
 			<p>You empower yourself with the trickery magic of Cloud Giants. As a bonus action, you become a shimmering mirage, making it harder to hit you. Whenever a creature targets you with an attack, roll a d4. On a 4, the attack deals 0 damage to you. This effect lasts for one minute and cannot be used again until you finish a short or long rest.</p>
 		</description>
@@ -132,7 +132,7 @@
 	</element>
 
   <element name="Storm Rune" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_GIANT_WARDEN_RUNE_WARDEN_STORM_RUNE">
-		<supports>Runes3</supports>
+		<supports>Master</supports>
 		<description>
 			<p> As a bonus action, you call upon the power of the storm in a weapon that you are holding. When you hit a creature with a weapon empowered by this rune, they take an additional 1d10 lightning damage. In addition, attacks that they make until the start of your next turn are made at disadvantage. This effect lasts for one minute and cannot be used again until you finish a short or long rest.</p>
 		</description>
