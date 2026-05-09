@@ -1,1 +1,149 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Clan of the Giant Warden</name>
+		<description>The Giant Warden subclass for the Crusader.</description>
+		<author url="https://GOAT.com">Guzufu</author>
+		<update version="0.0.1">
+			<file name="crusader-giantwarden.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/crusader/crusader-giantwarden.xml" />
+		</update>
+	</info>
 
+	<element name="Clan of the Giant Warden" type="Archetype" source="Homebrew" id="ID_HB_ARCHETYPE_CRUSADER_GIANT_WARDEN">
+		<supports>Crusader Subclass</supports>
+		<description>
+			<p class="flavor">Empower yourself with magical runes to slay your enemies</p>
+			<p>The giants of ancient times provided much inspiration for these Crusader clans. Whether taught by a surviving giant or merely adopting the teachings from long ago, these crusaders use the magical power of runes to embue themselves with strength.</p>
+			<div element="ID_HB_ARCHETYPE_FEATURE_CRUSADER_GIANT_WARDEN_RUNE_WARDEN"/>
+			<div element="ID_HB_ARCHETYPE_FEATURE_CRUSADER_GIANT_WARDEN_GIANT_CALL"/>
+			<div element="ID_HB_ARCHETYPE_FEATURE_CRUSADER_GIANT_WARDEN_RUNIC_POWER"/>
+			<div element="ID_HB_ARCHETYPE_FEATURE_CRUSADER_GIANT_WARDEN_RUNE_MASTER"/>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_GIANT_WARDEN_RUNE_WARDEN" level="3"/>
+			<grant type="Archetype Feature" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_GIANT_WARDEN_GIANT_CALL" level="7"/>
+			<grant type="Archetype Feature" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_GIANT_WARDEN_RUNIC_POWER" level="11"/>
+			<grant type="Archetype Feature" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_GIANT_WARDEN_RUNE_MASTER" level="15"/>
+		</rules>
+	</element>
+
+	<element name="Level 3: Rune Warden" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_GIANT_WARDEN_RUNE_WARDEN">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_GIANT_WARDEN_RUNE_WARDEN</requirements>
+		<description>
+			<p>You have learnt the basic of runes, allowing you to use them to help you in combat. You choose one of the following options. You can change your choice upon gaining a level in Crusader.</p>
+      <p class="indent"><b>Hill Rune:</b> As a bonus action, you use the magic of the Hill Rune to grow in size. Your size increases to Large and your range on melee attacks increases by 5 feet. These benefits last for one minute and cannot be used again until you finish a short or long rest.</p>
+      <p class="indent"><b>Stone Rune:</b> As a bonus action, you imbue your weapon with powerful magic. Whenever you make your first attack on your turn, you can choose to attempt to overwhelm the target and knock them prone. They must make a Strength saving throw against your save DC (8 + your proficiency bonus + your strength modifier) or be knocked prone. This effect lasts for one minute and cannot be used again until you finish a short or long rest.</p>
+		</description>
+		<sheet display="false" />
+    <rules>
+			<select type="Archetype Feature" name="Rune Warden" supports="Runes1" />
+		</rules>
+	</element>
+
+  <!-- Rune Options 1 -->
+	<element name="Hill Rune" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_GIANT_WARDEN_RUNE_WARDEN_HILL_RUNE">
+		<supports>Runes1</supports>
+		<description>
+			<p>As a bonus action, you use the magic of the Hill Rune to grow in size. Your size increases to Large and your range on melee attacks increases by 5 feet. These benefits last for one minute and cannot be used again until you finish a short or long rest.</p>
+		</description>
+		<sheet alt="Hill Rune" action="Bonus Action" usage="1/Short Rest">
+      <description>For one minute, Your size increases to Large and your range on melee attacks increases by 5 feet.</description>
+    </sheet>
+	</element>
+
+	<element name="Stone Rune" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_GIANT_WARDEN_RUNE_WARDEN_STONE_RUNE">
+		<supports>Runes1</supports>
+		<description>
+			<p>As a bonus action, you imbue your weapon with powerful magic. Whenever you make your first attack on your turn, you can choose to attempt to overwhelm the target and knock them prone. They must make a Strength saving throw against your save DC (8 + your proficiency bonus + your strength modifier) or be knocked prone. This effect lasts for one minute and cannot be used again until you finish a short or long rest.</p>
+		</description>
+		<sheet alt="Stone Rune" action="Bonus Action" usage="1/Short Rest">
+      <description>For one minute, Whenever you make your first attack on your turn, you can choose to attempt to overwhelm the target and knock them prone. They must make a DC {{stonerune:dc}} Strength saving throw or be knocked prone.</description>
+    </sheet>
+      <rules>
+         <stat name="stonerune:dc" value="8" bonus="base" />
+	       <stat name="stonerune:dc" value="proficiency" bonus="proficiency" />
+	       <stat name="stonerune:dc" value="strength:modifier" bonus="ability" />
+      </rules>
+	</element>
+  
+	<element name="Level 7: Giant Call" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_GIANT_WARDEN_GIANT_CALL">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_GIANT_WARDEN_GIANT_CALL</requirements>
+		<description>
+			<p>You embody the ancient magic and power of the giants and can use these to great effect. When you use your Rallying Cry, all creatures that are affected also gain advantage on their next attack roll that they make.</p>
+		</description>
+		<sheet alt="Giant Call"">
+      <description>When you use your Rallying Cry, all creatures that are affected also gain advantage on their next attack roll that they make.</description>
+    </sheet>
+	</element>
+
+	<element name="Level 11: Runic Power" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_GIANT_WARDEN_RUNIC_POWER">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_GIANT_WARDEN_RUNIC_POWER</requirements>
+		<description>
+			<p>You have learnt more runes to empower your journey. You can choose from the two additional options listed or another option avaliable earlier in the subclass. You can change your choice upon gaining a Crusader level.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="Runic Power" supports="Runes1,Runes2" />
+		</rules>
+	</element>
+
+  <!-- Rune Options 2 -->
+	<element name="Fire Rune" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_GIANT_WARDEN_RUNE_WARDEN_FIRE_RUNE">
+		<supports>Runes2</supports>
+		<description>
+			<p>Your weapon burns with powerful flame. As a bonus action, you imbue the magic of this rune into a weapon that you are holding. For the next minute, attacks made with that weapon deal an additional 1d6 fire damage. In addition, when a creature hit by the weapon move 5 feet or more willingly before the start of your next turn, they take another 1d6 fire damage. This effect lasts for one minute and cannot be used again until you finish a short or long rest.</p>
+		</description>
+		<sheet alt="Fire Rune" action="Bonus Action" usage="1/Short Rest">
+      <description>For one minute, you imbue the magic of this rune into a weapon that you are holding. Attacks made with that weapon deal an additional 1d6 fire damage. In addition, when a creature hit by the weapon moves 5 feet or more willingly before the start of your next turn, they take another 1d6 fire damage.</description>
+    </sheet>
+	</element>
+
+  <element name="Frost Rune" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_GIANT_WARDEN_RUNE_WARDEN_FROST_RUNE">
+		<supports>Runes2</supports>
+		<description>
+			<p>As a bonus action, you empower your armour with the chilling cold of the Frost Giants. When a creature deals damage to you with a melee attack, their movement speed is reduced to 0 until the start of your next turn. This effect lasts for one minute and cannot be used again until you finish a short or long rest.</p>
+		</description>
+		<sheet alt="Frost Rune" action="Bonus Action" usage="1/Short Rest">
+      <description>For one minute, when a creature deals damage to you with a melee attack, their movement speed is reduced to 0 until the start of your next turn.</description>
+    </sheet>
+	</element>
+
+	<element name="Level 15: Rune Master" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_GIANT_WARDEN_RUNE_MASTER">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_GIANT_WARDEN_RUNE_MASTER</requirements>
+		<description>
+			<p>You have become a master of runic magic. You can choose from the two additional options listed or another option avaliable earlier in the subclass. You can change your choice upon gaining a Crusader level.</p>
+		</description>
+		<sheet display="false" />
+    <rules>
+			<select type="Archetype Feature" name="Rune Master" supports="Runes1,Runes2,Runes3" />
+		</rules>
+	</element>
+
+  <!-- Rune Options 3 -->
+	<element name="Cloud Rune" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_GIANT_WARDEN_RUNE_WARDEN_CLOUD_RUNE">
+		<supports>Runes3</supports>
+		<description>
+			<p>You empower yourself with the trickery magic of Cloud Giants. As a bonus action, you become a shimmering mirage, making it harder to hit you. Whenever a creature targets you with an attack, roll a d4. On a 4, the attack deals 0 damage to you. This effect lasts for one minute and cannot be used again until you finish a short or long rest.</p>
+		</description>
+		<sheet alt="Cloud Rune" action="Bonus Action" usage="1/Short Rest">
+      <description>For one minute, you become a shimmering mirage, making it harder to hit you. Whenever a creature targets you with an attack, roll a d4. On a 4, the attack deals 0 damage to you.</description>
+    </sheet>
+	</element>
+
+  <element name="Storm Rune" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_GIANT_WARDEN_RUNE_WARDEN_STORM_RUNE">
+		<supports>Runes3</supports>
+		<description>
+			<p> As a bonus action, you call upon the power of the storm in a weapon that you are holding. When you hit a creature with a weapon empowered by this rune, they take an additional 1d10 lightning damage. In addition, attacks that they make until the start of your next turn are made at disadvantage. This effect lasts for one minute and cannot be used again until you finish a short or long rest.</p>
+		</description>
+		<sheet alt="Storm Rune" action="Bonus Action" usage="1/Short Rest">
+      <description>For one minute, When you hit a creature with a weapon empowered by this rune, they take an additional 1d10 lightning damage. In addition, attacks that they make until the start of your next turn are made at disadvantage.</description>
+    </sheet>
+	</element>
+	
+	<!--Feature Replacement Grants-->
+	<element name="Rune Warden Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_GIANT_WARDEN_RUNE_WARDEN" />
+	<element name="Giant Call Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_GIANT_WARDEN_GIANT_CALL" />
+	<element name="Runic Power Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_GIANT_WARDEN_RUNIC_POWER" />
+	<element name="Rune Master Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_GIANT_WARDEN_RUNE_MASTER" />
+</elements>
