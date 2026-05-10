@@ -1,1 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Clan of the Nature's Wrath</name>
+		<description>The Nature's Wrath subclass for the Crusader.</description>
+		<author url="https://GOAT.com">Guzufu</author>
+		<update version="0.0.1">
+			<file name="crusader-natureswrath.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/crusader/crusader-natureswrath.xml" />
+		</update>
+	</info>
 
+	<element name="Clan of the Nature's Wrath" type="Archetype" source="Homebrew" id="ID_HB_ARCHETYPE_CRUSADER_NATURES_WRATH">
+		<supports>Crusader Subclass</supports>
+		<description>
+			<p class="flavor">Protect the wilds with powerful strikes and sickening defences</p>
+			<p>Crusaders of the Clan of Nature’s Wrath are sentinels of the natural world, hunting down bestial threats that roam the lands. Many Crusaders of this clan wear armour covered in twigs, vines and roots to connect themselves to the natural world they work so hard to protect.</p>
+			<div element="ID_HB_ARCHETYPE_FEATURE_CRUSADER_NATURES_WRATH_SICKENING_WARD"/>
+			<div element="ID_HB_ARCHETYPE_FEATURE_CRUSADER_NATURES_WRATH_NATURES_SENTINEL"/>
+			<div element="ID_HB_ARCHETYPE_FEATURE_CRUSADER_NATURES_WRATH_WRATHFUL_STRIKE"/>
+			<div element="ID_HB_ARCHETYPE_FEATURE_CRUSADER_NATURES_WRATH_NATURAL_RESILIENCE"/>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_NATURES_WRATH_SICKENING_WARD" level="3"/>
+			<grant type="Archetype Feature" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_NATURES_WRATH_NATURES_SENTINEL" level="7"/>
+			<grant type="Archetype Feature" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_NATURES_WRATH_WRATHFUL_STRIKE" level="11"/>
+			<grant type="Archetype Feature" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_NATURES_WRATH_NATURAL_RESILIENCE" level="15"/>
+		</rules>
+	</element>
+
+	<element name="Level 3: Sickening Ward" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_NATURES_WRATH_SICKENING_WARD">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_NATURES_WRATH_SICKENING_WARD</requirements>
+		<description>
+			<p>When you activate your Crusader Ward and whenever a creature starts its turn within your range, you can choose to make that creature take 1d8 poison damage.</p>
+		</description>
+		<sheet alt="Sickening Ward">
+			<description>When you activate your Crusader Ward and whenever a creature starts its turn within your range, you can choose to make that creature take 1d8 poison damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 7: Nature's Sentinel" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_NATURES_WRATH_NATURES_SENTINEL">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_NATURES_WRATH_NATURES_SENTINEL</requirements>
+		<description>
+			<p>When a creature rerolls a saving throw thanks to your Crusader Ward, they gain temporary hit points equal to your Crusader Level.</p>
+		</description>
+		<sheet alt="Nature's Sentinel">
+      <description>When a creature rerolls a saving throw thanks to your Crusader Ward, they gain {{crusader:level}} temporary hit points.</description>
+    </sheet>
+	</element>
+
+	<element name="Level 11: Wrathful Strike" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_NATURES_WRATH_WRATHFUL_STRIKE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_NATURES_WRATH_WRATHFUL_STRIKE</requirements>
+		<description>
+			<p>When you hit a creature with an attack that deals your Weak Point damage, you can attempt to poison that creature. The creature must make a Constitution saving throw against a DC equal to 8 plus your proficiency bonus plus your Strength modifier. On a failed save, the creature is considered Poisoned for the next minute. They repeat the saving throw at the end of their turn.</p>
+      <p class="indent">You can use this feature four times. You regain one use at the end of a Short Rest and all expended uses at the end of a Long Rest</p>
+		</description>
+		<sheet alt="Wrathful Strike" usage="4/Long Rest">
+			<description>When you hit a creature with an attack that deals your Weak Point damage, you can attempt to poison that creature. The creature must make a {{wrathfulstrike:dc}} Constitution saving throw. On a failed save, the creature is considered Poisoned for the next minute. They repeat the saving throw at the end of their turn. You regain one use at the end of a Short Rest.</description>
+		</sheet>
+		<rules>
+			<stat name="wrathfulstrike:dc" value="8" bonus="base" />
+	    <stat name="wrathfulstrike:dc" value="proficiency" bonus="proficiency" />
+	    <stat name="wrathfulstrike:dc" value="strength:modifier" bonus="ability" />
+		</rules>
+	</element>
+
+	<element name="Level 15: Natural Resilience" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_NATURES_WRATH_NATURAL_RESILIENCE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_NATURES_WRATH_NATURAL_RESILIENCE</requirements>
+		<description>
+			<p>While your Crusader Ward is active, any critical hits against you deals normal damage and you cannot be blinded, deafened or poisoned.</p>
+		</description>
+		<sheet alt="Natural Resilienc">
+			<description>While your Crusader Ward is active, any critical hits against you deals normal damage and you cannot be blinded, deafened or poisoned.</description>
+		</sheet>
+	</element>
+	
+	<!--Feature Replacement Grants-->
+	<element name="Sickening Ward Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_NATURES_WRATH_SICKENING_WARD" />
+	<element name="Nature's Sentinel Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_NATURES_WRATH_NATURES_SENTINEL" />
+	<element name="Wrathful Strike Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_NATURES_WRATH_WRATHFUL_STRIKE" />
+	<element name="Natural Resilience Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_NATURES_WRATH_NATURAL_RESILIENCE" />
+</elements>
