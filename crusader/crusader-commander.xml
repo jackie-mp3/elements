@@ -34,86 +34,39 @@
 			<p>You are a master at best utilising your weapon. You are able to choose a second weapon mastery from the list of Mastery Properties to apply to weapons which you have Weapon Mastery. For example, if you have chosen to take on the weapon mastery of the Halberd (Cleave) and Handaxe (Vex), you can choose to add Topple to your Halberd and Cleave to your Handaxe.</p>
 		</description>
 		<sheet display="false" />
-			<rules>
-        <select type="Class Feature" name="Weapon Mastery (Master of Arms)" supports="Weapon Mastery" number="1"/>
-      </rules>
-	</element>
-
-  <!-- Psionic Abilities 1 -->
-	<element name="Psionic Interception" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_COMMANDER_MASTER_OF_ARMS_PSIONIC_INTERCEPTION">
-    <supports>Psionic Interception</supports>
-		<sheet alt="Psionic Interception" action="Reaction">
-      		<description>After a creature within 30 feet of you is targeted with an attack, you can choose to expend one of your Psionic Energy dice, roll it and subtract half of the roll from the attack, potentially causing it to miss. If the attack still hits, then the damage is reduced by the amount rolled.</description>
-    	</sheet>
-	</element>
-
-	<element name="Psionic Slash" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_COMMANDER_MASTER_OF_ARMS_PSIONIC_SLASH">
-    <supports>Psionic Slash</supports>
-		<sheet alt="Psionic Slash" action="Bonus Action">
-      		<description>You attack a creature within 5 feet using your strength and on a hit, expend one of your psionic energy dice and roll it, the creature takes psychic damage equal to the dice roll plus {{strength:modifier}}.</description>
-    	</sheet>
+		<rules>
+        	<select type="Class Feature" name="Weapon Mastery (Master of Arms)" supports="ArmsMaster" number="2"/>
+      	</rules>
 	</element>
   
 	<element name="Level 7: Unshakable" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_COMMANDER_UNSHAKABLE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_COMMANDER_UNSHAKABLE</requirements>
 		<description>
-			<p>You have mastered new ways to use your psionic powers.</p>
-			<p class="indent"><b>Psi-powered Teleportation:</b>As a bonus action, your body begins to shift between space due to your psionic power. You roll one of your psionic energy dice. You then teleport a number of feet equal to 10 x the number rolled. You can use this feature once per long rest unless you expend a usage of your psionic energy dice to do it again.</p>
-      		<p class="indent"><b>Psionic Push:</b>As a bonus action, you empower your body with psionic energy and expend it on an enemy within 30 feet. That creature must make a Strength saving throw (DC = 8 + your proficiency bonus + your constitution modifier) and on a failure is pushed. You roll one of your psionic energy dice, then push a creature back a number of feet equal to 5 x the number you rolled. You can use this feature once per long rest unless you expend a usage of your psionic energy dice to do it again.</p>
+			<p>You are sturdy and unmoving against your foes. You have advantage on saving throws against being grappled, restrained or paralyzed. In addition, you are immune to effects that slow your movement such as difficult terrain and the Slow weapon mastery. Effects that reduce your speed to 0 such as Incapacitated still apply.</p>
 		</description>
-		<sheet display="false" />
-		<rules>
-			<grant type="Archetype Feature" name="Psi-powered Teleportation" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_COMMANDER_MASTER_OF_ARMS_PSIPOWERED_TELEPORTATION" />
-			<grant type="Archetype Feature" name="Psionic Push" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_COMMANDER_MASTER_OF_ARMS_PSIONIC_PUSH" />
-		</rules>
-	</element>
-
-	  <!-- Psionic Abilities 2 -->
-	<element name="Psi-powered Teleportation" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_COMMANDER_MASTER_OF_ARMS_PSIPOWERED_TELEPORTATION">
-    <supports>Psipowered Teleportation</supports>
-		<sheet alt="Psi-powered Teleportation" action="Bonus Action" usage="1/Long Rest">
-     		<description>Your body begins to shift between space due to your psionic power. You roll one of your psionic energy dice. You then teleport a number of feet equal to 10 x the number rolled. You may expend a usage of your psionic energy dice to do it again.</description>
-    	</sheet>
-	</element>
-
-	<element name="Psionic Push" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_COMMANDER_MASTER_OF_ARMS_PSIONIC_PUSH">
-    <supports>Psionic Push</supports>
-		<sheet alt="Psionic Push" action="Bonus Action" usage="1/Long Rest">
-      		<description>A creature you target within 30ft must make a DC {{psionicpush:dc}} Strength saving throw and on a failure is pushed. You roll one of your psionic energy dice, then push a creature back a number of feet equal to 5 x the number you rolled. You may expend a usage of your psionic energy dice to do it again.</description>
-    	</sheet>
-		<rules>
-			<stat name="psionicpush:dc" value="8" bonus="base" />
-	        <stat name="psionicpush:dc" value="proficiency" bonus="proficiency" />
-	        <stat name="psionicpush:dc" value="constitution:modifier" bonus="ability" />
-		</rules>
+		<sheet alt="Unshakable">
+			<description>You have advantage on saving throws against being grappled, restrained or paralyzed. In addition, you are immune to effects that slow your movement such as difficult terrain and the Slow weapon mastery. Effects that reduce your speed to 0 such as Incapacitated still apply.</description>
+		</sheet>
 	</element>
 
 	<element name="Level 11: Rally" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_COMMANDER_RALLY">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_COMMANDER_RALLY</requirements>
 		<description>
-			<p>Starting from 11th level, your ability to protect yourself from enemies who target you mentally has increased greatly. You are granted resistance to psychic damage and you have advantage on saving throws against charm effects.</p>
+			<p>When you use your Relentless feature, you can choose to grant yourself temporary hit points equal to half of damage you reduced with your Relentless feature.</p>
 		</description>
 		<sheet alt="Rally">
-			<description>You have advantage on saving throws against charm effects.</description>
+			<description>When you use your Relentless feature, you can choose to grant yourself temporary hit points equal to half of damage you reduced with your Relentless feature.</description>
 		</sheet>
-		<rules>
-			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
-		</rules>
 	</element>
 
 	<element name="Level 15: Crushing Might" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_COMMANDER_CRUSHING_MIGHT">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_COMMANDER_CRUSHING_MIGHT</requirements>
 		<description>
-			<p>At 15th level, when you hit a creature, you can choose to attempt to weaken that creature. After hitting the creature, you can force them to make a saving throw (DC = 8 + your proficiency bonus + your constitution modifier) instead of taking damage. On a failed save, the creature takes double damage from all attacks until the end of your next turn. You can use this feature once per long rest, unless you expend four of your psionic energy dice to use it again.</p>
+			<p>When a creature strikes you with an attack, you find a strength within to respond in kind. If you hit a creature that had dealt damage to you since the end of your last turn, you deal an additional 1d8 damage with your weapon.</p>
 		</description>
 		<sheet alt="Crushing Might" usage="1/Long Rest">
-			<description>After hitting a creature, you can force them to make a DC {{cripplingweakness:dc}} saving throw instead of taking damage. On a failed save, the creature takes double damage from all attacks until the end of your next turn. You may expend four of your psionic energy dice to use this again.</description>
+			<description>If you hit a creature that had dealt damage to you since the end of your last turn, you deal an additional 1d8 damage with your weapon.</description>
 		</sheet>
-    	<rules>
-			<stat name="cripplingweakness:dc" value="8" bonus="base" />
-	        <stat name="cripplingweakness:dc" value="proficiency" bonus="proficiency" />
-	        <stat name="cripplingweakness:dc" value="constitution:modifier" bonus="ability" />
-		</rules>
 	</element>
 	
 	<!--Feature Replacement Grants-->
