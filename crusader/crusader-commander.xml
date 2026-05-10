@@ -33,10 +33,9 @@
 		<description>
 			<p>You are a master at best utilising your weapon. You are able to choose a second weapon mastery from the list of Mastery Properties to apply to weapons which you have Weapon Mastery. For example, if you have chosen to take on the weapon mastery of the Halberd (Cleave) and Handaxe (Vex), you can choose to add Topple to your Halberd and Cleave to your Handaxe.</p>
 		</description>
-		<sheet display="false" />
-		<rules>
-        	<select type="Class Feature" name="Weapon Mastery (Master of Arms)" supports="ArmsMaster" number="2"/>
-      	</rules>
+		<sheet alt="Master of Arms" >
+			<description>You are able to choose a second weapon mastery from the list of Mastery Properties to apply to weapons which you have Weapon Mastery.</description>
+		</sheet>
 	</element>
   
 	<element name="Level 7: Unshakable" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_COMMANDER_UNSHAKABLE">
@@ -64,7 +63,7 @@
 		<description>
 			<p>When a creature strikes you with an attack, you find a strength within to respond in kind. If you hit a creature that had dealt damage to you since the end of your last turn, you deal an additional 1d8 damage with your weapon.</p>
 		</description>
-		<sheet alt="Crushing Might" usage="1/Long Rest">
+		<sheet alt="Crushing Might">
 			<description>If you hit a creature that had dealt damage to you since the end of your last turn, you deal an additional 1d8 damage with your weapon.</description>
 		</sheet>
 	</element>
