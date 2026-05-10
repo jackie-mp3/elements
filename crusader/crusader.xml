@@ -40,7 +40,7 @@
 			<h5>CRUSADER FEATURES</h5>
 			<table class="class-features">
 				<thead>
-					<tr><td> class="col-5">Level</td><td>Proficiency Bonus</td><td class="left">Features</td><td>Weak Point</td></tr>
+					<tr><td class="col-5">Level</td><td>Proficiency Bonus</td><td class="left">Features</td><td>Weak Point</td></tr>
 				</thead>
 				<tr><td> 1</td><td>+2</td><td class="left">Relentless, Weapon Mastery</td><td>-</td></tr>
 				<tr><td> 2</td><td>+2</td><td class="left">Crusader Ward, Fighting Style</td><td>-</td></tr>
@@ -115,7 +115,7 @@
 		</rules>
 		<multiclass id="ID_HB_MULTICLASS_CRUSADER">
 			<prerequisite>Strength 13</prerequisite>
-			<requirements>([str:13],!(ID_HB_PHB_CLASS_CRUSADER||ID_HB_PHB_MULTICLASS_CRUSADER))||ID_INTERNAL_GRANTS_MULTICLASS_UNLOCKER</requirements>
+			<requirements>([str:13])||ID_INTERNAL_GRANTS_MULTICLASS_UNLOCKER</requirements>
 			<setters>
 				<set name="multiclass proficiencies">Martial weapons, Light armor, Medium armor, Shields</set>
 			</setters>
@@ -264,7 +264,7 @@
 		<sheet display="false">
 		</sheet>
 		<rules>
-			<select type="Proficiency" name="Saving Throw Proficiency (Iron Will)" supports="Saving Throw,Crusader" number="1" requirements="!ID_HB_MULTICLASS_CRUSADER"/>
+			<select type="Proficiency" name="Saving Throw Proficiency (Iron Will)" supports="Iron Will||Saving Expertise" number="2" />
 		</rules>
 	</element>
 
