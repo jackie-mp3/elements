@@ -62,7 +62,7 @@
 	<element name="Psionic Slash" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_PSYCHIC_BLADE_PSIONIC_POWER_PSIONIC_SLASH">
     <supports>Psionic Slash</supports>
 		<sheet alt="Psionic Slash" action="Bonus Action">
-      <description>You attack a creature within 5 feet using your strength and on a hit, expend one of your psionic energy dice and roll it, the creature takes psychic damage equal to the dice roll plus {{modifier:strength}}.</description>
+      <description>You attack a creature within 5 feet using your strength and on a hit, expend one of your psionic energy dice and roll it, the creature takes psychic damage equal to the dice roll plus {{strength:modifier}}.</description>
     </sheet>
 	</element>
   
@@ -70,74 +70,60 @@
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_PSYCHIC_BLADE_PSIONIC_MOVEMENT</requirements>
 		<description>
 			<p>You have mastered new ways to use your psionic powers.</p>
+			<p class="indent"><b>Psi-powered Teleportation:</b>As a bonus action, your body begins to shift between space due to your psionic power. You roll one of your psionic energy dice. You then teleport a number of feet equal to 10 x the number rolled. You can use this feature once per long rest unless you expend a usage of your psionic energy dice to do it again.</p>
+      		<p class="indent"><b>Psionic Push:</b>As a bonus action, you empower your body with psionic energy and expend it on an enemy within 30 feet. That creature must make a Strength saving throw (DC = 8 + your proficiency bonus + your constitution modifier) and on a failure is pushed. You roll one of your psionic energy dice, then push a creature back a number of feet equal to 5 x the number you rolled. You can use this feature once per long rest unless you expend a usage of your psionic energy dice to do it again.</p>
 		</description>
-		<sheet alt="Psionic Movement">
-      <description>When you use your Rallying Cry, all creatures that are affected also gain advantage on their next attack roll that they make.</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" name="Psi-powered Teleportation" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_PSYCHIC_BLADE_PSIONIC_POWER_PSIPOWERED_TELEPORTATION" />
+			<grant type="Archetype Feature" name="Psionic Push" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_PSYCHIC_BLADE_PSIONIC_POWER_PSIONIC_PUSH" />
+		</rules>
+	</element>
+
+	  <!-- Psionic Abilities 2 -->
+	<element name="Psi-powered Teleportation" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_PSYCHIC_BLADE_PSIONIC_POWER_PSIPOWERED_TELEPORTATION">
+    <supports>Psipowered Teleportation</supports>
+		<sheet alt="Psi-powered Teleportation" action="Bonus Action" usage="1/Long Rest">
+      <description>Your body begins to shift between space due to your psionic power. You roll one of your psionic energy dice. You then teleport a number of feet equal to 10 x the number rolled. You may expend a usage of your psionic energy dice to do it again.</description>
     </sheet>
+	</element>
+
+	<element name="Psionic Push" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_PSYCHIC_BLADE_PSIONIC_POWER_PSIONIC_PUSH">
+    <supports>Psionic Push</supports>
+		<sheet alt="Psionic Push" action="Bonus Action" usage="1/Long Rest">
+      <description>A creature you target within 30ft must make a DC {{psionicpush:dc}} Strength saving throw and on a failure is pushed. You roll one of your psionic energy dice, then push a creature back a number of feet equal to 5 x the number you rolled. You may expend a usage of your psionic energy dice to do it again.</description>
+    </sheet>
+		<rules>
+			<stat name="psionicpush:dc" value="8" bonus="base" />
+	        <stat name="psionicpush:dc" value="proficiency" bonus="proficiency" />
+	        <stat name="psionicpush:dc" value="constitution:modifier" bonus="ability" />
 	</element>
 
 	<element name="Level 11: Psionic Mind" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_PSYCHIC_BLADE_PSIONIC_MIND">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_PSYCHIC_BLADE_PSIONIC_MIND</requirements>
 		<description>
-			<p>You have learnt more runes to empower your journey. You can choose from the two additional options listed or another option avaliable earlier in the subclass. You can change your choice upon gaining a Crusader level.</p>
+			<p>Starting from 11th level, your ability to protect yourself from enemies who target you mentally has increased greatly. You are granted resistance to psychic damage and you have advantage on saving throws against charm effects.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Archetype Feature" name="Psionic Mind" supports="Warden||Power" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
+			<grant type="Condition" name="Advantage on saving throws against charm effects." />
 		</rules>
-	</element>
-
-  <!-- Rune Options 2 -->
-	<element name="Fire Rune" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_PSYCHIC_BLADE_PSIONIC_POWER_FIRE_RUNE">
-		<supports>Power</supports>
-		<description>
-			<p>Your weapon burns with powerful flame. As a bonus action, you imbue the magic of this rune into a weapon that you are holding. For the next minute, attacks made with that weapon deal an additional 1d6 fire damage. In addition, when a creature hit by the weapon move 5 feet or more willingly before the start of your next turn, they take another 1d6 fire damage. This effect lasts for one minute and cannot be used again until you finish a short or long rest.</p>
-		</description>
-		<sheet alt="Fire Rune" action="Bonus Action" usage="1/Short Rest">
-      <description>For one minute, you imbue the magic of this rune into a weapon that you are holding. Attacks made with that weapon deal an additional 1d6 fire damage. In addition, when a creature hit by the weapon moves 5 feet or more willingly before the start of your next turn, they take another 1d6 fire damage.</description>
-    </sheet>
-	</element>
-
-  <element name="Frost Rune" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_PSYCHIC_BLADE_PSIONIC_POWER_FROST_RUNE">
-		<supports>Power</supports>
-		<description>
-			<p>As a bonus action, you empower your armour with the chilling cold of the Frost Giants. When a creature deals damage to you with a melee attack, their movement speed is reduced to 0 until the start of your next turn. This effect lasts for one minute and cannot be used again until you finish a short or long rest.</p>
-		</description>
-		<sheet alt="Frost Rune" action="Bonus Action" usage="1/Short Rest">
-      <description>For one minute, when a creature deals damage to you with a melee attack, their movement speed is reduced to 0 until the start of your next turn.</description>
-    </sheet>
 	</element>
 
 	<element name="Level 15: Crippling Weakness" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_PSYCHIC_BLADE_CRIPPLING_WEAKNESS">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_PSYCHIC_BLADE_CRIPPLING_WEAKNESS</requirements>
 		<description>
-			<p>You have become a master of runic magic. You can choose from the two additional options listed or another option avaliable earlier in the subclass. You can change your choice upon gaining a Crusader level.</p>
+			<p>At 15th level, when you hit a creature, you can choose to attempt to weaken that creature. After hitting the creature, you can force them to make a saving throw (DC = 8 + your proficiency bonus + your constitution modifier) instead of taking damage. On a failed save, the creature takes double damage from all attacks until the end of your next turn. You can use this feature once per long rest, unless you expend four of your psionic energy dice to use it again.</p>
 		</description>
-		<sheet display="false" />
-    <rules>
+		<sheet alt="Crippling Weakness" usage="1/Long Rest" />
+			<description>After hitting a creature, you can force them to make a DC {{cripplingweakness:dc}} saving throw instead of taking damage. On a failed save, the creature takes double damage from all attacks until the end of your next turn. You may expend four of your psionic energy dice to use this again.</description>
+    	<rules>
 			<select type="Archetype Feature" name="Crippling Weakness" supports="Warden||Power||Master" />
+			<stat name="cripplingweakness:dc" value="8" bonus="base" />
+	        <stat name="cripplingweakness:dc" value="proficiency" bonus="proficiency" />
+	        <stat name="cripplingweakness:dc" value="constitution:modifier" bonus="ability" />
 		</rules>
-	</element>
-
-  <!-- Rune Options 3 -->
-	<element name="Cloud Rune" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_PSYCHIC_BLADE_PSIONIC_POWER_CLOUD_RUNE">
-		<supports>Master</supports>
-		<description>
-			<p>You empower yourself with the trickery magic of Cloud Giants. As a bonus action, you become a shimmering mirage, making it harder to hit you. Whenever a creature targets you with an attack, roll a d4. On a 4, the attack deals 0 damage to you. This effect lasts for one minute and cannot be used again until you finish a short or long rest.</p>
-		</description>
-		<sheet alt="Cloud Rune" action="Bonus Action" usage="1/Short Rest">
-      <description>For one minute, you become a shimmering mirage, making it harder to hit you. Whenever a creature targets you with an attack, roll a d4. On a 4, the attack deals 0 damage to you.</description>
-    </sheet>
-	</element>
-
-  <element name="Storm Rune" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_PSYCHIC_BLADE_PSIONIC_POWER_STORM_RUNE">
-		<supports>Master</supports>
-		<description>
-			<p> As a bonus action, you call upon the power of the storm in a weapon that you are holding. When you hit a creature with a weapon empowered by this rune, they take an additional 1d10 lightning damage. In addition, attacks that they make until the start of your next turn are made at disadvantage. This effect lasts for one minute and cannot be used again until you finish a short or long rest.</p>
-		</description>
-		<sheet alt="Storm Rune" action="Bonus Action" usage="1/Short Rest">
-      <description>For one minute, When you hit a creature with a weapon empowered by this rune, they take an additional 1d10 lightning damage. In addition, attacks that they make until the start of your next turn are made at disadvantage.</description>
-    </sheet>
 	</element>
 	
 	<!--Feature Replacement Grants-->
