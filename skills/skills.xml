@@ -18,7 +18,7 @@
 	</element>
 
 	<element name="Animal Handling" type="Proficiency" source="Aurora Legacy Essentials" id="ID_PROFICIENCY_SKILL_ANIMALHANDLING">
-		<supports>Skill,Mistblade,Blademaster</supports>
+		<supports>Skill,Mistblade</supports>
 		<description>
 			<p>When there is any question whether you can calm down a domesticated animal, keep a mount from getting spooked, or intuit an animal’s intentions, the GM might call for a Wisdom (Animal Handling) check. You also make a Wisdom (Animal Handling) check to control your mount when you attempt a risky maneuver.</p>
 		</description>
@@ -63,7 +63,7 @@
 	</element>
 
 	<element name="Insight" type="Proficiency" source="Aurora Legacy Essentials" id="ID_PROFICIENCY_SKILL_INSIGHT">
-		<supports>Skill,Mistblade,Duskblade,Runecaster,Blademaster</supports>
+		<supports>Skill,Mistblade,Duskblade,Runecaster</supports>
 		<description>
 			<p>Your Wisdom (Insight) check decides whether you can determine the true intentions of a creature, such as when searching out a lie or predicting someone’s next move. Doing so involves gleaning clues from body language, speech habits, and changes in mannerisms.</p>
 		</description>
@@ -93,7 +93,7 @@
 	</element>
 
 	<element name="Medicine" type="Proficiency" source="Aurora Legacy Essentials" id="ID_PROFICIENCY_SKILL_MEDICINE">
-		<supports>Skill,Mistblade,Duskblade,Runecaster,Crusader,Blademaster</supports>
+		<supports>Skill,Mistblade,Duskblade,Runecaster,Crusader</supports>
 		<description>
 			<p>A Wisdom (Medicine) check lets you try to stabilize a dying companion or diagnose an illness.</p>
 		</description>
@@ -113,7 +113,7 @@
 	</element>
 
 	<element name="Perception" type="Proficiency" source="Aurora Legacy Essentials" id="ID_PROFICIENCY_SKILL_PERCEPTION">
-		<supports>Skill,Crusader,Blademaster</supports>
+		<supports>Skill,Crusader</supports>
 		<description>
 			<p>Your Wisdom (Perception) check lets you spot, hear, or otherwise detect the presence of something. It measures your general awareness of your surroundings and the keenness of your senses. For example, you might try to hear a conversation through a closed door, eavesdrop under an open window, or hear monsters moving stealthily in the forest. Or you might try to spot things that are obscured or easy to miss, whether they are orcs lying in ambush on a road, thugs hiding in the shadows of an alley, or candlelight under a closed secret door.</p>
 		</description>
@@ -153,7 +153,7 @@
 	</element>
 
 	<element name="Survival" type="Proficiency" source="Aurora Legacy Essentials" id="ID_PROFICIENCY_SKILL_SURVIVAL">
-		<supports>Skill,Mistblade,Duskblade,Runecaster,Crusader,Blademaster</supports>
+		<supports>Skill,Mistblade,Duskblade,Runecaster,Crusader</supports>
 		<description>
 			<p>The GM might ask you to make a Wisdom (Survival) check to follow tracks, hunt wild game, guide your group through frozen wastelands, identify signs that owlbears live nearby, predict the weather, or avoid quicksand and other natural hazards.</p>
 		</description>
@@ -164,42 +164,42 @@
 	
 	<!-- Saving Throws -->
 	<element name="Saving Throw Proficiency (Strength)" type="Proficiency" source="Aurora Legacy Essentials" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH">
-		<supports>Saving Throw,Crusader</supports>
+		<supports>Iron Will</supports>
 		<rules>
 			<stat name="strength:save:proficiency" value="proficiency" bonus="proficiency" alt="Proficiency" />
 		</rules>
 	</element>
 
 	<element name="Saving Throw Proficiency (Dexterity)" type="Proficiency" source="Aurora Legacy Essentials" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY">
-		<supports>Saving Throw,Crusader</supports>
+		<supports>Iron Will</supports>
 		<rules>
 			<stat name="dexterity:save:proficiency" value="proficiency" bonus="proficiency" alt="Proficiency" />
 		</rules>
 	</element>
 
 	<element name="Saving Throw Proficiency (Constitution)" type="Proficiency" source="Aurora Legacy Essentials" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION">
-		<supports>Saving Throw,Crusader</supports>
+		<supports>Iron Will</supports>
 		<rules>
 			<stat name="constitution:save:proficiency" value="proficiency" bonus="proficiency" alt="Proficiency" />
 		</rules>
 	</element>
 
 	<element name="Saving Throw Proficiency (Intelligence)" type="Proficiency" source="Aurora Legacy Essentials" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE">
-		<supports>Saving Throw,Crusader</supports>
+		<supports>Iron Will</supports>
 		<rules>
 			<stat name="intelligence:save:proficiency" value="proficiency" bonus="proficiency" alt="Proficiency" />
 		</rules>
 	</element>
 
 	<element name="Saving Throw Proficiency (Wisdom)" type="Proficiency" source="Aurora Legacy Essentials" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM">
-		<supports>Saving Throw,Crusader</supports>
+		<supports>Iron Will</supports>
 		<rules>
 			<stat name="wisdom:save:proficiency" value="proficiency" bonus="proficiency" alt="Proficiency" />
 		</rules>
 	</element>
 
 	<element name="Saving Throw Proficiency (Charisma)" type="Proficiency" source="Aurora Legacy Essentials" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA">
-		<supports>Saving Throw,Crusader</supports>
+		<supports>Iron Will</supports>
 		<rules>
 			<stat name="charisma:save:proficiency" value="proficiency" bonus="proficiency" alt="Proficiency" />
 		</rules>
@@ -207,44 +207,50 @@
 
 	<!-- Saving Throw Expertise -->
 	<element name="Saving Throw Expertise (Strength)" type="Proficiency" source="Aurora Legacy Essentials" id="ID_EXPERTISE_SAVINGTHROW_STRENGTH">
-		<supports>Saving Throw,Crusader</supports>
+		<supports>Saving Expertise</supports>
+		<requirements>ID_PROFICIENCY_SAVINGTHROW_STRENGTH</requirements>
 		<rules>
-			<stat name="strength:save:proficiency" value="proficiency" bonus="double" alt="Proficiency" />
+			<stat name="strength:save:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
 
 	<element name="Saving Throw Expertise (Dexterity)" type="Proficiency" source="Aurora Legacy Essentials" id="ID_EXPERTISE_SAVINGTHROW_DEXTERITY">
-		<supports>Saving Throw</supports>
+		<supports>Saving Expertise</supports>
+		<requirements>ID_PROFICIENCY_SAVINGTHROW_DEXTERITY</requirements>
 		<rules>
-			<stat name="dexterity:save:proficiency" value="proficiency" bonus="double" alt="Proficiency" />
+			<stat name="dexterity:save:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
 
 	<element name="Saving Throw Expertise (Constitution)" type="Proficiency" source="Aurora Legacy Essentials" id="ID_EXPERTISE_SAVINGTHROW_CONSTITUTION">
-		<supports>Saving Throw,Crusader</supports>
+		<supports>Saving Expertise</supports>
+		<requirements>ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION</requirements>
 		<rules>
-			<stat name="constitution:save:proficiency" value="proficiency" bonus="double" alt="Proficiency" />
+			<stat name="constitution:save:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
 
 	<element name="Saving Throw Expertise (Intelligence)" type="Proficiency" source="Aurora Legacy Essentials" id="ID_EXPERTISE_SAVINGTHROW_INTELLIGENCE">
-		<supports>Saving Throw</supports>
+		<supports>Saving Expertise</supports>
+		<requirements>ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE</requirements>
 		<rules>
-			<stat name="intelligence:save:proficiency" value="proficiency" bonus="double" alt="Proficiency" />
+			<stat name="intelligence:save:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
 
 	<element name="Saving Throw Expertise (Wisdom)" type="Proficiency" source="Aurora Legacy Essentials" id="ID_EXPERTISE_SAVINGTHROW_WISDOM">
-		<supports>Saving Throw</supports>
+		<supports>Saving Expertise</supports>
+		<requirements>ID_PROFICIENCY_SAVINGTHROW_WISDOM</requirements>
 		<rules>
-			<stat name="wisdom:save:proficiency" value="proficiency" bonus="double" alt="Proficiency" />
+			<stat name="wisdom:save:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
 
 	<element name="Saving Throw Expertise (Charisma)" type="Proficiency" source="Aurora Legacy Essentials" id="ID_EXPERTISE_SAVINGTHROW_CHARISMA">
-		<supports>Saving Throw</supports>
+		<supports>Saving Expertise</supports>
+		<requirements>ID_PROFICIENCY_SAVINGTHROW_CHARISMA</requirements>
 		<rules>
-			<stat name="charisma:save:proficiency" value="proficiency" bonus="double" alt="Proficiency" />
+			<stat name="charisma:save:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
 </elements>
