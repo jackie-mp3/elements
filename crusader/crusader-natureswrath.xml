@@ -44,7 +44,7 @@
 			<p>When a creature rerolls a saving throw thanks to your Crusader Ward, they gain temporary hit points equal to your Crusader Level.</p>
 		</description>
 		<sheet alt="Nature's Sentinel">
-      <description>When a creature rerolls a saving throw thanks to your Crusader Ward, they gain {{crusader:level}} temporary hit points.</description>
+      <description>When a creature rerolls a saving throw thanks to your Crusader Ward, they gain {{level:crusader}} temporary hit points.</description>
     </sheet>
 	</element>
 
