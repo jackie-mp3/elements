@@ -33,7 +33,7 @@
 		<description>
 			<p>You are a master at best utilising your weapon. You are able to choose a second weapon mastery from the list of Mastery Properties to apply to weapons which you have Weapon Mastery. For example, if you have chosen to take on the weapon mastery of the Halberd (Cleave) and Handaxe (Vex), you can choose to add Topple to your Halberd and Cleave to your Handaxe.</p>
 		</description>
-		<sheet alt="Master of Arms" >
+		<sheet alt="Master of Arms">
 			<description>You are able to choose a second weapon mastery from the list of Mastery Properties to apply to weapons which you have Weapon Mastery.</description>
 		</sheet>
 	</element>
