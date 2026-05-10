@@ -32,16 +32,18 @@
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_PSYCHIC_BLADE_PSIONIC_POWER</requirements>
 		<description>
 			<p>You harbour a wellspring of psionic energy within yourself. This energy is represented by your Psionic Energy dice, which are each a d6. You have a number of these dice equal to twice your proficiency bonus, and they fuel various psionic powers you have, which are detailed below.</p>
-      <p class="indent">Some of your powers expend the Psionic Energy die they use, as specified in a power’s description, and you can’t use a power if it requires you to use a die when your dice are all expended. You regain all your expended Psionic Energy dice when you finish a long rest. In addition, as a bonus action, you can regain one expended Psionic Energy die, but you can’t do so again until you finish a short or long rest.</p>
-      <p class="indent">When you reach certain levels in this class, the size of your Psionic Energy dice increases: at 5th level (d8), 11th level (d10), and 17th level (d12). The powers below use your Psionic Energy dice.</p>
-      <p class="indent"><b>Psionic Interception:</b>As a reaction after a creature within 30 feet of you is targeted with an attack, you can choose to expend one of your Psionic Energy dice, roll it and subtract half of the roll from the attack, potentially causing it to miss. If the attack still hits, then the damage is reduced by the amount rolled.</p>
-      <p class="indent"<b>Psionic Slash:</b>As a bonus action, you wreathe psionic energy into your hand and strike at a foe. You attack a creature within 5 feet using your strength and on a hit, expend one of your psionic energy dice and roll it, then the creature takes psychic damage equal to the dice roll plus your strength modifier.
+      		<p class="indent">Some of your powers expend the Psionic Energy die they use, as specified in a power’s description, and you can’t use a power if it requires you to use a die when your dice are all expended. You regain all your expended Psionic Energy dice when you finish a long rest. In addition, as a bonus action, you can regain one expended Psionic Energy die, but you can’t do so again until you finish a short or long rest.</p>
+      		<p class="indent">When you reach certain levels in this class, the size of your Psionic Energy dice increases: at 5th level (d8), 11th level (d10), and 17th level (d12). The powers below use your Psionic Energy dice.</p>
+      		<p class="indent"><b>Psionic Interception:</b>As a reaction after a creature within 30 feet of you is targeted with an attack, you can choose to expend one of your Psionic Energy dice, roll it and subtract half of the roll from the attack, potentially causing it to miss. If the attack still hits, then the damage is reduced by the amount rolled.</p>
+      		<p class="indent"><b>Psionic Slash:</b>As a bonus action, you wreathe psionic energy into your hand and strike at a foe. You attack a creature within 5 feet using your strength and on a hit, expend one of your psionic energy dice and roll it, then the creature takes psychic damage equal to the dice roll plus your strength modifier.</p>
 		</description>
 		<sheet alt="Psionic Power" usage="{{crusader:psionic power:dice amount}}d{{crusader:psionic power:dice size}}/Long Rest">
 			<description>You can regain 1 expended die as a bonus action once per Short/Long Rest.</description>
+		</sheet>
     <rules>
-      <grant type="Archetype Feature" name="Psionic Power" supports="Psionic Interception||Psionic Slash" />
-      <stat name="crusader:psionic power:dice amount" value="proficiency" bonus="double" />
+      		<grant type="Archetype Feature" name="Psionic Interception" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_PSYCHIC_BLADE_PSIONIC_POWER_PSIONIC_INTERCEPTION" />
+			<grant type="Archetype Feature" name="Psionic Slash" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_PSYCHIC_BLADE_PSIONIC_POWER_PSIONIC_SLASH" />
+      		<stat name="crusader:psionic power:dice amount" value="proficiency" bonus="double" />
 			<stat name="crusader:psionic power:dice size" value="6" bonus="base" />
 			<stat name="crusader:psionic power:dice size" value="8" level="5" bonus="base" />
 			<stat name="crusader:psionic power:dice size" value="10" level="11" bonus="base" />
