@@ -16,7 +16,7 @@
 		<file name="mistblade.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/mistblade/mistblade.xml" />
 
 		<!-- Subclasses -->
-		<file name="crusader-theblademaster.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/crusader/crusader-theblademaster.xml" />
+		<file name="crusader-blademaster.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/crusader/crusader-theblademaster.xml" />
 		<file name="crusader-divinewarrior.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/crusader/crusader-divinewarrior.xml" />
 		<file name="crusader-giantwarden.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/crusader/crusader-giantwarden.xml" />
 		<file name="crusader-psychicblade.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/crusader/crusader-psychicblade.xml" />
@@ -24,18 +24,30 @@
 		<file name="crusader-commander.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/crusader/crusader-commander.xml" />
 		<file name="crusader-arcaneiron.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/crusader/crusader-arcaneiron.xml" />
 		<file name="crusader-bruiser.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/crusader/crusader-bruiser.xml" />
-		<file name="runecaster-theorderoflightsinger.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/runecaster/runecaster-theorderoflightsinger.xml" />
+		<file name="runecaster-lightsinger.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/runecaster/runecaster-lightsinger.xml" />
 		<file name="runecaster-frostborn.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/runecaster/runecaster-frostborn.xml" />
 		<file name="runecaster-flamecaller.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/runecaster/runecaster-flamecaller.xml" />
 		<file name="runecaster-stormrider.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/runecaster/runecaster-stormrider.xml" />
-		<file name="duskblade-theordersofdevotedhand.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/duskblade/duskblade-theordersofdevotedhand.xml" />
+		<file name="runecaster-bloodletter.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/runecaster/runecaster-bloodletter.xml" />
+		<file name="runecaster-cloudjumper.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/runecaster/runecaster-cloudjumper.xml" />
+		<file name="runecaster-deathbringer.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/runecaster/runecaster-deathbringer.xml" />
+		<file name="runecaster-lifessalvation.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/runecaster/runecaster-lifessalvation.xml" />
+		<file name="runecaster-mountainborn.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/runecaster/runecaster-mountainborn.xml" />
+		<file name="runecaster-stonecutter.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/runecaster/runecaster-stonecutter.xml" />
+		<file name="runecaster-wardedway.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/runecaster/runecaster-wardedway.xml" />
+		<file name="runecaster-warriorshand.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/runecaster/runecaster-warriorshand.xml" />
+		<file name="duskblade-devotedhand.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/duskblade/duskblade-devotedhand.xml" />
 		<file name="duskblade-lionheart.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/duskblade/duskblade-lionheart.xml" />
 		<file name="duskblade-mysticknight.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/duskblade/duskblade-mysticknight.xml" />
 		<file name="duskblade-temperence.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/duskblade/duskblade-temperence.xml" />
-		<file name="mistblade-thetraditionsofrestlessshadow.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/mistblade/mistblade-thetraditionsofrestlessshadow.xml" />
+		<file name="mistblade-restlessshadow.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/mistblade/mistblade-restlessshadow.xml" />
 		<file name="mistblade-draconicpower.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/mistblade/mistblade-draconicpower.xml" />
 		<file name="mistblade-tranquilform.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/mistblade/mistblade-tranquilform.xml" />
 		<file name="mistblade-mirroredheart.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/mistblade/mistblade-mirroredheart.xml" />
+		<file name="mistblade-aberranthunter.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/mistblade/mistblade-aberranthunter.xml" />
+		<file name="mistblade-marksman.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/mistblade/mistblade-marksman.xml" />
+		<file name="mistblade-spectralarmada.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/mistblade/mistblade-spectralarmada.xml" />
+		<file name="mistblade-warhound.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/mistblade/mistblade-warhound.xml" />
 
 		<!-- Skills -->
 		<file name="skills.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/skills/skills.xml" />
