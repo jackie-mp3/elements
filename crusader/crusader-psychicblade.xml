@@ -1,1 +1,146 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Clan of the Psychic Blade</name>
+		<description>The Psychic Blade subclass for the Crusader.</description>
+		<author url="https://GOAT.com">Guzufu</author>
+		<update version="0.0.1">
+			<file name="crusader-psychicblade.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/crusader/crusader-psychicblade.xml" />
+		</update>
+	</info>
 
+	<element name="Clan of the Psychic Blade" type="Archetype" source="Homebrew" id="ID_HB_ARCHETYPE_CRUSADER_PSYCHIC_BLADE">
+		<supports>Crusader Subclass</supports>
+		<description>
+			<p class="flavor">Project your will onto your blade with powerful psionic magic</p>
+			<p>In order to best protect the weak and force evil to bend the knee, some Crusaders have chosen to empower themselves through mastering psionics. As such, these Crusaders are able to push their physical gifts and sharpen them with mental quickness to use these new abilities to quash evil wherever it may root itself</p>
+			<div element="ID_HB_ARCHETYPE_FEATURE_CRUSADER_PSYCHIC_BLADE_PSIONIC_POWER"/>
+			<div element="ID_HB_ARCHETYPE_FEATURE_CRUSADER_PSYCHIC_BLADE_PSIONIC_MOVEMENT"/>
+			<div element="ID_HB_ARCHETYPE_FEATURE_CRUSADER_PSYCHIC_BLADE_PSIONIC_MIND"/>
+			<div element="ID_HB_ARCHETYPE_FEATURE_CRUSADER_PSYCHIC_BLADE_CRIPPLING_WEAKNESS"/>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_PSYCHIC_BLADE_PSIONIC_POWER" level="3"/>
+			<grant type="Archetype Feature" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_PSYCHIC_BLADE_PSIONIC_MOVEMENT" level="7"/>
+			<grant type="Archetype Feature" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_PSYCHIC_BLADE_PSIONIC_MIND" level="11"/>
+			<grant type="Archetype Feature" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_PSYCHIC_BLADE_CRIPPLING_WEAKNESS" level="15"/>
+		</rules>
+	</element>
+
+	<element name="Level 3: Psionic Power" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_PSYCHIC_BLADE_PSIONIC_POWER">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_PSYCHIC_BLADE_PSIONIC_POWER</requirements>
+		<description>
+			<p>You harbour a wellspring of psionic energy within yourself. This energy is represented by your Psionic Energy dice, which are each a d6. You have a number of these dice equal to twice your proficiency bonus, and they fuel various psionic powers you have, which are detailed below.</p>
+      <p class="indent">Some of your powers expend the Psionic Energy die they use, as specified in a power’s description, and you can’t use a power if it requires you to use a die when your dice are all expended. You regain all your expended Psionic Energy dice when you finish a long rest. In addition, as a bonus action, you can regain one expended Psionic Energy die, but you can’t do so again until you finish a short or long rest.</p>
+      <p class="indent">When you reach certain levels in this class, the size of your Psionic Energy dice increases: at 5th level (d8), 11th level (d10), and 17th level (d12). The powers below use your Psionic Energy dice.</p>
+      <p class="indent"><b>Psionic Interception:</b>As a reaction after a creature within 30 feet of you is targeted with an attack, you can choose to expend one of your Psionic Energy dice, roll it and subtract half of the roll from the attack, potentially causing it to miss. If the attack still hits, then the damage is reduced by the amount rolled.</p>
+      <p class="indent"<b>Psionic Slash:</b>As a bonus action, you wreathe psionic energy into your hand and strike at a foe. You attack a creature within 5 feet using your strength and on a hit, expend one of your psionic energy dice and roll it, then the creature takes psychic damage equal to the dice roll plus your strength modifier.
+		</description>
+		<sheet alt="Psionic Power" usage="{{crusader:psionic power:dice amount}}d{{crusader:psionic power:dice size}}/Long Rest">
+			<description>You can regain 1 expended die as a bonus action once per Short/Long Rest.</description>
+    <rules>
+      <grant type="Archetype Feature" name="Psionic Power" supports="Psionic Interception||Psionic Slash" />
+      <stat name="crusader:psionic power:dice amount" value="proficiency" bonus="double" />
+			<stat name="crusader:psionic power:dice size" value="6" bonus="base" />
+			<stat name="crusader:psionic power:dice size" value="8" level="5" bonus="base" />
+			<stat name="crusader:psionic power:dice size" value="10" level="11" bonus="base" />
+			<stat name="crusader:psionic power:dice size" value="12" level="17" bonus="base" />
+		</rules>
+	</element>
+
+  <!-- Psionic Abilities 1 -->
+	<element name="Psionic Interception" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_PSYCHIC_BLADE_PSIONIC_POWER_PSIONIC_INTERCEPTION">
+    <supports>Psionic Interception</supports>
+		<sheet alt="Psionic Interception" action="Reaction">
+      <description>After a creature within 30 feet of you is targeted with an attack, you can choose to expend one of your Psionic Energy dice, roll it and subtract half of the roll from the attack, potentially causing it to miss. If the attack still hits, then the damage is reduced by the amount rolled.</description>
+    </sheet>
+	</element>
+
+	<element name="Psionic Slash" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_PSYCHIC_BLADE_PSIONIC_POWER_PSIONIC_SLASH">
+    <supports>Psionic Slash</supports>
+		<sheet alt="Psionic Slash" action="Bonus Action">
+      <description>You attack a creature within 5 feet using your strength and on a hit, expend one of your psionic energy dice and roll it, the creature takes psychic damage equal to the dice roll plus {{modifier:strength}}.</description>
+    </sheet>
+	</element>
+  
+	<element name="Level 7: Psionic Movement" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_PSYCHIC_BLADE_PSIONIC_MOVEMENT">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_PSYCHIC_BLADE_PSIONIC_MOVEMENT</requirements>
+		<description>
+			<p>You have mastered new ways to use your psionic powers.</p>
+		</description>
+		<sheet alt="Psionic Movement">
+      <description>When you use your Rallying Cry, all creatures that are affected also gain advantage on their next attack roll that they make.</description>
+    </sheet>
+	</element>
+
+	<element name="Level 11: Psionic Mind" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_PSYCHIC_BLADE_PSIONIC_MIND">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_PSYCHIC_BLADE_PSIONIC_MIND</requirements>
+		<description>
+			<p>You have learnt more runes to empower your journey. You can choose from the two additional options listed or another option avaliable earlier in the subclass. You can change your choice upon gaining a Crusader level.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="Psionic Mind" supports="Warden||Power" />
+		</rules>
+	</element>
+
+  <!-- Rune Options 2 -->
+	<element name="Fire Rune" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_PSYCHIC_BLADE_PSIONIC_POWER_FIRE_RUNE">
+		<supports>Power</supports>
+		<description>
+			<p>Your weapon burns with powerful flame. As a bonus action, you imbue the magic of this rune into a weapon that you are holding. For the next minute, attacks made with that weapon deal an additional 1d6 fire damage. In addition, when a creature hit by the weapon move 5 feet or more willingly before the start of your next turn, they take another 1d6 fire damage. This effect lasts for one minute and cannot be used again until you finish a short or long rest.</p>
+		</description>
+		<sheet alt="Fire Rune" action="Bonus Action" usage="1/Short Rest">
+      <description>For one minute, you imbue the magic of this rune into a weapon that you are holding. Attacks made with that weapon deal an additional 1d6 fire damage. In addition, when a creature hit by the weapon moves 5 feet or more willingly before the start of your next turn, they take another 1d6 fire damage.</description>
+    </sheet>
+	</element>
+
+  <element name="Frost Rune" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_PSYCHIC_BLADE_PSIONIC_POWER_FROST_RUNE">
+		<supports>Power</supports>
+		<description>
+			<p>As a bonus action, you empower your armour with the chilling cold of the Frost Giants. When a creature deals damage to you with a melee attack, their movement speed is reduced to 0 until the start of your next turn. This effect lasts for one minute and cannot be used again until you finish a short or long rest.</p>
+		</description>
+		<sheet alt="Frost Rune" action="Bonus Action" usage="1/Short Rest">
+      <description>For one minute, when a creature deals damage to you with a melee attack, their movement speed is reduced to 0 until the start of your next turn.</description>
+    </sheet>
+	</element>
+
+	<element name="Level 15: Crippling Weakness" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_PSYCHIC_BLADE_CRIPPLING_WEAKNESS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_PSYCHIC_BLADE_CRIPPLING_WEAKNESS</requirements>
+		<description>
+			<p>You have become a master of runic magic. You can choose from the two additional options listed or another option avaliable earlier in the subclass. You can change your choice upon gaining a Crusader level.</p>
+		</description>
+		<sheet display="false" />
+    <rules>
+			<select type="Archetype Feature" name="Crippling Weakness" supports="Warden||Power||Master" />
+		</rules>
+	</element>
+
+  <!-- Rune Options 3 -->
+	<element name="Cloud Rune" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_PSYCHIC_BLADE_PSIONIC_POWER_CLOUD_RUNE">
+		<supports>Master</supports>
+		<description>
+			<p>You empower yourself with the trickery magic of Cloud Giants. As a bonus action, you become a shimmering mirage, making it harder to hit you. Whenever a creature targets you with an attack, roll a d4. On a 4, the attack deals 0 damage to you. This effect lasts for one minute and cannot be used again until you finish a short or long rest.</p>
+		</description>
+		<sheet alt="Cloud Rune" action="Bonus Action" usage="1/Short Rest">
+      <description>For one minute, you become a shimmering mirage, making it harder to hit you. Whenever a creature targets you with an attack, roll a d4. On a 4, the attack deals 0 damage to you.</description>
+    </sheet>
+	</element>
+
+  <element name="Storm Rune" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_PSYCHIC_BLADE_PSIONIC_POWER_STORM_RUNE">
+		<supports>Master</supports>
+		<description>
+			<p> As a bonus action, you call upon the power of the storm in a weapon that you are holding. When you hit a creature with a weapon empowered by this rune, they take an additional 1d10 lightning damage. In addition, attacks that they make until the start of your next turn are made at disadvantage. This effect lasts for one minute and cannot be used again until you finish a short or long rest.</p>
+		</description>
+		<sheet alt="Storm Rune" action="Bonus Action" usage="1/Short Rest">
+      <description>For one minute, When you hit a creature with a weapon empowered by this rune, they take an additional 1d10 lightning damage. In addition, attacks that they make until the start of your next turn are made at disadvantage.</description>
+    </sheet>
+	</element>
+	
+	<!--Feature Replacement Grants-->
+	<element name="Psionic Power Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_PSYCHIC_BLADE_PSIONIC_POWER" />
+	<element name="Psionic Movement Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_PSYCHIC_BLADE_PSIONIC_MOVEMENT" />
+	<element name="Psionic Mind Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_PSYCHIC_BLADE_PSIONIC_MIND" />
+	<element name="Crippling Weakness Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_PSYCHIC_BLADE_CRIPPLING_WEAKNESS" />
+</elements>
