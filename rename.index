@@ -2,7 +2,7 @@
 <index>
 	<info>
 		<name>Rename</name>
-		<description>The content from the core rulebooks.</description>
+		<description>Homebrew Classes from the GOAT Guzufu</description>
 		<author url="https://www.urbandictionary.com/define.php?term=GOAT">Guzufu</author>
 		<update version="0.0.1">
 			<file name="rename.index" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/rename.index" />
