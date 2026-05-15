@@ -1,1 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Clan of the Bruiser</name>
+		<description>The Bruiser subclass for the Crusader.</description>
+		<author url="https://GOAT.com">Guzufu</author>
+		<update version="0.0.1">
+			<file name="crusader-bruiser.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/crusader/crusader-bruiser.xml" />
+		</update>
+	</info>
 
+	<element name="Clan of the Bruiser" type="Archetype" source="Homebrew" id="ID_HB_ARCHETYPE_CRUSADER_BRUISER">
+		<supports>Crusader Subclass</supports>
+		<description>
+			<p class="flavor">Protect the wilds with powerful strikes and sickening defences</p>
+			<p>Some Crusaders forgo the typical arnaments and instead choose to use their body as the weapon against evil beings in the realm. These Crusaders typically still wear the heavy armour associated with their brethren, with more exaggerated gauntlets for additional damage and intimidation.</p>
+      <div element="ID_HB_ARCHETYPE_FEATURE_CRUSADER_BRUISER_FISTS_OF_FURY"/>
+			<div element="ID_HB_ARCHETYPE_FEATURE_CRUSADER_BRUISER_GRAPPLING_MASTER"/>
+			<div element="ID_HB_ARCHETYPE_FEATURE_CRUSADER_BRUISER_YOURE_COMING_WITH_ME"/>
+			<div element="ID_HB_ARCHETYPE_FEATURE_CRUSADER_BRUISER_PUSH_BEYOND"/>
+			<div element="ID_HB_ARCHETYPE_FEATURE_CRUSADER_BRUISER_GOT_YOU"/>
+		</description>
+		<sheet display="false" />
+		<rules>
+      <grant type="Archetype Feature" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_BRUISER_FISTS_OF_FURY" level="3"/>
+			<grant type="Archetype Feature" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_BRUISER_GRAPPLING_MASTER" level="3"/>
+			<grant type="Archetype Feature" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_BRUISER_YOURE_COMING_WITH_ME" level="7"/>
+			<grant type="Archetype Feature" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_BRUISER_PUSH_BEYOND" level="11"/>
+			<grant type="Archetype Feature" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_BRUISER_GOT_YOU" level="15"/>
+		</rules>
+	</element>
+
+  <element name="Level 3: Fists of Fury" type="Archetype Feature" source="Player’s Handbook (2024)" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_BRUISER_FISTS_OF_FURY">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_BRUISER_FISTS_OF_FURY</requirements>
+		<description>
+			<p>You are just as adept with fighting with your fists as with any weapon. When you make an Unarmed Strike, you can use a d6 for the damage instead of the usual damage. Also, you can choose to use one of your Weapon Mastery's on giving your unarmed strike either the Push, Topple, Cleave, or Slow properties.</p>
+		</description>
+		<sheet alt="Fists of Fury">
+			<description>When you make an Unarmed Strike, you can use a d6 for the damage instead of the usual damage. Also, you can choose to use one of your Weapon Mastery's on giving your unarmed strike either the Push, Topple, Cleave, or Slow properties.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 3: Grappling Master" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_BRUISER_GRAPPLING_MASTER">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_BRUISER_GRAPPLING_MASTER</requirements>
+		<description>
+			<p>You are able to effectively grapple targets while still keeping up the offence. Attacks you make against a grappled target have advantage.</p>
+		</description>
+		<sheet alt="Grappling Master">
+			<description>Attacks you make against a grappled target have advantage.</description>
+		</sheet>
+	</element>
+  
+	<element name="Level 7: You're Coming With Me" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_BRUISER_YOURE_COMING_WITH_ME">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_BRUISER_YOURE_COMING_WITH_ME</requirements>
+		<description>
+			<p>Your ability to grapple grows even stronger. When you move with a target that you are grappling, your movement speed is not halved. In addition, a target that is grappled by you takes 1d4 of bludgeoning damage at the start of their turn.</p>
+		</description>
+		<sheet alt="You're Coming With Me">
+      <description>When you move with a target that you are grappling, your movement speed is not halved. A target that is grappled by you takes 1d4 of bludgeoning damage at the start of their turn.</description>
+    </sheet>
+	</element>
+
+	<element name="Level 11: Push Beyond" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_BRUISER_PUSH_BEYOND">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_BRUISER_PUSH_BEYOND</requirements>
+		<description>
+			<p>You are able to daze a target with your hefty strikes. When you hit a creature with an unarmed strike, you can attempt to daze the target. The target must make a Constitution saving throw against your save DC (8 + your proficiency bonus + your constitution modifier). On a failed save, their speed is halved and all attacks that they make before the start of your next turn have disadvantage. You can use this feature a number of times per long rest equal to your proficiency bonus.</p>
+		</description>
+		<sheet alt="Push Beyond" usage="{{pushbeyond:diceamount}}/Long Rest">
+			<description>When you hit a creature with an unarmed strike, you can attempt to daze the target. The target must make a DC {{pushbeyond:dc}} Constitution saving throw. On a failed save, their speed is halved and all attacks that they make before the start of your next turn have disadvantage.</description>
+		</sheet>
+    <rules>
+      <stat name="pushbeyond:diceamount" value="proficiency" bonus="base" />
+      <stat name="pushbeyond:dc" value="8" bonus="base" />
+	    <stat name="pushbeyond:dc" value="proficiency" bonus="proficiency" />
+	    <stat name="pushbeyond:dc" value="constitution:modifier" bonus="ability" />
+    </rules>
+	</element>
+
+	<element name="Level 15: Got You" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_BRUISER_GOT_YOU">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_BRUISER_GOT_YOU</requirements>
+		<description>
+			<p>"Your skills as a grappler grow even stronger. While you are grappling a target, you can use your action to crush them in your grip, dealing 1d10 + your strength modifier of bludgeoning damage and giving the target disadvantage on their next saving throw against escaping your grapple.</p>
+		</description>
+		<sheet alt="Got You" action="Action">
+			<description>While you are grappling a target, you can use your action to crush them in your grip, dealing 1d10+{{strength:modifier}} of bludgeoning damage and giving the target disadvantage on their next saving throw against escaping your grapple.</description>
+		</sheet>
+	</element>
+	
+	<!--Feature Replacement Grants-->
+  <element name="Fists of Fury Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_BRUISER_FISTS_OF_FURY" />
+	<element name="Grappling Master Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_BRUISER_GRAPPLING_MASTER" />
+	<element name="You're Coming With Me Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_BRUISER_YOURE_COMING_WITH_ME" />
+	<element name="Push Beyond Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_BRUISER_PUSH_BEYOND" />
+	<element name="Got You Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_BRUISER_GOT_YOU" />
+</elements>
