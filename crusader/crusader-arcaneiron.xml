@@ -1,1 +1,169 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Clan of the Arcane Iron</name>
+		<description>The Arcane Iron subclass for the Crusader.</description>
+		<author url="https://GOAT.com">Guzufu</author>
+		<update version="0.0.1">
+			<file name="crusader-arcaneiron.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/crusader/crusader-arcaneiron.xml" />
+		</update>
+	</info>
 
+	<element name="Clan of the Arcane Iron" type="Archetype" source="Homebrew" id="ID_HB_ARCHETYPE_CRUSADER_ARCANE_IRON">
+		<supports>Crusader Subclass</supports>
+		<description>
+			<p class="flavor">Use spells to further protect your allies</p>
+			<p>Crusaders of the Arcane Iron have mixed the studies of wizardry with the power of a Crusader, becoming a powerful spell-slinging warrior. The magic they use is flavoured like their armour, with runic wards along their gauntlets and pauldrons that empower their martial skills.</p>
+      <div element="ID_HB_ARCHETYPE_FEATURE_CRUSADER_ARCANE_IRON_SPELLCASTING"/>
+			<h5>ARCANE IRON SPELLCASTING</h5>
+			<table class="class-features">
+				<tr style="font-weight: bold">
+					<td rowspan="2">Crusader Level</td>
+          <td rowspan="2">Cantrips Known</td>
+					<td rowspan="2">Spells Prepared</td>
+					<td colspan="4" style="vertical-align:bottom; border-bottom: 0px">Spell Slots per Spell Level</td>
+				</tr>
+				<tr style="font-weight: bold"><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+				<tr><td> 3</td><td>2</td><td>3</td<td>2</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 4</td><td>2</td><td>4</td<td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 5</td><td>2</td><td>4</td<td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 6</td><td>2</td><td>4</td<td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 7</td><td>2</td><td>5</td<td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td> 8</td><td>2</td><td>6</td<td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td> 9</td><td>2</td><td>6</td<td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td>10</td><td>3</td><td>7</td<td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>11</td><td>3</td><td>8</td<td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>12</td><td>3</td><td>8</td<td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>13</td><td>3</td><td>9</td<td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>14</td><td>3</td><td>10</td<td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>15</td><td>3</td><td>10</td<td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>16</td><td>3</td><td>11</td<td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>17</td><td>3</td><td>11</td<td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>18</td><td>3</td><td>11</td<td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>19</td><td>3</td><td>12</td<td>4</td><td>3</td><td>3</td><td>1</td></tr>
+				<tr><td>20</td><td>3</td><td>13</td<td>4</td><td>3</td><td>3</td><td>1</td></tr>
+			</table>
+			<div element="ID_HB_ARCHETYPE_FEATURE_CRUSADER_ARCANE_IRON_ARCANE_ARMOUR"/>
+			<div element="ID_HB_ARCHETYPE_FEATURE_CRUSADER_ARCANE_IRON_ARCANE_REINFORCEMENT"/>
+			<div element="ID_HB_ARCHETYPE_FEATURE_CRUSADER_ARCANE_IRON_EXPOSE_WEAKNESS"/>
+			<div element="ID_HB_ARCHETYPE_FEATURE_CRUSADER_ARCANE_IRON_VISAGE"/>
+		</description>
+		<sheet display="false" />
+		<rules>
+      <grant type="Archetype Feature" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_ARCANE_IRON_SPELLCASTING" level="3"/>
+			<grant type="Archetype Feature" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_ARCANE_IRON_ARCANE_ARMOUR" level="3"/>
+			<grant type="Archetype Feature" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_ARCANE_IRON_ARCANE_REINFORCEMENT" level="7"/>
+			<grant type="Archetype Feature" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_ARCANE_IRON_EXPOSE_WEAKNESS" level="11"/>
+			<grant type="Archetype Feature" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_ARCANE_IRON_VISAGE" level="15"/>
+		</rules>
+	</element>
+
+  <element name="Level 3: Spellcasting" type="Archetype Feature" source="Player’s Handbook (2024)" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_ARCANE_IRON_SPELLCASTING">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_ARCANE_IRON_SPELLCASTING</requirements>
+		<description>
+			<p>You have learned to cast spells.</p>
+			<p class="indent"><strong><em>Cantrips.</em></strong> You know two cantrips of your choice from the Wizard spell list. <i>Mind Sliver</i> and <i>Minor Illusion</i> are recommended. Whenever you gain a Crusader level, you can replace one of these cantrips with another cantrip of your choice from the Wizard spell list.</p>
+			<p class="indent">When you reach Crusader level 10, you learn another Wizard cantrip of your choice.</p>
+			<p class="indent"><strong><em>Spell Slots.</em></strong> The Arcane Iron Spellcasting table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a Long Rest.</p>
+			<p class="indent"><strong><em>Prepared Spells of Level 1+.</em></strong> You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose three level 1 spells from the Wizard spell list. <i>Charm Person</i>, <i>Disguise Self</i>, and <i>Fog Cloud</i> are recommended.</p>
+			<p class="indent">The number of spells on your list increases as you gain Crusader levels, as shown in the Prepared Spells column of the Arcane Iron Spellcasting table. Whenever that number increases, choose additional spells from the Wizard spell list until the number of spells on your list matches the number on the table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 7 Crusader, your list of prepared spells can include five Wizard spells of levels 1 and 2 in any combination.</p>
+			<p class="indent"><strong><em>Changing your Prepared Spells.</em></strong> Whenever you gain a Crusader level, you can replace one spell on your list with another Wizard spell for which you have spell slots.</p>
+			<p class="indent"><strong><em>Spellcasting Ability.</em></strong> Intelligence is your spellcasting ability for your Wizard spells.</p>
+			<p class="indent"><strong><em>Spellcasting Focus.</em></strong> You can use an Arcane Focus as a Spellcasting Focus for your Wizard spells.</p>
+			<center>
+				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Intelligence modifier</p>
+				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Intelligence modifier</p>
+			</center>
+		</description>
+		<sheet alt="Spellcasting">
+			<description>You can replace one of your spells and/or cantrips whenever you gain a Crusader level.</description>
+		</sheet>
+		<spellcasting name="Arcane Iron" ability="Intelligence" allowReplace="true">
+			<list>Wizard</list>
+		</spellcasting>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_SPELLCASTING_FEATURE" />
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_THIRD" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+
+			<stat name="arcane iron:spellcasting:slots:1" value="2" level="3" />
+			<stat name="arcane iron:spellcasting:slots:1" value="1" level="4" />
+			<stat name="arcane iron:spellcasting:slots:1" value="1" level="7" />
+			<stat name="arcane iron:spellcasting:slots:2" value="2" level="7" />
+			<stat name="arcane iron:spellcasting:slots:2" value="1" level="10" />
+			<stat name="arcane iron:spellcasting:slots:3" value="2" level="13" />
+			<stat name="arcane iron:spellcasting:slots:3" value="1" level="16" />
+			<stat name="arcane iron:spellcasting:slots:4" value="1" level="19" />
+
+			<select type="Spell" name="Cantrip (Arcane Iron)" supports="Wizard, 0" level="3" number="2" spellcasting="Arcane Iron" />
+			<select type="Spell" name="Cantrip (Arcane Iron)" supports="Wizard, 0" level="10" spellcasting="Arcane Iron" />
+			<select type="Spell" name="Spell (Arcane Iron)" supports="$(spellcasting:list), $(spellcasting:slots)" level="3" number="3" spellcasting="Arcane Iron" />
+			<select type="Spell" name="Spell (Arcane Iron)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" spellcasting="Arcane Iron"/>
+			<select type="Spell" name="Spell (Arcane Iron)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" spellcasting="Arcane Iron"/>
+			<select type="Spell" name="Spell (Arcane Iron)" supports="$(spellcasting:list), $(spellcasting:slots)" level="8" spellcasting="Arcane Iron"/>
+			<select type="Spell" name="Spell (Arcane Iron)" supports="$(spellcasting:list), $(spellcasting:slots)" level="10" spellcasting="Arcane Iron"/>
+			<select type="Spell" name="Spell (Arcane Iron)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" spellcasting="Arcane Iron"/>
+			<select type="Spell" name="Spell (Arcane Iron)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" spellcasting="Arcane Iron"/>
+			<select type="Spell" name="Spell (Arcane Iron)" supports="$(spellcasting:list), $(spellcasting:slots)" level="14" spellcasting="Arcane Iron"/>
+			<select type="Spell" name="Spell (Arcane Iron)" supports="$(spellcasting:list), $(spellcasting:slots)" level="16" spellcasting="Arcane Iron"/>
+			<select type="Spell" name="Spell (Arcane Iron)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" spellcasting="Arcane Iron"/>
+			<select type="Spell" name="Spell (Arcane Iron)" supports="$(spellcasting:list), $(spellcasting:slots)" level="20" spellcasting="Arcane Iron"/>
+		</rules>
+	</element>
+
+	<element name="Level 3: Arcane Armour" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_ARCANE_IRON_ARCANE_ARMOUR">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_ARCANE_IRON_ARCANE_ARMOUR</requirements>
+		<description>
+			<p>Your armour is ascribed with a series of magical runes. You can don and doff your armour instantly and the armour cannot be removed from you unless you allow it.</p>
+		</description>
+		<sheet alt="Arcane Armour">
+			<description>You can don and doff your armour instantly and the armour cannot be removed from you unless you allow it.</description>
+		</sheet>
+	</element>
+  
+	<element name="Level 7: Arcane Reinforcement" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_ARCANE_IRON_ARCANE_REINFORCEMENT">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_ARCANE_IRON_ARCANE_REINFORCEMENT</requirements>
+		<description>
+			<p>When you cast certain spells, you are granted temporary benefits. When you cast a spell of level 1+ of one of the following schools, you are granted the benefit listed</p>
+			<p class="indent"><b>Abjuration:</b>After casting an Abjuration spell of level 1+, you gain a bonus to your AC until the start of your next turn equal to the level of spell slot expended.</p>
+      <p class="indent"><b>Evocation:</b>After casting an Evocation spell of level 1+, you gain a number of d4s of additional damage to one weapon attack that you make before the end of your next turn. The number of d4s of additional damage is determined by the level of spell cast. The additional damage is the same as the Evocation spell. If no damage type is provided, then the damage is the same as the weapon. If two different damage types are provided, then you choose which damage type the extra damage deals.</p>
+      <p class="indent"><b>Illusion:</b>After casting an Illusion spell of level 1+, the next time you are hit by an attack before the end of your next turn, you can roll a d4. If the roll is equal to or lower than the level of the spell slot used to cast the Illusion spell, the attack instead misses.</p>
+		</description>
+		<sheet alt="Arcane Reinforcement">
+      <description>
+			<p><b>Abjuration</b></p>
+      <p class="indent">After casting this type of spell, you gain a bonus to your AC until the start of your next turn equal to the level of spell slot expended.</p>
+      <p>><b>Evocation</b></p>
+        <p class="indent">After casting this type of spell, you gain a number of d4s of additional damage to one weapon attack that you make before the end of your next turn. The number of d4s of additional damage is determined by the level of spell cast. The additional damage is the same as the Evocation spell. If no damage type is provided, then the damage is the same as the weapon. If two different damage types are provided, then you choose which damage type the extra damage deals.</p>
+      <p>><b>Illusion</b></p>
+        <p class="indent">After casting this type of spell, the next time you are hit by an attack before the end of your next turn, you can roll a d4. If the roll is equal to or lower than the level of the spell slot used to cast the Illusion spell, the attack instead misses.</p>
+		</description>
+    </sheet>
+	</element>
+
+	<element name="Level 11: Expose Weakness" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_ARCANE_IRON_EXPOSE_WEAKNESS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_ARCANE_IRON_EXPOSE_WEAKNESS</requirements>
+		<description>
+			<p>You learn how to make your weapon strikes undercut a creature’s ability to withstand your spells. When you hit a creature with an attack using a weapon, that creature has Disadvantage on the next saving throw it makes against a spell you cast before the end of your next turn.</p>
+		</description>
+		<sheet alt="Expose Weakness">
+			<description>When you hit a creature with an attack using a weapon, that creature has Disadvantage on the next saving throw it makes against a spell you cast before the end of your next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 15: Visage" type="Archetype Feature" source="Homebrew" id="ID_HB_ARCHETYPE_FEATURE_CRUSADER_ARCANE_IRON_VISAGE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_ARCANE_IRON_VISAGE</requirements>
+		<description>
+			<p>When you use your Relentless feature, you can choose to teleport to an area that you can see within 30 feet.</p>
+		</description>
+		<sheet alt="Visage">
+			<description>When you use your Relentless feature, you can choose to teleport to an area that you can see within 30 feet.</description>
+		</sheet>
+	</element>
+	
+	<!--Feature Replacement Grants-->
+  <element name="Spellcasting Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_ARCANE_IRON_SPELLCASTING" />
+	<element name="Arcane Armour Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_ARCANE_IRON_ARCANE_ARMOUR" />
+	<element name="Arcane Reinforcement Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_ARCANE_IRON_ARCANE_REINFORCEMENT" />
+	<element name="Expose Weakness Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_ARCANE_IRON_EXPOSE_WEAKNESS" />
+	<element name="Visage Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CRUSADER_ARCANE_IRON_VISAGE" />
+</elements>
