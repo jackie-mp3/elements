@@ -1,1 +1,341 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Duskblade</name>
+		<description>The Duskblade Homebrew Class.</description>
+		<author url="https://www.urbandictionary.com/define.php?term=GOAT">Guzufu</author>
+		<update version="0.0.1">
+			<file name="duskblade.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/duskblade/duskblade.xml" />
+		</update>
+	</info>
 
+	<element name="Duskblade" type="Class" source="Homebrew" id="ID_HB_CLASS_DUSKBLADE">
+		<description>
+			<p>A mixture of arcane prowess and precise bladework, the Duskblades are a rare and powerful group who use ancient teachings from bygone ages to empower themselves in the modern day. Most Duskblades live in small monasteries, hidden deep within the mountains or deserts. Any Duskblade Orders that do exist within wider society has to contend with abuse of the arcane from those who would wish to use the power of their group for their own ends. Some Duskblades even work with wizard academies for protection, sharing their knowledge in exchange for a safe sanctuary.</p>
+			<p class="indent">The combination of arcane arts and bladework is tricky to learn and almost impossible to master. Those who take the long route of learning these techniques often dedicate themselves fully to their studies, ensuring that they are prepared to mix spells with sword in the most effective way possible.</p>
+			<div class="sidebar">
+				<h5>CORE DUSKBLADE TRAITS</h5>
+				<table>
+					<tr><td><b>Primary Ability</b></td><td class="left">Strength</td></tr>
+					<tr><td><b>Hit Point Die</b></td><td class="left">D12 per Duskblade level</td></tr>
+					<tr><td><b>Saving Throw Proficiencies</b></td><td class="left">Strength and Constitution</td></tr>
+					<tr><td><b>Skill Proficiencies</b></td><td class="left"><i>Choose 2:</i> Athletics, History, Insight, Intimidation, Investigation, Medicine, Perception, Religion or Survival</td></tr>
+					<tr><td><b>Weapon Proficiencies</b></td><td class="left">Simple weapons and Martial weapons</td></tr>
+					<tr><td><b>Armor Training</b></td><td class="left">Light, Medium and Heavy armor and Shields</td></tr>
+					<tr><td><b>Starting Equipment</b></td><td class="left"><i> Choose A, B:</i> (A) Longsword, Javelin, Chain Mail and Shield or (B) 110 GP</td></tr>
+				</table>
+			</div>
+			<h4>BECOMING A DUSKBLADE ...</h4>
+			<h5 style="margin-top:-2em">AS A LEVEL 1 CHARACTER</h5>
+			<ul style="margin-top:-1em; margin-bottom: 0.5em">
+				<li>Gain all the traits in the Core Duskblade Traits table.</li>
+				<li>Gain the Duskblade's level 1 features, which are listed in the Duskblade Features table.</li>
+			</ul>
+			<h5 style="margin-top: 0px">AS A MULTICLASS CHARACTER</h5>
+			<ul style="margin-top:-1em">
+				<li>Gain the following traits from the Core Duskblade Traits table: Hit Point Die, proficiency with Martial weapons, and training with Light and Medium armor and Shields.</li>
+				<li>Gain the Duskblade's level 1 features, which are listed in the Duskblade Features table.</li>
+			</ul>
+			<h5>DUSKBLADE FEATURES</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td>Proficiency Bonus</td><td class="left">Features</td><td>Weak Point</td></tr>
+				</thead>
+				<tr><td> 1</td><td>+2</td><td class="left">Relentless, Weapon Mastery</td><td>-</td></tr>
+				<tr><td> 2</td><td>+2</td><td class="left">Duskblade Ward, Fighting Style</td><td>-</td></tr>
+				<tr><td> 3</td><td>+2</td><td class="left">Duskblade Subclass</td><td>-</td></tr>
+				<tr><td> 4</td><td>+2</td><td class="left">Ability Score Improvement</td><td>-</td></tr>
+				<tr><td> 5</td><td>+3</td><td class="left">Rallying Cry, Weak Point</td><td>2d8</td></tr>
+				<tr><td> 6</td><td>+3</td><td class="left">Protective Spirit</td><td>2d8</td></tr>
+				<tr><td> 7</td><td>+3</td><td class="left">Subclass feature</td><td>2d8</td></tr>
+				<tr><td> 8</td><td>+3</td><td class="left">Ability Score Improvement</td><td>2d8</td></tr>
+				<tr><td> 9</td><td>+4</td><td class="left">Iron Will, Duskblade Ward Improvement</td><td>3d8</td></tr>
+				<tr><td>10</td><td>+4</td><td class="left">Ability Score Improvement</td><td>3d8</td></tr>
+				<tr><td>11</td><td>+4</td><td class="left">Subclass Feature</td><td>3d8</td></tr>
+				<tr><td>12</td><td>+4</td><td class="left">Ability Score Improvement</td><td>3d8</td></tr>
+				<tr><td>13</td><td>+5</td><td class="left">Retaliation</td><td>4d8</td></tr>
+				<tr><td>14</td><td>+5</td><td class="left">Juggernaut</td><td>4d8</td></tr>
+				<tr><td>15</td><td>+5</td><td class="left">Subclass feature</td><td>4d8</td></tr>
+				<tr><td>16</td><td>+5</td><td class="left">Ability Score Improvement</td><td>4d8</td></tr>
+				<tr><td>17</td><td>+6</td><td class="left">Hidden Strength</td><td>5d8</td></tr>
+				<tr><td>18</td><td>+6</td><td class="left">Duskblade Ward Improvement</td><td>5d8</td></tr>
+				<tr><td>19</td><td>+6</td><td class="left">Epic Boon</td><td>5d8</td></tr>
+				<tr><td>20</td><td>+6</td><td class="left">Impervious</td><td>5d8</td></tr>
+			</table>
+			<h4>DUSKBLADE CLASS FEATURES</h4>
+			<p>As a Duskblade, you gain the following class features when you reach the specified Duskblade levels. These features are listed in the Duskblade Features table.</p>
+			<div element="ID_HB_CLASS_FEATURE_DUSKBLADE_RELENTLESS" />
+			<div element="ID_HB_CLASS_FEATURE_DUSKBLADE_WEAPON_MASTERY" />
+      		<div element="ID_HB_CLASS_FEATURE_DUSKBLADE_DUSKBLADE_WARD" />
+			<div element="ID_HB_CLASS_FEATURE_DUSKBLADE_FIGHTING_STYLE" />
+			<div element="ID_HB_CLASS_FEATURE_DUSKBLADE_DUSKBLADE_SUBCLASS" />
+			<div element="ID_HB_CLASS_FEATURE_DUSKBLADE_ABILITY_SCORE_IMPROVEMENT" />
+			<div element="ID_HB_CLASS_FEATURE_DUSKBLADE_RALLYING_CRY" />
+			<div element="ID_HB_CLASS_FEATURE_DUSKBLADE_WEAK_POINT" />
+			<div element="ID_HB_CLASS_FEATURE_DUSKBLADE_PROTECTIVE_SPIRIT" />
+			<div element="ID_HB_CLASS_FEATURE_DUSKBLADE_IRON_WILL" />
+			<div element="ID_HB_CLASS_FEATURE_DUSKBLADE_RETALIATION" />
+     	 	<div element="ID_HB_CLASS_FEATURE_DUSKBLADE_JUGGERNAUT" />
+      		<div element="ID_HB_CLASS_FEATURE_DUSKBLADE_HIDDEN_STRENGTH" />
+			<div element="ID_HB_CLASS_FEATURE_DUSKBLADE_EPIC_BOON" />
+			<div element="ID_HB_CLASS_FEATURE_DUSKBLADE_IMPERVIOUS" />
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="short">A Warrior of Honour and Glory</set>
+			<set name="hd">d12</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" requirements="!ID_HB_MULTICLASS_DUSKBLADE"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_HB_MULTICLASS_DUSKBLADE"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" requirements="!ID_HB_MULTICLASS_DUSKBLADE"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_HB_MULTICLASS_DUSKBLADE"/>
+			<select type="Proficiency" name="Skill Proficiency (Duskblade)" supports="Skill,Duskblade" number="2" requirements="!ID_HB_MULTICLASS_DUSKBLADE"/>
+
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_DUSKBLADE_RELENTLESS" />
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_DUSKBLADE_WEAPON_MASTERY" />
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_DUSKBLADE_DUSKBLADE_WARD" level="2"/>
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_DUSKBLADE_FIGHTING_STYLE" level="2"/>
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_DUSKBLADE_DUSKBLADE_SUBCLASS" level="3"/>
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_DUSKBLADE_ABILITY_SCORE_IMPROVEMENT" level="4"/>
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_DUSKBLADE_RALLYING_CRY" level="5"/>
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_DUSKBLADE_WEAK_POINT" level="5"/>
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_DUSKBLADE_PROTECTIVE_SPIRIT" level="6"/>
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_DUSKBLADE_IRON_WILL" level="9"/>
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_DUSKBLADE_RETALIATION" level="13" />
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_DUSKBLADE_JUGGERNAUT" level="14"/>
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_DUSKBLADE_HIDDEN_STRENGTH" level="17"/>
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_DUSKBLADE_EPIC_BOON" level="19"/>
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_DUSKBLADE_IMPERVIOUS" level="20" />
+		</rules>
+		<multiclass id="ID_HB_MULTICLASS_DUSKBLADE">
+			<prerequisite>Strength 13</prerequisite>
+			<requirements>([str:13])||ID_INTERNAL_GRANTS_MULTICLASS_UNLOCKER</requirements>
+			<setters>
+				<set name="multiclass proficiencies">Martial weapons, Light armor, Medium armor, Shields</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+			</rules>
+		</multiclass>
+	</element>
+
+	<element name="Level 1: Relentless" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_DUSKBLADE_RELENTLESS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_RELENTLESS</requirements>
+		<description>
+			<p>You have a wellspring of resilience that you can call on in times of need. When you take damage, you can choose to reduce the damage you take by an amount equal to 1d10 + your Duskblade level.</p>
+			<p class="indent">You can use this feature twice. You regain one expended use on a Short Rest and all expended uses on a Long Rest. You can use this feature three times starting at 4th level and four times starting at 10th level</p>
+		</description>
+		<sheet alt="Relentless" usage="{{relentless:usage}}/Long Rest">
+			<description>When you take damage, you can choose to reduce the damage you take by 1d10+{{level:duskblade}} HP. &#13;
+			You regain one expended use when you finish a Short Rest.</description>
+		</sheet>
+		<rules>
+			<stat name="relentless:usage" value="2" bonus="base" />
+			<stat name="relentless:usage" value="3" level="4" bonus="base" />
+			<stat name="relentless:usage" value="4" level="10" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Level 1: Weapon Mastery" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_DUSKBLADE_WEAPON_MASTERY">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_WEAPON_MASTERY</requirements>
+		<description>
+			<p>Your training with weapons allows you to use the mastery properties of two kinds of Simple or Martial weapons of your choice. Whenever you finish a Long Rest, you can practice weapon drills and change one of those weapon choices.</p>
+		</description>
+		<sheet alt="Weapon Mastery">
+			<description>Whenever you finish a Long Rest, you can change one of the weapons you previously chosen for a different one. </description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Weapon Mastery (Duskblade 1)" level="1" supports="Weapon Mastery" number="2"/>
+		</rules>
+	</element>
+
+	<element name="Level 2: Duskblade Ward" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_DUSKBLADE_DUSKBLADE_WARD">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_DUSKBLADE_WARD</requirements>
+		<description>
+			<p>Starting at 2nd level, your training as a Duskblade has allowed you to learn a series of special techniques that can be used to protect your allies and improve your offensive capabilities. As a bonus action, you activate this ward for the next minute or until you are Incapacitated. While this ward is active, you and allies within 10 feet of you cannot be Frightened. In addition, damage dealt to allies within 10 feet of you is halved.</p>
+			<p class="indent">You can use this feature twice. You regain one expended use at the end of a Short Rest and all expended uses at the end of a Long Rest.</p>
+			<p class="indent">At 9th level, the range of the aura is increased to 20 feet and you gain an additional usage of this feature. At 18th level, the range of the aura is increased to 30 feet and you gain an additional usage of this feature.</p>
+		</description>
+		<sheet alt="Duskblade Ward" action="Bonus Action" usage="{{duskblade ward:usage}}/Long Rest">
+			<description>You activate this ward for the next minute or until you are Incapacitated. While this ward is active, you and allies within {{duskblade ward:range}} feet of you cannot be Frightened. In addition, damage dealt to allies within {{duskblade ward:range}} feet of you is halved.</description>
+		</sheet>
+		<rules>
+			<stat name="duskblade ward:usage" value="2" bonus="base" />
+			<stat name="duskblade ward:usage" value="3" level="9" bonus="base" />
+			<stat name="duskblade ward:usage" value="4" level="18" bonus="base" />
+			<stat name="duskblade ward:range" value="10" bonus="base" />
+			<stat name="duskblade ward:range" value="20" level="9" bonus="base" />
+			<stat name="duskblade ward:range" value="30" level="18" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Level 2: Fighting Style" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_DUSKBLADE_FIGHTING_STYLE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_FIGHTING_STYLE</requirements>
+		<description>
+			<p>You have honed your martial prowess and gain a Fighting Style feat of your choice. Defense is recommended.</p>
+			<p class="indent">Whenever you gain a Duskblade level, you can replace the feat you chose with a different Fighting Style feat.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_FIGHTING_STYLE_FEATURE" />
+			<select type="Feat" name="Fighting Style (Duskblade 2)" supports="Fighting Style" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Duskblade Subclass" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_DUSKBLADE_DUSKBLADE_SUBCLASS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_DUSKBLADE_SUBCLASS</requirements>
+		<description>
+			<p>You gain a Duskblade subclass of your choice. A subclass is a specialization that grants you features at certain Duskblade levels. For the rest of your career, you gain each of your subclass's features that are of your Duskblade level or lower.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype" name="Duskblade Subclass" supports="Duskblade Clan||Duskblade Subclass" level="3" />
+		</rules>
+	</element>
+
+	<element name="Level 4: Ability Score Improvement" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_DUSKBLADE_ABILITY_SCORE_IMPROVEMENT">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_ABILITY_SCORE_IMPROVEMENT</requirements>
+		<compendium display="false" />
+		<description>
+			<p>You gain the Ability Score Improvement feat or another feat of your choice for which you qualify. You gain this feature again at Duskblade levels 8, 10, 12 and 16.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat" name="Ability Score Improvement (Duskblade 4)" level="4" />
+			<select type="Feat" name="Ability Score Improvement (Duskblade 8)" level="8" />
+			<select type="Feat" name="Ability Score Improvement (Duskblade 10)" level="10" />
+			<select type="Feat" name="Ability Score Improvement (Duskblade 12)" level="12" />
+			<select type="Feat" name="Ability Score Improvement (Duskblade 16)" level="16" />
+		</rules>
+	</element>
+
+	<element name="Level 5: Rallying Cry" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_DUSKBLADE_RALLYING_CRY">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_RALLYING_CRY</requirements>
+		<description>
+			<p>By 5th level, you have learnt how to inspire courage into your allies during dire times. As an action, you make a loud battle cry to all allied creatures within 60 feet that can hear you. Creatures that hear your battle cry gain temporary hit points equal to 1d12 plus your duskblade level and gain a Heroic Inspiration if they lack it.</p>
+			<p class="indent">Once you have used this feature, you cannot use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet alt="Rallying Cry" action="Action" usage="1/Short Rest">
+			<description>You make a loud battle cry to all allied creatures within 60 feet that can hear you. Creatures that hear your battle cry gain temporary hit points equal to 1d12+{{rallying:cry}} and gain a Heroic Inspiration if they lack it.</description>
+		</sheet>
+		<rules>
+			<stat name="rallying:cry" value="level:duskblade"/>
+		</rules>
+	</element>
+
+	<element name="Level 5: Weak Point" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_DUSKBLADE_WEAK_POINT">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_WEAK_POINT</requirements>
+		<description>
+			<p>Starting at 5th level, your Duskblade training allows you to strike a decisive blow against your foes. When you make an attack with a melee weapon that you are proficient with, you can add 2d8 damage of your weapon’s damage type to the damage rolls. You can only add this extra damage once per turn.</p>
+			<p class="indent">The damage is increased to 3d8 at 9th level, 4d8 at 13th level and 5d8 at 17th level.</p>
+		</description>
+		<sheet alt="Weak Point">
+			<description>When you make an attack with a melee weapon that you are proficient with, you can add {{weakpoint:damage}}d8 damage of your weapon’s damage type to the damage rolls. You can only add this extra damage once per turn.</description>
+		</sheet>
+		<rules>
+			<stat name="weakpoint:damage" value="2" level="5" bonus="base" />
+			<stat name="weakpoint:damage" value="3" level="9" bonus="base" />
+			<stat name="weakpoint:damage" value="4" level="13" bonus="base" />
+			<stat name="weakpoint:damage" value="5" level="17" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Level 6: Protective Spirit" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_DUSKBLADE_PROTECTIVE_SPIRIT">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_PROTECTIVE_SPIRIT</requirements>
+		<description>
+			<p>When you activate your Duskblade Ward, you and all allies within its range gain a +2 bonus to their AC. In addition, once per round when an ally fails a saving throw while within 10 feet of you, you can make them reroll. They must use the new result.</p>
+		</description>
+		<sheet alt="Protective Spirit">
+			<description>When you activate your Duskblade Ward, you and all allies within its range gain a +2 bonus to their AC. In addition, once per round when an ally fails a saving throw while within 10 feet of you, you can make them reroll. They must use the new result.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 9: Iron Will" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_DUSKBLADE_IRON_WILL">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_IRON_WILL</requirements>
+		<description>
+			<p>Choose two saving throws. You gain proficiency if you do not already have it. If you already have proficiency in the saving throw you choose, you instead double your proficiency bonus for those saving throws.</p>
+		</description>
+		<sheet display="false">
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Saving Throw Proficiency (Iron Will)" supports="Iron Will||Saving Expertise" number="2" />
+		</rules>
+	</element>
+
+	<element name="Level 13: Retaliation" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_DUSKBLADE_RETALIATION">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_RETALIATION</requirements>
+		<description>
+			<p>You put your heart into each and every strike. You can add a bonus to damage rolls made with weapons with which you are proficient equal to your Constitution modifier. In addition, when you make an attack of opportunity, you can take two attacks instead of one.</p>
+		</description>
+		<sheet alt="Retaliation">
+			<description>You can add {{retaliation:mod}} extra damage to rolls made with weapons with which you are proficient with. In addition, when you make an attack of opportunity, you can take two attacks instead of one.</description>
+		</sheet>
+		<rules>
+			<stat name="retaliation:mod" value="constitution:modifier"/>
+		</rules>
+	</element>
+
+	<element name="Level 14: Juggernaut" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_DUSKBLADE_JUGGERNAUT">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_JUGGERNAUT</requirements>
+		<description>
+			<p>You are unstoppable while in combat. You reduce all damage you take by an amount equal to your Constitution modifier. In addition, any damage you deal with a weapon that you are proficient with deals additional damage equal to your Constitution modifier.</p>
+		</description>
+		<sheet alt="Juggernaut">
+		<description>You reduce all damage you take by {{retaliation:mod}}. In addition, any damage you deal with a weapon that you are proficient with deals an additional {{retaliation:mod}} damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 17: Hidden Strength" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_DUSKBLADE_HIDDEN_STRENGTH">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_HIDDEN_STRENGTH</requirements>
+		<description>
+			<p>You can dig deep when times grow tough. While you are under half of your maximum hp, all attacks you make with weapons that you are proficient with are made at advantage.</p>
+		</description>
+		<sheet alt="Hidden Strength">
+			<description>While you are under half of your maximum hp, all attacks you make with weapons that you are proficient with are made at advantage.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 19: Epic Boon" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_DUSKBLADE_EPIC_BOON">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_EPIC_BOON</requirements>
+		<description>
+			<p>You gain an Epic Boon feat or another feat of your choice for which you qualify.</p>
+		</description>
+		<sheet display="false">
+		</sheet>
+		<rules>
+			<select type="Feat" name="Epic Boon (Duskblade 19)" level="19" />
+		</rules>
+	</element>
+
+	<element name="Level 20: Impervious" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_DUSKBLADE_IMPERVIOUS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_IMPERVIOUS</requirements>
+		<description>
+			<p>Upon reaching 20th level, you have become a paragon for defending and protecting your allies and you are able to resist even the forces of death for a time. As a bonus action, you can choose to prepare yourself against attack. For the next minute, you gain resistance to all incoming damage that you take. In addition, if you are reduced to 0 hit points while this is active, you are instead on 1 hit point and conscious. Once you use this feature, you must complete a long rest before you use it again.</p>
+		</description>
+		<sheet alt="Impervious" action="Bonus Action" usage="1/Long Rest">
+			<description>You can choose to prepare yourself against attack. For the next minute, you gain resistance to all incoming damage that you take. In addition, if you are reduced to 0 hit points while this is active, you are instead on 1 hit point and conscious. </description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Relentless Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_RELENTLESS" />
+	<element name="Weapon Mastery Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_WEAPON_MASTERY" />
+	<element name="Duskblade Ward Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_DUSKBLADE_WARD" />
+	<element name="Fighting Style Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_FIGHTING_STYLE" />
+	<element name="Duskblade Subclass Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_DUSKBLADE_SUBCLASS" />
+	<element name="Ability Score Improvement Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_ABILITY_SCORE_IMPROVEMENT" />
+	<element name="Rallying Cry Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_RALLYING_CRY" />
+	<element name="Weak Point Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_WEAK_POINT" />
+	<element name="Protective Spirit Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_PROTECTIVE_SPIRIT" />
+	<element name="Iron Will Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_IRON_WILL" />
+	<element name="Retaliation Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_RETALIATION" />
+	<element name="Juggernaut Attacks Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_JUGGERNAUT" />
+	<element name="Hidden Strength" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_HIDDEN_STRENGTH" />
+	<element name="Epic Boon Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_EPIC_BOON" />
+	<element name="Impervious" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_IMPERVIOUS" />
+</elements>
