@@ -5,24 +5,24 @@
 		<description>Homebrew Classes from the GOAT Guzufu</description>
 		<author url="https://www.urbandictionary.com/define.php?term=GOAT">Guzufu</author>
 		<update version="0.0.1">
-			<file name="crusaderTEST.index" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/crusaderTEST.index" />
+			<file name="crusaderTEST.index" url="https://raw.githubusercontent.com/jackie-mp3/elements/refs/heads/master/crusaderTEST.index" />
 		</update>
 	</info>
 	<files>
 		<!-- Classes -->
-		<file name="crusader.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/crusader/crusader.xml" />
+		<file name="crusader.xml" url="https://raw.githubusercontent.com/jackie-mp3/elements/refs/heads/master/crusader/crusader.xml" />
 
 		<!-- Subclasses -->
-		<file name="crusader-blademaster.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/crusader/crusader-theblademaster.xml" />
-		<file name="crusader-divinewarrior.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/crusader/crusader-divinewarrior.xml" />
-		<file name="crusader-giantwarden.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/crusader/crusader-giantwarden.xml" />
-		<file name="crusader-psychicblade.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/crusader/crusader-psychicblade.xml" />
-		<file name="crusader-natureswrath.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/crusader/crusader-natureswrath.xml" />
-		<file name="crusader-commander.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/crusader/crusader-commander.xml" />
-		<file name="crusader-arcaneiron.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/crusader/crusader-arcaneiron.xml" />
-		<file name="crusader-bruiser.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/crusader/crusader-bruiser.xml" />
+		<file name="crusader-blademaster.xml" url="https://raw.githubusercontent.com/jackie-mp3/elements/refs/heads/master/crusader/crusader-theblademaster.xml" />
+		<file name="crusader-divinewarrior.xml" url="https://raw.githubusercontent.com/jackie-mp3/elements/refs/heads/master/crusader/crusader-divinewarrior.xml" />
+		<file name="crusader-giantwarden.xml" url="https://raw.githubusercontent.com/jackie-mp3/elements/refs/heads/master/crusader/crusader-giantwarden.xml" />
+		<file name="crusader-psychicblade.xml" url="https://raw.githubusercontent.com/jackie-mp3/elements/refs/heads/master/crusader/crusader-psychicblade.xml" />
+		<file name="crusader-natureswrath.xml" url="https://raw.githubusercontent.com/jackie-mp3/elements/refs/heads/master/crusader/crusader-natureswrath.xml" />
+		<file name="crusader-commander.xml" url="https://raw.githubusercontent.com/jackie-mp3/elements/refs/heads/master/crusader/crusader-commander.xml" />
+		<file name="crusader-arcaneiron.xml" url="https://raw.githubusercontent.com/jackie-mp3/elements/refs/heads/master/crusader/crusader-arcaneiron.xml" />
+		<file name="crusader-bruiser.xml" url="https://raw.githubusercontent.com/jackie-mp3/elements/refs/heads/master/crusader/crusader-bruiser.xml" />
 
 		<!-- Skills -->
-		<file name="skills.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/misc/skills.xml" />
+		<file name="skills.xml" url="https://raw.githubusercontent.com/jackie-mp3/elements/refs/heads/master/misc/skills.xml" />
 	</files>
 </index>
