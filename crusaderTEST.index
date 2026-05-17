@@ -5,7 +5,7 @@
 		<description>Homebrew Classes from the GOAT Guzufu</description>
 		<author url="https://www.urbandictionary.com/define.php?term=GOAT">Guzufu</author>
 		<update version="0.0.1">
-			<file name="rename.index" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/crusaderTEST.index" />
+			<file name="crusaderTEST.index" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/crusaderTEST.index" />
 		</update>
 	</info>
 	<files>
