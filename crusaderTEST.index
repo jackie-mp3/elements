@@ -23,6 +23,6 @@
 		<file name="crusader-bruiser.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/crusader/crusader-bruiser.xml" />
 
 		<!-- Skills -->
-		<file name="skills.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/skills/skills.xml" />
+		<file name="skills.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/misc/skills.xml" />
 	</files>
 </index>
