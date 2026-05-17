@@ -5,7 +5,7 @@
 		<description>The Bruiser subclass for the Crusader.</description>
 		<author url="https://GOAT.com">Guzufu</author>
 		<update version="0.0.1">
-			<file name="crusader-bruiser.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/crusader/crusader-bruiser.xml" />
+			<file name="crusader-bruiser.xml" url="https://raw.githubusercontent.com/jackie-mp3/elements/refs/heads/master/crusader/crusader-bruiser.xml" />
 		</update>
 	</info>
 
