@@ -5,7 +5,7 @@
 		<description>The Crusader Homebrew Class.</description>
 		<author url="https://www.urbandictionary.com/define.php?term=GOAT">Guzufu</author>
 		<update version="0.0.1">
-			<file name="crusader.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/crusader/crusader.xml" />
+			<file name="crusader.xml" url="https://raw.githubusercontent.com/jackie-mp3/elements/refs/heads/master/crusader/crusader.xml" />
 		</update>
 	</info>
 
