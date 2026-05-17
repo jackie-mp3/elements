@@ -24,24 +24,24 @@
 					<td colspan="4" style="vertical-align:bottom; border-bottom: 0px">Spell Slots per Spell Level</td>
 				</tr>
 				<tr style="font-weight: bold"><td>1</td><td>2</td><td>3</td><td>4</td></tr>
-				<tr><td> 3</td><td>2</td><td>3</td<td>2</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td> 4</td><td>2</td><td>4</td<td>3</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td> 5</td><td>2</td><td>4</td<td>3</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td> 6</td><td>2</td><td>4</td<td>3</td><td>—</td><td>—</td><td>—</td></tr>
-				<tr><td> 7</td><td>2</td><td>5</td<td>4</td><td>2</td><td>—</td><td>—</td></tr>
-				<tr><td> 8</td><td>2</td><td>6</td<td>4</td><td>2</td><td>—</td><td>—</td></tr>
-				<tr><td> 9</td><td>2</td><td>6</td<td>4</td><td>2</td><td>—</td><td>—</td></tr>
-				<tr><td>10</td><td>3</td><td>7</td<td>4</td><td>3</td><td>—</td><td>—</td></tr>
-				<tr><td>11</td><td>3</td><td>8</td<td>4</td><td>3</td><td>—</td><td>—</td></tr>
-				<tr><td>12</td><td>3</td><td>8</td<td>4</td><td>3</td><td>—</td><td>—</td></tr>
-				<tr><td>13</td><td>3</td><td>9</td<td>4</td><td>3</td><td>2</td><td>—</td></tr>
-				<tr><td>14</td><td>3</td><td>10</td<td>4</td><td>3</td><td>2</td><td>—</td></tr>
-				<tr><td>15</td><td>3</td><td>10</td<td>4</td><td>3</td><td>2</td><td>—</td></tr>
-				<tr><td>16</td><td>3</td><td>11</td<td>4</td><td>3</td><td>3</td><td>—</td></tr>
-				<tr><td>17</td><td>3</td><td>11</td<td>4</td><td>3</td><td>3</td><td>—</td></tr>
-				<tr><td>18</td><td>3</td><td>11</td<td>4</td><td>3</td><td>3</td><td>—</td></tr>
-				<tr><td>19</td><td>3</td><td>12</td<td>4</td><td>3</td><td>3</td><td>1</td></tr>
-				<tr><td>20</td><td>3</td><td>13</td<td>4</td><td>3</td><td>3</td><td>1</td></tr>
+				<tr><td> 3</td><td>2</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 4</td><td>2</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 5</td><td>2</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 6</td><td>2</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 7</td><td>2</td><td>5</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td> 8</td><td>2</td><td>6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td> 9</td><td>2</td><td>6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td>10</td><td>3</td><td>7</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>11</td><td>3</td><td>8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>12</td><td>3</td><td>8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>13</td><td>3</td><td>9</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>14</td><td>3</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>15</td><td>3</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>16</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>17</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>18</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>19</td><td>3</td><td>12</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+				<tr><td>20</td><td>3</td><td>13</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
 			</table>
 			<div element="ID_HB_ARCHETYPE_FEATURE_CRUSADER_ARCANE_IRON_ARCANE_ARMOUR"/>
 			<div element="ID_HB_ARCHETYPE_FEATURE_CRUSADER_ARCANE_IRON_ARCANE_REINFORCEMENT"/>
