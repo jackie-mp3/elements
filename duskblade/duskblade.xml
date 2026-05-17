@@ -16,13 +16,13 @@
 			<div class="sidebar">
 				<h5>CORE DUSKBLADE TRAITS</h5>
 				<table>
-					<tr><td><b>Primary Ability</b></td><td class="left">Strength</td></tr>
-					<tr><td><b>Hit Point Die</b></td><td class="left">D12 per Duskblade level</td></tr>
-					<tr><td><b>Saving Throw Proficiencies</b></td><td class="left">Strength and Constitution</td></tr>
-					<tr><td><b>Skill Proficiencies</b></td><td class="left"><i>Choose 2:</i> Athletics, History, Insight, Intimidation, Investigation, Medicine, Perception, Religion or Survival</td></tr>
+					<tr><td><b>Primary Ability</b></td><td class="left">Strength and Intelligence</td></tr>
+					<tr><td><b>Hit Point Die</b></td><td class="left">D10 per Duskblade level</td></tr>
+					<tr><td><b>Saving Throw Proficiencies</b></td><td class="left">Constitution and Intelligence</td></tr>
+					<tr><td><b>Skill Proficiencies</b></td><td class="left"><i>Choose 2:</i> Arcana, Athletics, History, Insight, Intimidation, Medicine, Religion, or Survival</td></tr>
 					<tr><td><b>Weapon Proficiencies</b></td><td class="left">Simple weapons and Martial weapons</td></tr>
-					<tr><td><b>Armor Training</b></td><td class="left">Light, Medium and Heavy armor and Shields</td></tr>
-					<tr><td><b>Starting Equipment</b></td><td class="left"><i> Choose A, B:</i> (A) Longsword, Javelin, Chain Mail and Shield or (B) 110 GP</td></tr>
+					<tr><td><b>Armor Training</b></td><td class="left">Light and Medium Armour and Shields</td></tr>
+					<tr><td><b>Starting Equipment</b></td><td class="left"><i> Choose A, B:</i> (A) Longsword, Javelin, Chain Mail, Shield, and an Arcane Focus or (B) 125 GP</td></tr>
 				</table>
 			</div>
 			<h4>BECOMING A DUSKBLADE ...</h4>
@@ -38,57 +38,64 @@
 			</ul>
 			<h5>DUSKBLADE FEATURES</h5>
 			<table class="class-features">
-				<thead>
-					<tr><td class="col-5">Level</td><td>Proficiency Bonus</td><td class="left">Features</td><td>Weak Point</td></tr>
-				</thead>
-				<tr><td> 1</td><td>+2</td><td class="left">Relentless, Weapon Mastery</td><td>-</td></tr>
-				<tr><td> 2</td><td>+2</td><td class="left">Duskblade Ward, Fighting Style</td><td>-</td></tr>
-				<tr><td> 3</td><td>+2</td><td class="left">Duskblade Subclass</td><td>-</td></tr>
-				<tr><td> 4</td><td>+2</td><td class="left">Ability Score Improvement</td><td>-</td></tr>
-				<tr><td> 5</td><td>+3</td><td class="left">Rallying Cry, Weak Point</td><td>2d8</td></tr>
-				<tr><td> 6</td><td>+3</td><td class="left">Protective Spirit</td><td>2d8</td></tr>
-				<tr><td> 7</td><td>+3</td><td class="left">Subclass feature</td><td>2d8</td></tr>
-				<tr><td> 8</td><td>+3</td><td class="left">Ability Score Improvement</td><td>2d8</td></tr>
-				<tr><td> 9</td><td>+4</td><td class="left">Iron Will, Duskblade Ward Improvement</td><td>3d8</td></tr>
-				<tr><td>10</td><td>+4</td><td class="left">Ability Score Improvement</td><td>3d8</td></tr>
-				<tr><td>11</td><td>+4</td><td class="left">Subclass Feature</td><td>3d8</td></tr>
-				<tr><td>12</td><td>+4</td><td class="left">Ability Score Improvement</td><td>3d8</td></tr>
-				<tr><td>13</td><td>+5</td><td class="left">Retaliation</td><td>4d8</td></tr>
-				<tr><td>14</td><td>+5</td><td class="left">Juggernaut</td><td>4d8</td></tr>
-				<tr><td>15</td><td>+5</td><td class="left">Subclass feature</td><td>4d8</td></tr>
-				<tr><td>16</td><td>+5</td><td class="left">Ability Score Improvement</td><td>4d8</td></tr>
-				<tr><td>17</td><td>+6</td><td class="left">Hidden Strength</td><td>5d8</td></tr>
-				<tr><td>18</td><td>+6</td><td class="left">Duskblade Ward Improvement</td><td>5d8</td></tr>
-				<tr><td>19</td><td>+6</td><td class="left">Epic Boon</td><td>5d8</td></tr>
-				<tr><td>20</td><td>+6</td><td class="left">Impervious</td><td>5d8</td></tr>
+				<tr style="font-weight: bold">
+					<td rowspan="2">Level</td>
+					<td class="col-30 left" rowspan="2">Class Features</td>
+					<td rowspan="2">Mystic Arts<br />Divinity</td>
+					<td rowspan="2">Spells<br />Known</td>
+					<td rowspan="2">Cantrips/td>
+					<td colspan="5" style="vertical-align:bottom; border-bottom: 0px">Spell Slots per Spell Level</td>
+				</tr>
+				<tr style="font-weight: bold"><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+				<tr><td> 1</td><td class="left">Spellcasting, Mystic Arts, Weapon Mastery</td><td>1</td><td>2</td><td>2</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 2</td><td class="left">Fighting Style, Arcane Empowerment, Arcane Strike</td><td>3</td><td>2</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 3</td><td class="left">Duskblade Subclass</td><td>3</td><td>3</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 4</td><td class="left">Ability Score Increase</td><td>3</td><td>3</td><td>5</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 5</td><td class="left">Mystic Attack</td><td>4</td><td>3</td><td>6</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 6</td><td class="left">Mystical Knowledge</td><td>4</td><td>3</td><td>6</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 7</td><td class="left">Subclass Feature</td><td>4</td><td>3</td><td>7</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 8</td><td class="left">Ability Score Increase</td><td>5</td><td>3</td><td>7</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 9</td><td class="left">Restoring Respite</td><td>5</td><td>3</td><td>9</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td>10</td><td class="left">Arcane Defence</td><td>5</td><td>3</td><td>9</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td>11</td><td class="left">Subclass Feature</td><td>6</td><td>4</td><td>10</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>12</td><td class="left">Ability Score Increase</td><td>6</td><td>4</td><td>10</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>13</td><td class="left">Greater Mystical Knowledge</td><td>6</td><td>4</td><td>11</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td></tr>
+				<tr><td>14</td><td class="left">Mystical Retribution</td><td>7</td><td>4</td><td>11</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td></tr>
+				<tr><td>15</td><td class="left">Subclass Feature</td><td>7</td><td>4</td><td>12</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>16</td><td class="left">Ability Score Increase</td><td>7</td><td>4</td><td>12</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>17</td><td class="left">-</td><td>8</td><td>4</td><td>14</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
+				<tr><td>18</td><td class="left">Favoured Spell</td><td>8</td><td>4</td><td>14</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
+				<tr><td>19</td><td class="left">Epic Boon</td><td>8</td><td>4</td><td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
+				<tr><td>20</td><td class="left">One With the Dawn</td><td>9</td><td>4</td><td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
 			</table>
 			<h4>DUSKBLADE CLASS FEATURES</h4>
 			<p>As a Duskblade, you gain the following class features when you reach the specified Duskblade levels. These features are listed in the Duskblade Features table.</p>
-			<div element="ID_HB_CLASS_FEATURE_DUSKBLADE_RELENTLESS" />
+			<div element="ID_HB_CLASS_FEATURE_DUSKBLADE_SPELLCASTING" />
 			<div element="ID_HB_CLASS_FEATURE_DUSKBLADE_WEAPON_MASTERY" />
-      		<div element="ID_HB_CLASS_FEATURE_DUSKBLADE_DUSKBLADE_WARD" />
+      		<div element="ID_HB_CLASS_FEATURE_DUSKBLADE_MYSTIC_ARTS" />
 			<div element="ID_HB_CLASS_FEATURE_DUSKBLADE_FIGHTING_STYLE" />
+			<div element="ID_HB_CLASS_FEATURE_DUSKBLADE_ARCANE_EMPOWERMENT" />
+			<div element="ID_HB_CLASS_FEATURE_DUSKBLADE_ARCANE_STRIKE" />
 			<div element="ID_HB_CLASS_FEATURE_DUSKBLADE_DUSKBLADE_SUBCLASS" />
 			<div element="ID_HB_CLASS_FEATURE_DUSKBLADE_ABILITY_SCORE_IMPROVEMENT" />
-			<div element="ID_HB_CLASS_FEATURE_DUSKBLADE_RALLYING_CRY" />
-			<div element="ID_HB_CLASS_FEATURE_DUSKBLADE_WEAK_POINT" />
-			<div element="ID_HB_CLASS_FEATURE_DUSKBLADE_PROTECTIVE_SPIRIT" />
-			<div element="ID_HB_CLASS_FEATURE_DUSKBLADE_IRON_WILL" />
-			<div element="ID_HB_CLASS_FEATURE_DUSKBLADE_RETALIATION" />
-     	 	<div element="ID_HB_CLASS_FEATURE_DUSKBLADE_JUGGERNAUT" />
-      		<div element="ID_HB_CLASS_FEATURE_DUSKBLADE_HIDDEN_STRENGTH" />
+			<div element="ID_HB_CLASS_FEATURE_DUSKBLADE_MYSTIC_ATTACK" />
+			<div element="ID_HB_CLASS_FEATURE_DUSKBLADE_MYSTICAL_KNOWLEDGE" />
+			<div element="ID_HB_CLASS_FEATURE_DUSKBLADE_RESTORING_RESPITE" />
+			<div element="ID_HB_CLASS_FEATURE_DUSKBLADE_ARCANE_DEFENCE" />
+			<div element="ID_HB_CLASS_FEATURE_DUSKBLADE_GREATER_MYSTICAL_KNOWLEDGE" />
+     	 	<div element="ID_HB_CLASS_FEATURE_DUSKBLADE_MYSTICAL_RETRIBUTION" />
+      		<div element="ID_HB_CLASS_FEATURE_DUSKBLADE_FAVOURED_SPELL" />
 			<div element="ID_HB_CLASS_FEATURE_DUSKBLADE_EPIC_BOON" />
-			<div element="ID_HB_CLASS_FEATURE_DUSKBLADE_IMPERVIOUS" />
+			<div element="ID_HB_CLASS_FEATURE_DUSKBLADE_ONE_WITH_THE_DAWN" />
 		</description>
 		<sheet display="false" />
 		<setters>
-			<set name="short">A Warrior of Honour and Glory</set>
-			<set name="hd">d12</set>
+			<set name="short">An Arcane Fighter of Mystical Arts</set>
+			<set name="hd">d10</set>
 		</setters>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
-			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" requirements="!ID_HB_MULTICLASS_DUSKBLADE"/>
 			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_HB_MULTICLASS_DUSKBLADE"/>
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
@@ -96,25 +103,27 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_HB_MULTICLASS_DUSKBLADE"/>
 			<select type="Proficiency" name="Skill Proficiency (Duskblade)" supports="Skill,Duskblade" number="2" requirements="!ID_HB_MULTICLASS_DUSKBLADE"/>
 
-			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_DUSKBLADE_RELENTLESS" />
-			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_DUSKBLADE_WEAPON_MASTERY" />
-			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_DUSKBLADE_DUSKBLADE_WARD" level="2"/>
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_DUSKBLADE_SPELLCASTING" level="1"/>
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_DUSKBLADE_WEAPON_MASTERY" level="1"/>
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_DUSKBLADE_MYSTIC_ARTS" level="1"/>
 			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_DUSKBLADE_FIGHTING_STYLE" level="2"/>
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_DUSKBLADE_ARCANE_EMPOWERMENT" level="2"/>
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_DUSKBLADE_ARCANE_STRIKE" level="2"/>
 			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_DUSKBLADE_DUSKBLADE_SUBCLASS" level="3"/>
 			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_DUSKBLADE_ABILITY_SCORE_IMPROVEMENT" level="4"/>
-			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_DUSKBLADE_RALLYING_CRY" level="5"/>
-			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_DUSKBLADE_WEAK_POINT" level="5"/>
-			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_DUSKBLADE_PROTECTIVE_SPIRIT" level="6"/>
-			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_DUSKBLADE_IRON_WILL" level="9"/>
-			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_DUSKBLADE_RETALIATION" level="13" />
-			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_DUSKBLADE_JUGGERNAUT" level="14"/>
-			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_DUSKBLADE_HIDDEN_STRENGTH" level="17"/>
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_DUSKBLADE_MYSTIC_ATTACK" level="5"/>
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_DUSKBLADE_MYSTICAL_KNOWLEDGE" level="6"/>
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_DUSKBLADE_RESTORING_RESPITE" level="9"/>
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_DUSKBLADE_ARCANE_DEFENCE" level="10"/>
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_DUSKBLADE_GREATER_MYSTICAL_KNOWLEDGE" level="13" />
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_DUSKBLADE_MYSTICAL_RETRIBUTION" level="14"/>
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_DUSKBLADE_FAVOURED_SPELL" level="18"/>
 			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_DUSKBLADE_EPIC_BOON" level="19"/>
-			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_DUSKBLADE_IMPERVIOUS" level="20" />
+			<grant type="Class Feature" id="ID_HB_CLASS_FEATURE_DUSKBLADE_ONE_WITH_THE_DAWN" level="20" />
 		</rules>
 		<multiclass id="ID_HB_MULTICLASS_DUSKBLADE">
-			<prerequisite>Strength 13</prerequisite>
-			<requirements>([str:13])||ID_INTERNAL_GRANTS_MULTICLASS_UNLOCKER</requirements>
+			<prerequisite>Strength 13 and Intelligence 13</prerequisite>
+			<requirements>([str:13],[int:13])||ID_INTERNAL_GRANTS_MULTICLASS_UNLOCKER</requirements>
 			<setters>
 				<set name="multiclass proficiencies">Martial weapons, Light armor, Medium armor, Shields</set>
 			</setters>
@@ -124,20 +133,56 @@
 		</multiclass>
 	</element>
 
-	<element name="Level 1: Relentless" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_DUSKBLADE_RELENTLESS">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_RELENTLESS</requirements>
+	<element name="Level 1: SPELLCASTING" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_DUSKBLADE_SPELLCASTING">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_SPELLCASTING</requirements>
 		<description>
-			<p>You have a wellspring of resilience that you can call on in times of need. When you take damage, you can choose to reduce the damage you take by an amount equal to 1d10 + your Duskblade level.</p>
-			<p class="indent">You can use this feature twice. You regain one expended use on a Short Rest and all expended uses on a Long Rest. You can use this feature three times starting at 4th level and four times starting at 10th level</p>
+			<p>You have learned to channel the magical essence of nature to cast spells.</p>
+			<p class="indent"><i><b>Spell Slots.</b></i> The Duskblade Features table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a Long Rest.</p>
+			<p class="indent"><i><b>Prepared Spells of Level 1+.</b></i> You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose two level 1 Duskblade spells.</p>
+			<p class="indent">The number of spells on your list increases as you gain Duskblade levels, as shown in the Prepared Spells column of the Duskblade Features table. Whenever that number increases, choose additional Duskblade spells until the number of spells on your list matches the number in the Duskblade Features table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 5 Duskblade, your list of prepared spells can include six Duskblade spells of level 1 or 2 in any combination.</p>
+			<p class="indent">If another Duskblade feature gives you spells that you always have prepared, those spells don't count against the number of spells you can prepare with this feature, but those spells otherwise count as Duskblade spells for you.</p>
+			<p class="indent"><i><b>Changing Your Prepared Spells.</b></i> Whenever you finish a Long Rest, you can replace one spell on your list with another Duskblade spell for which you have spell slots.</p>
+			<p class="indent"><i><b>Spellcasting Ability.</b></i> Intelligence is your spellcasting ability for your Duskblade spells.</p>
+			<p class="indent"><i><b>Spellcasting Focus.</b></i> You can use an Arcane Focus as a Spellcasting Focus for your Duskblade spells.</p>
+			<center>
+				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Intelligence modifier</p>
+				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Intelligence modifier</p>
+			</center>
 		</description>
-		<sheet alt="Relentless" usage="{{relentless:usage}}/Long Rest">
-			<description>When you take damage, you can choose to reduce the damage you take by 1d10+{{level:duskblade}} HP. &#13;
-			You regain one expended use when you finish a Short Rest.</description>
+		<sheet alt="Spellcasting">
+			<description>Whenever you finish a Long Rest, you can replace one spell on your list with another Duskblade spell.</description>
 		</sheet>
+		<spellcasting name="Duskblade" ability="Intelligence" allowReplace="true">
+			<list>Duskblade</list>
+		</spellcasting>
 		<rules>
-			<stat name="relentless:usage" value="2" bonus="base" />
-			<stat name="relentless:usage" value="3" level="4" bonus="base" />
-			<stat name="relentless:usage" value="4" level="10" bonus="base" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_SPELLCASTING_FEATURE" />
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_HALF" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+			<stat name="duskblade:spellcasting:slots:1" value="2" level="1" />
+			<stat name="duskblade:spellcasting:slots:1" value="1" level="3" />
+			<stat name="duskblade:spellcasting:slots:1" value="1" level="5" />
+			<stat name="duskblade:spellcasting:slots:2" value="2" level="5" />
+			<stat name="duskblade:spellcasting:slots:2" value="1" level="7" />
+			<stat name="duskblade:spellcasting:slots:3" value="2" level="9" />
+			<stat name="duskblade:spellcasting:slots:3" value="1" level="11" />
+			<stat name="duskblade:spellcasting:slots:4" value="1" level="13" />
+			<stat name="duskblade:spellcasting:slots:4" value="1" level="15" />
+			<stat name="duskblade:spellcasting:slots:4" value="1" level="17" />
+			<stat name="duskblade:spellcasting:slots:5" value="1" level="17" />
+			<stat name="duskblade:spellcasting:slots:5" value="1" level="19" />
+			
+			<select type="Spell" name="Spell (Duskblade)" supports="$(spellcasting:list),$(spellcasting:slots)" level="1" number="2" spellcasting="Duskblade" />
+			<select type="Spell" name="Spell (Duskblade)" supports="$(spellcasting:list),$(spellcasting:slots)" level="2" spellcasting="Duskblade" />
+			<select type="Spell" name="Spell (Duskblade)" supports="$(spellcasting:list),$(spellcasting:slots)" level="3" spellcasting="Duskblade" />
+			<select type="Spell" name="Spell (Duskblade)" supports="$(spellcasting:list),$(spellcasting:slots)" level="4" spellcasting="Duskblade" />
+			<select type="Spell" name="Spell (Duskblade)" supports="$(spellcasting:list),$(spellcasting:slots)" level="5" spellcasting="Duskblade" />
+			<select type="Spell" name="Spell (Duskblade)" supports="$(spellcasting:list),$(spellcasting:slots)" level="7" spellcasting="Duskblade" />
+			<select type="Spell" name="Spell (Duskblade)" supports="$(spellcasting:list),$(spellcasting:slots)" level="9" number="2" spellcasting="Duskblade" />
+			<select type="Spell" name="Spell (Duskblade)" supports="$(spellcasting:list),$(spellcasting:slots)" level="11" spellcasting="Duskblade" />
+			<select type="Spell" name="Spell (Duskblade)" supports="$(spellcasting:list),$(spellcasting:slots)" level="13" spellcasting="Duskblade" />
+			<select type="Spell" name="Spell (Duskblade)" supports="$(spellcasting:list),$(spellcasting:slots)" level="15" spellcasting="Duskblade" />
+			<select type="Spell" name="Spell (Duskblade)" supports="$(spellcasting:list),$(spellcasting:slots)" level="17" number="2" spellcasting="Duskblade" />
+			<select type="Spell" name="Spell (Duskblade)" supports="$(spellcasting:list),$(spellcasting:slots)" level="19" spellcasting="Duskblade" />
 		</rules>
 	</element>
 
@@ -154,8 +199,8 @@
 		</rules>
 	</element>
 
-	<element name="Level 2: Duskblade Ward" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_DUSKBLADE_DUSKBLADE_WARD">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_DUSKBLADE_WARD</requirements>
+	<element name="Level 2: Duskblade Ward" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_DUSKBLADE_MYSTIC_ARTS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_MYSTIC_ARTS</requirements>
 		<description>
 			<p>Starting at 2nd level, your training as a Duskblade has allowed you to learn a series of special techniques that can be used to protect your allies and improve your offensive capabilities. As a bonus action, you activate this ward for the next minute or until you are Incapacitated. While this ward is active, you and allies within 10 feet of you cannot be Frightened. In addition, damage dealt to allies within 10 feet of you is halved.</p>
 			<p class="indent">You can use this feature twice. You regain one expended use at the end of a Short Rest and all expended uses at the end of a Long Rest.</p>
@@ -214,8 +259,8 @@
 		</rules>
 	</element>
 
-	<element name="Level 5: Rallying Cry" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_DUSKBLADE_RALLYING_CRY">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_RALLYING_CRY</requirements>
+	<element name="Level 5: Rallying Cry" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_DUSKBLADE_MYSTIC_ATTACK">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_MYSTIC_ATTACK</requirements>
 		<description>
 			<p>By 5th level, you have learnt how to inspire courage into your allies during dire times. As an action, you make a loud battle cry to all allied creatures within 60 feet that can hear you. Creatures that hear your battle cry gain temporary hit points equal to 1d12 plus your duskblade level and gain a Heroic Inspiration if they lack it.</p>
 			<p class="indent">Once you have used this feature, you cannot use it again until you finish a short or long rest.</p>
@@ -228,8 +273,8 @@
 		</rules>
 	</element>
 
-	<element name="Level 5: Weak Point" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_DUSKBLADE_WEAK_POINT">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_WEAK_POINT</requirements>
+	<element name="Level 5: Weak Point" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_DUSKBLADE_MYSTICAL_KNOWLEDGE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_MYSTICAL_KNOWLEDGE</requirements>
 		<description>
 			<p>Starting at 5th level, your Duskblade training allows you to strike a decisive blow against your foes. When you make an attack with a melee weapon that you are proficient with, you can add 2d8 damage of your weapon’s damage type to the damage rolls. You can only add this extra damage once per turn.</p>
 			<p class="indent">The damage is increased to 3d8 at 9th level, 4d8 at 13th level and 5d8 at 17th level.</p>
@@ -245,8 +290,8 @@
 		</rules>
 	</element>
 
-	<element name="Level 6: Protective Spirit" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_DUSKBLADE_PROTECTIVE_SPIRIT">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_PROTECTIVE_SPIRIT</requirements>
+	<element name="Level 6: Protective Spirit" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_DUSKBLADE_RESTORING_RESPITE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_RESTORING_RESPITE</requirements>
 		<description>
 			<p>When you activate your Duskblade Ward, you and all allies within its range gain a +2 bonus to their AC. In addition, once per round when an ally fails a saving throw while within 10 feet of you, you can make them reroll. They must use the new result.</p>
 		</description>
@@ -255,8 +300,8 @@
 		</sheet>
 	</element>
 
-	<element name="Level 9: Iron Will" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_DUSKBLADE_IRON_WILL">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_IRON_WILL</requirements>
+	<element name="Level 9: Iron Will" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_DUSKBLADE_ARCANE_DEFENCE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_ARCANE_DEFENCE</requirements>
 		<description>
 			<p>Choose two saving throws. You gain proficiency if you do not already have it. If you already have proficiency in the saving throw you choose, you instead double your proficiency bonus for those saving throws.</p>
 		</description>
@@ -267,31 +312,31 @@
 		</rules>
 	</element>
 
-	<element name="Level 13: Retaliation" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_DUSKBLADE_RETALIATION">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_RETALIATION</requirements>
+	<element name="Level 13: GREATER_MYSTICAL_KNOWLEDGE" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_DUSKBLADE_GREATER_MYSTICAL_KNOWLEDGE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_GREATER_MYSTICAL_KNOWLEDGE</requirements>
 		<description>
 			<p>You put your heart into each and every strike. You can add a bonus to damage rolls made with weapons with which you are proficient equal to your Constitution modifier. In addition, when you make an attack of opportunity, you can take two attacks instead of one.</p>
 		</description>
-		<sheet alt="Retaliation">
-			<description>You can add {{retaliation:mod}} extra damage to rolls made with weapons with which you are proficient with. In addition, when you make an attack of opportunity, you can take two attacks instead of one.</description>
+		<sheet alt="GREATER_MYSTICAL_KNOWLEDGE">
+			<description>You can add {{GREATER_MYSTICAL_KNOWLEDGE:mod}} extra damage to rolls made with weapons with which you are proficient with. In addition, when you make an attack of opportunity, you can take two attacks instead of one.</description>
 		</sheet>
 		<rules>
-			<stat name="retaliation:mod" value="constitution:modifier"/>
+			<stat name="GREATER_MYSTICAL_KNOWLEDGE:mod" value="constitution:modifier"/>
 		</rules>
 	</element>
 
-	<element name="Level 14: Juggernaut" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_DUSKBLADE_JUGGERNAUT">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_JUGGERNAUT</requirements>
+	<element name="Level 14: MYSTICAL_RETRIBUTION" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_DUSKBLADE_MYSTICAL_RETRIBUTION">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_MYSTICAL_RETRIBUTION</requirements>
 		<description>
 			<p>You are unstoppable while in combat. You reduce all damage you take by an amount equal to your Constitution modifier. In addition, any damage you deal with a weapon that you are proficient with deals additional damage equal to your Constitution modifier.</p>
 		</description>
-		<sheet alt="Juggernaut">
-		<description>You reduce all damage you take by {{retaliation:mod}}. In addition, any damage you deal with a weapon that you are proficient with deals an additional {{retaliation:mod}} damage.</description>
+		<sheet alt="MYSTICAL_RETRIBUTION">
+		<description>You reduce all damage you take by {{GREATER_MYSTICAL_KNOWLEDGE:mod}}. In addition, any damage you deal with a weapon that you are proficient with deals an additional {{GREATER_MYSTICAL_KNOWLEDGE:mod}} damage.</description>
 		</sheet>
 	</element>
 
-	<element name="Level 17: Hidden Strength" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_DUSKBLADE_HIDDEN_STRENGTH">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_HIDDEN_STRENGTH</requirements>
+	<element name="Level 17: Hidden Strength" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_DUSKBLADE_FAVOURED_SPELL">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_FAVOURED_SPELL</requirements>
 		<description>
 			<p>You can dig deep when times grow tough. While you are under half of your maximum hp, all attacks you make with weapons that you are proficient with are made at advantage.</p>
 		</description>
@@ -312,30 +357,30 @@
 		</rules>
 	</element>
 
-	<element name="Level 20: Impervious" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_DUSKBLADE_IMPERVIOUS">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_IMPERVIOUS</requirements>
+	<element name="Level 20: ONE_WITH_THE_DAWN" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_DUSKBLADE_ONE_WITH_THE_DAWN">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_ONE_WITH_THE_DAWN</requirements>
 		<description>
 			<p>Upon reaching 20th level, you have become a paragon for defending and protecting your allies and you are able to resist even the forces of death for a time. As a bonus action, you can choose to prepare yourself against attack. For the next minute, you gain resistance to all incoming damage that you take. In addition, if you are reduced to 0 hit points while this is active, you are instead on 1 hit point and conscious. Once you use this feature, you must complete a long rest before you use it again.</p>
 		</description>
-		<sheet alt="Impervious" action="Bonus Action" usage="1/Long Rest">
+		<sheet alt="ONE_WITH_THE_DAWN" action="Bonus Action" usage="1/Long Rest">
 			<description>You can choose to prepare yourself against attack. For the next minute, you gain resistance to all incoming damage that you take. In addition, if you are reduced to 0 hit points while this is active, you are instead on 1 hit point and conscious. </description>
 		</sheet>
 	</element>
 
 	<!--Feature Replacement Grants-->
-	<element name="Relentless Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_RELENTLESS" />
+	<element name="SPELLCASTING Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_SPELLCASTING" />
 	<element name="Weapon Mastery Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_WEAPON_MASTERY" />
-	<element name="Duskblade Ward Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_DUSKBLADE_WARD" />
+	<element name="Duskblade Ward Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_MYSTIC_ARTS" />
 	<element name="Fighting Style Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_FIGHTING_STYLE" />
 	<element name="Duskblade Subclass Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_DUSKBLADE_SUBCLASS" />
 	<element name="Ability Score Improvement Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_ABILITY_SCORE_IMPROVEMENT" />
-	<element name="Rallying Cry Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_RALLYING_CRY" />
-	<element name="Weak Point Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_WEAK_POINT" />
-	<element name="Protective Spirit Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_PROTECTIVE_SPIRIT" />
-	<element name="Iron Will Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_IRON_WILL" />
-	<element name="Retaliation Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_RETALIATION" />
-	<element name="Juggernaut Attacks Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_JUGGERNAUT" />
-	<element name="Hidden Strength" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_HIDDEN_STRENGTH" />
+	<element name="Rallying Cry Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_MYSTIC_ATTACK" />
+	<element name="Weak Point Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_MYSTICAL_KNOWLEDGE" />
+	<element name="Protective Spirit Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_RESTORING_RESPITE" />
+	<element name="Iron Will Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_ARCANE_DEFENCE" />
+	<element name="GREATER_MYSTICAL_KNOWLEDGE Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_GREATER_MYSTICAL_KNOWLEDGE" />
+	<element name="MYSTICAL_RETRIBUTION Attacks Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_MYSTICAL_RETRIBUTION" />
+	<element name="Hidden Strength" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_FAVOURED_SPELL" />
 	<element name="Epic Boon Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_EPIC_BOON" />
-	<element name="Impervious" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_IMPERVIOUS" />
+	<element name="ONE_WITH_THE_DAWN" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_ONE_WITH_THE_DAWN" />
 </elements>
