@@ -5,7 +5,7 @@
 		<description>The Duskblade Homebrew Class.</description>
 		<author url="https://www.urbandictionary.com/define.php?term=GOAT">Guzufu</author>
 		<update version="0.0.1">
-			<file name="duskblade.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/main/duskblade/duskblade.xml" />
+			<file name="duskblade.xml" url="https://raw.githubusercontent.com/jackie-mp3/elements/refs/heads/master/duskblade/duskblade.xml" />
 		</update>
 	</info>
 
