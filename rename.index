@@ -49,7 +49,9 @@
 		<file name="mistblade-spectralarmada.xml" url="https://raw.githubusercontent.com/jackie-mp3/elements/refs/heads/master/mistblade/mistblade-spectralarmada.xml" />
 		<file name="mistblade-warhound.xml" url="https://raw.githubusercontent.com/jackie-mp3/elements/refs/heads/master/mistblade/mistblade-warhound.xml" />
 
-		<!-- Skills -->
-		<file name="skills.xml" url="https://raw.githubusercontent.com/jackie-mp3/elements/refs/heads/master/skills/skills.xml" />
+		<!-- misc -->
+		<file name="skills.xml" url="https://raw.githubusercontent.com/jackie-mp3/elements/refs/heads/master/misc/skills.xml" />
+		<file name="spells.xml" url="https://raw.githubusercontent.com/jackie-mp3/elements/refs/heads/master/misc/spells.xml" />
+		<file name="mystic-arts.xml" url="https://raw.githubusercontent.com/jackie-mp3/elements/refs/heads/master/misc/mystic-arts.xml" />
 	</files>
 </index>
