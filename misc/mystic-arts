@@ -5,7 +5,7 @@
 		<description>Mystic Arts for the Duskblade Class. </description>
 		<author url="goat.com">Guzufu</author>
 		<update version="0.0.1">
-			<file name="mystic-arts.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook-2024/classes/eldritch-invocations.xml" />
+			<file name="mystic-arts.xml" url="" />
 		</update>
 	</info>
 
