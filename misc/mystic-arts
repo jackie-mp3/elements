@@ -5,17 +5,17 @@
 		<description>Mystic Arts for the Duskblade Class. </description>
 		<author url="goat.com">Guzufu</author>
 		<update version="0.0.1">
-			<file name="mystic-arts.xml" url="" />
+			<file name="mystic-arts.xml" url="https://raw.githubusercontent.com/jackie-mp3/elements/refs/heads/master/misc/mystic-arts" />
 		</update>
 	</info>
 
 	<!-- Mystic Arts -->
-	<element name="Agonizing Blast" type="Class Feature" source="Player’s Handbook (2024)" id="ID_HB_CLASS_FEATURE_MYSTIC_ART_AGONIZING_BLAST">
-		<supports>PHB24 Mystic Art</supports>
-		<requirements>[level:duskblade:2],!ID_WOTC_PHB_CLASS_FEATURE_MYSTIC_ART_AGONIZING_BLAST</requirements>
-		<prerequisite>Level 2+ Duskblade, a Duskblade Cantrip That Deals Damage</prerequisite>
+	<element name="Animated Shield" type="Class Feature" source="Player’s Handbook (2024)" id="ID_HB_CLASS_FEATURE_MYSTIC_ART_ANIMATED_SHIELD">
+		<supports>Mystic Art</supports>
+		<requirements>[level:duskblade:5]</requirements>
+		<prerequisite>Level 5+ Duskblade</prerequisite>
 		<description>
-			<p><em>Prerequisite: Level 2+ Duskblade, a Duskblade Cantrip That Deals Damage</em></p>
+			<p><em>Prerequisite: Level 5+ Duskblade</em></p>
 			<p>Choose one of your known Duskblade cantrips that deals damage. You can add your Charisma modifier to that spell’s damage rolls.</p>
 			<p class="indent"><em><strong>Repeatable.</strong></em> You can gain this invocation more than once. Each time you do so, choose a different eligible cantrip.</p>
 		</description>
@@ -31,7 +31,7 @@
 	</element>
 
 	<element name="Armor of Shadows" type="Class Feature" source="Player’s Handbook (2024)" id="ID_HB_CLASS_FEATURE_MYSTIC_ART_ARMOR_OF_SHADOWS">
-		<supports>PHB24 Mystic Art</supports>
+		<supports>Mystic Art</supports>
 		<requirements>!ID_WOTC_PHB_CLASS_FEATURE_MYSTIC_ART_ARMOR_OF_SHADOWS</requirements>
 		<description>
 			<p>You can cast <i>Mage Armor</i> on yourself without expending a spell slot.</p>
@@ -48,7 +48,7 @@
 	</element>
 
 	<element name="Ascendant Step" type="Class Feature" source="Player’s Handbook (2024)" id="ID_HB_CLASS_FEATURE_MYSTIC_ART_ASCENDANT_STEP">
-		<supports>PHB24 Mystic Art</supports>
+		<supports>Mystic Art</supports>
 		<requirements>[level:duskblade:5],!ID_WOTC_PHB_CLASS_FEATURE_MYSTIC_ART_ASCENDANT_STEP</requirements>
 		<prerequisite>Level 5+ Duskblade</prerequisite>
 		<description>
@@ -67,7 +67,7 @@
 	</element>
 
 	<element name="Devil’s Sight" type="Class Feature" source="Player’s Handbook (2024)" id="ID_HB_CLASS_FEATURE_MYSTIC_ART_DEVILS_SIGHT">
-		<supports>PHB24 Mystic Art</supports>
+		<supports>Mystic Art</supports>
 		<requirements>[level:duskblade:2],!ID_WOTC_PHB_CLASS_FEATURE_MYSTIC_ART_DEVILS_SIGHT</requirements>
 		<prerequisite>Level 2+ Duskblade</prerequisite>
 		<description>
@@ -80,7 +80,7 @@
 	</element>
 
 	<element name="Devouring Blade" type="Class Feature" source="Player’s Handbook (2024)" id="ID_HB_CLASS_FEATURE_MYSTIC_ART_DEVOURING_BLADE">
-		<supports>PHB24 Mystic Art</supports>
+		<supports>Mystic Art</supports>
 		<requirements>[level:duskblade:12],ID_HB_CLASS_FEATURE_MYSTIC_ART_THIRSTING_BLADE</requirements>
 		<prerequisite>Level 12+ Duskblade, Thirsting Blade Invocation</prerequisite>
 		<description>
@@ -91,7 +91,7 @@
 	</element>
 	<!-- a subelement of the Devouring Blade to make it replace Thirsting Blade -->
 	<element name="Devouring Blade" type="Class Feature" source="Player’s Handbook (2024)" id="ID_HB_CLASS_FEATURE_MYSTIC_ART_DEVOURING_BLADE_SUBELEMENT">
-		<supports>PHB24 Devouring Blade Invocation</supports>
+		<supports>Devouring Blade Invocation</supports>
 		<compendium display="false" />
 		<sheet>
 			<description>You can attack three times with your pact weapon when you take the Attack action.</description>
@@ -99,7 +99,7 @@
 	</element>
 
 	<element name="Eldritch Mind" type="Class Feature" source="Player’s Handbook (2024)" id="ID_HB_CLASS_FEATURE_MYSTIC_ART_ELDRITCH_MIND">
-		<supports>PHB24 Mystic Art</supports>
+		<supports>Mystic Art</supports>
 		<requirements>!ID_WOTC_TCOE_CLASS_FEATURE_ELDRITCH_MIND</requirements>
 		<description>
 			<p>You have Advantage on Constitution saving throws that you make to maintain Concentration.</p>
@@ -110,7 +110,7 @@
 	</element>
 
 	<element name="Eldritch Smite" type="Class Feature" source="Player’s Handbook (2024)" id="ID_HB_CLASS_FEATURE_MYSTIC_ART_ELDRITCH_SMITE">
-		<supports>PHB24 Mystic Art</supports>
+		<supports>Mystic Art</supports>
 		<requirements>([level:duskblade:5],ID_HB_CLASS_FEATURE_MYSTIC_ART_PACT_OF_THE_BLADE),!ID_WOTC_XGTE_CLASS_FEATURE_MYSTIC_ART_ELDRITCH_SMITE</requirements>
 		<prerequisite>Level 5+ Duskblade, Pact of the Blade</prerequisite>
 		<description>
@@ -127,7 +127,7 @@
 	</element>
 
 	<element name="Eldritch Spear" type="Class Feature" source="Player’s Handbook (2024)" id="ID_HB_CLASS_FEATURE_MYSTIC_ART_ELDRITCH_SPEAR">
-		<supports>PHB24 Mystic Art</supports>
+		<supports>Mystic Art</supports>
 		<requirements>[level:duskblade:2],!ID_WOTC_PHB_CLASS_FEATURE_MYSTIC_ART_ELDRITCH_SPEAR</requirements>
 		<prerequisite>Level 2+ Duskblade, a Duskblade Cantrip That Deals Damage and has a Range of 10+ Feet</prerequisite>
 		<description>
@@ -155,7 +155,7 @@
 		</rules>
 	</element>
 	<element name="Eldritch Spear" type="Class Feature" source="Player’s Handbook (2024)" id="ID_HB_CLASS_FEATURE_MYSTIC_ART_ELDRITCH_SPEAR_REPEATABLE">
-		<supports>PHB24 Mystic Art</supports>
+		<supports>Mystic Art</supports>
 		<requirements>[level:duskblade:2],ID_HB_CLASS_FEATURE_MYSTIC_ART_ELDRITCH_SPEAR</requirements>
 		<prerequisite>Level 2+ Duskblade, a Duskblade Cantrip That Deals Damage and has a Range of 10+ Feet</prerequisite>
 		<compendium display="false" />
@@ -174,7 +174,7 @@
 	</element>
 
 	<element name="Fiendish Vigor" type="Class Feature" source="Player’s Handbook (2024)" id="ID_HB_CLASS_FEATURE_MYSTIC_ART_FIENDISH_VIGOR">
-		<supports>PHB24 Mystic Art</supports>
+		<supports>Mystic Art</supports>
 		<requirements>[level:duskblade:2],!ID_WOTC_PHB_CLASS_FEATURE_MYSTIC_ART_FIENDISH_VIGOR</requirements>
 		<prerequisite>Level 2+ Duskblade</prerequisite>
 		<description>
@@ -193,7 +193,7 @@
 	</element>
 
 	<element name="Gaze of Two Minds" type="Class Feature" source="Player’s Handbook (2024)" id="ID_HB_CLASS_FEATURE_MYSTIC_ART_GAZE_OF_TWO_MINDS">
-		<supports>PHB24 Mystic Art</supports>
+		<supports>Mystic Art</supports>
 		<requirements>[level:duskblade:5],!ID_WOTC_PHB_CLASS_FEATURE_MYSTIC_ART_GAZE_OF_TWO_MINDS</requirements>
 		<prerequisite>Level 5+ Duskblade</prerequisite>
 		<description>
@@ -208,7 +208,7 @@
 	</element>
 
 	<element name="Gift of the Depths" type="Class Feature" source="Player’s Handbook (2024)" id="ID_HB_CLASS_FEATURE_MYSTIC_ART_GIFT_OF_THE_DEPTHS">
-		<supports>PHB24 Mystic Art</supports>
+		<supports>Mystic Art</supports>
 		<requirements>[level:duskblade:5],!ID_WOTC_XGTE_CLASS_FEATURE_MYSTIC_ART_GIFT_OF_THE_DEPTHS</requirements>
 		<prerequisite>Level 5+ Duskblade</prerequisite>
 		<description>
@@ -226,7 +226,7 @@
 	</element>
 
 	<element name="Gift of the Protectors" type="Class Feature" source="Player’s Handbook (2024)" id="ID_HB_CLASS_FEATURE_MYSTIC_ART_GIFT_OF_THE_PROTECTORS">
-		<supports>PHB24 Mystic Art</supports>
+		<supports>Mystic Art</supports>
 		<requirements>([level:duskblade:9],ID_HB_CLASS_FEATURE_MYSTIC_ART_PACT_OF_THE_TOME),!ID_WOTC_TCOE_CLASS_FEATURE_GIFT_OF_THE_PROTECTORS</requirements>
 		<prerequisite>Level 9+ Duskblade, Pact of the Tome Invocation</prerequisite>
 		<description>
@@ -246,7 +246,7 @@
 	</element>
 
 	<element name="Investment of the Chain Master" type="Class Feature" source="Player’s Handbook (2024)" id="ID_HB_CLASS_FEATURE_MYSTIC_ART_INVESTMENT_OF_THE_CHAIN_MASTER">
-		<supports>PHB24 Mystic Art</supports>
+		<supports>Mystic Art</supports>
 		<requirements>([level:duskblade:5],ID_HB_CLASS_FEATURE_MYSTIC_ART_PACT_OF_THE_CHAIN),!ID_WOTC_TCOE_CLASS_FEATURE_INVESTMENT_OF_THE_CHAIN_MASTER</requirements>
 		<prerequisite>Level 5+ Duskblade, Pact of the Chain Invocation</prerequisite>
 		<description>
@@ -269,7 +269,7 @@
 	</element>
 
 	<element name="Lessons of the First Ones" type="Class Feature" source="Player’s Handbook (2024)" id="ID_HB_CLASS_FEATURE_MYSTIC_ART_LESSONS_OF_THE_FIRST_ONES">
-		<supports>PHB24 Mystic Art</supports>
+		<supports>Mystic Art</supports>
 		<requirements>[level:duskblade:2]</requirements>
 		<prerequisite>Level 2+ Duskblade</prerequisite>
 		<description>
@@ -283,7 +283,7 @@
 		</rules>
 	</element>
 	<element name="Lessons of the First Ones" type="Class Feature" source="Player’s Handbook (2024)" id="ID_HB_CLASS_FEATURE_MYSTIC_ART_LESSONS_OF_THE_FIRST_ONES_2">
-		<supports>PHB24 Mystic Art</supports>
+		<supports>Mystic Art</supports>
 		<requirements>[level:duskblade:2],ID_HB_CLASS_FEATURE_MYSTIC_ART_LESSONS_OF_THE_FIRST_ONES</requirements>
 		<prerequisite>Level 2+ Duskblade</prerequisite>
 		<compendium display="false" />
@@ -298,7 +298,7 @@
 		</rules>
 	</element>
 	<element name="Lessons of the First Ones" type="Class Feature" source="Player’s Handbook (2024)" id="ID_HB_CLASS_FEATURE_MYSTIC_ART_LESSONS_OF_THE_FIRST_ONES_3">
-		<supports>PHB24 Mystic Art</supports>
+		<supports>Mystic Art</supports>
 		<requirements>[level:duskblade:2],ID_HB_CLASS_FEATURE_MYSTIC_ART_LESSONS_OF_THE_FIRST_ONES_2</requirements>
 		<prerequisite>Level 2+ Duskblade</prerequisite>
 		<compendium display="false" />
@@ -313,7 +313,7 @@
 		</rules>
 	</element>
 	<element name="Lessons of the First Ones" type="Class Feature" source="Player’s Handbook (2024)" id="ID_HB_CLASS_FEATURE_MYSTIC_ART_LESSONS_OF_THE_FIRST_ONES_4">
-		<supports>PHB24 Mystic Art</supports>
+		<supports>Mystic Art</supports>
 		<requirements>[level:duskblade:2],ID_HB_CLASS_FEATURE_MYSTIC_ART_LESSONS_OF_THE_FIRST_ONES_3</requirements>
 		<prerequisite>Level 2+ Duskblade</prerequisite>
 		<compendium display="false" />
@@ -328,7 +328,7 @@
 		</rules>
 	</element>
 	<element name="Lessons of the First Ones" type="Class Feature" source="Player’s Handbook (2024)" id="ID_HB_CLASS_FEATURE_MYSTIC_ART_LESSONS_OF_THE_FIRST_ONES_5">
-		<supports>PHB24 Mystic Art</supports>
+		<supports>Mystic Art</supports>
 		<requirements>[level:duskblade:2],ID_HB_CLASS_FEATURE_MYSTIC_ART_LESSONS_OF_THE_FIRST_ONES_4</requirements>
 		<prerequisite>Level 2+ Duskblade</prerequisite>
 		<compendium display="false" />
@@ -343,7 +343,7 @@
 		</rules>
 	</element>
 	<element name="Lessons of the First Ones" type="Class Feature" source="Player’s Handbook (2024)" id="ID_HB_CLASS_FEATURE_MYSTIC_ART_LESSONS_OF_THE_FIRST_ONES_6">
-		<supports>PHB24 Mystic Art</supports>
+		<supports>Mystic Art</supports>
 		<requirements>[level:duskblade:2],ID_HB_CLASS_FEATURE_MYSTIC_ART_LESSONS_OF_THE_FIRST_ONES_5</requirements>
 		<prerequisite>Level 2+ Duskblade</prerequisite>
 		<compendium display="false" />
@@ -358,7 +358,7 @@
 		</rules>
 	</element>
 	<element name="Lessons of the First Ones" type="Class Feature" source="Player’s Handbook (2024)" id="ID_HB_CLASS_FEATURE_MYSTIC_ART_LESSONS_OF_THE_FIRST_ONES_7">
-		<supports>PHB24 Mystic Art</supports>
+		<supports>Mystic Art</supports>
 		<requirements>[level:duskblade:2],ID_HB_CLASS_FEATURE_MYSTIC_ART_LESSONS_OF_THE_FIRST_ONES_6</requirements>
 		<prerequisite>Level 2+ Duskblade</prerequisite>
 		<compendium display="false" />
@@ -373,7 +373,7 @@
 		</rules>
 	</element>
 	<element name="Lessons of the First Ones" type="Class Feature" source="Player’s Handbook (2024)" id="ID_HB_CLASS_FEATURE_MYSTIC_ART_LESSONS_OF_THE_FIRST_ONES_8">
-		<supports>PHB24 Mystic Art</supports>
+		<supports>Mystic Art</supports>
 		<requirements>[level:duskblade:2],ID_HB_CLASS_FEATURE_MYSTIC_ART_LESSONS_OF_THE_FIRST_ONES_7</requirements>
 		<prerequisite>Level 2+ Duskblade</prerequisite>
 		<compendium display="false" />
@@ -388,7 +388,7 @@
 		</rules>
 	</element>
 	<element name="Lessons of the First Ones" type="Class Feature" source="Player’s Handbook (2024)" id="ID_HB_CLASS_FEATURE_MYSTIC_ART_LESSONS_OF_THE_FIRST_ONES_9">
-		<supports>PHB24 Mystic Art</supports>
+		<supports>Mystic Art</supports>
 		<requirements>[level:duskblade:2],ID_HB_CLASS_FEATURE_MYSTIC_ART_LESSONS_OF_THE_FIRST_ONES_8</requirements>
 		<prerequisite>Level 2+ Duskblade</prerequisite>
 		<compendium display="false" />
@@ -403,7 +403,7 @@
 		</rules>
 	</element>
 	<element name="Lessons of the First Ones" type="Class Feature" source="Player’s Handbook (2024)" id="ID_HB_CLASS_FEATURE_MYSTIC_ART_LESSONS_OF_THE_FIRST_ONES_10">
-		<supports>PHB24 Mystic Art</supports>
+		<supports>Mystic Art</supports>
 		<requirements>[level:duskblade:2],ID_HB_CLASS_FEATURE_MYSTIC_ART_LESSONS_OF_THE_FIRST_ONES_9</requirements>
 		<prerequisite>Level 2+ Duskblade</prerequisite>
 		<compendium display="false" />
@@ -419,7 +419,7 @@
 	</element>
 	
 	<element name="Lifedrinker" type="Class Feature" source="Player’s Handbook (2024)" id="ID_HB_CLASS_FEATURE_MYSTIC_ART_LIFEDRINKER">
-		<supports>PHB24 Mystic Art</supports>
+		<supports>Mystic Art</supports>
 		<requirements>([level:duskblade:9],ID_HB_CLASS_FEATURE_MYSTIC_ART_PACT_OF_THE_BLADE),!ID_WOTC_PHB_CLASS_FEATURE_MYSTIC_ART_LIFEDRINKER</requirements>
 		<prerequisite>Level 9+ Duskblade, Pact of the Blade Invocation</prerequisite>
 		<description>
@@ -436,7 +436,7 @@
 	</element>
 
 	<element name="Mask of Many Faces" type="Class Feature" source="Player’s Handbook (2024)" id="ID_HB_CLASS_FEATURE_MYSTIC_ART_MASK_OF_MANY_FACES">
-		<supports>PHB24 Mystic Art</supports>
+		<supports>Mystic Art</supports>
 		<requirements>[level:duskblade:2],!ID_WOTC_PHB_CLASS_FEATURE_MYSTIC_ART_MASK_OF_MANY_FACES</requirements>
 		<prerequisite>Level 2+ Duskblade</prerequisite>
 		<description>
@@ -455,7 +455,7 @@
 	</element>
 
 	<element name="Master of Myriad Forms" type="Class Feature" source="Player’s Handbook (2024)" id="ID_HB_CLASS_FEATURE_MYSTIC_ART_MASTER_OF_MYRIAD_FORMS">
-		<supports>PHB24 Mystic Art</supports>
+		<supports>Mystic Art</supports>
 		<requirements>[level:duskblade:5],!ID_WOTC_PHB_CLASS_FEATURE_MYSTIC_ART_MASTER_OF_MYRIAD_FORMS</requirements>
 		<prerequisite>Level 5+ Duskblade</prerequisite>
 		<description>
@@ -474,7 +474,7 @@
 	</element>
 
 	<element name="Misty Visions" type="Class Feature" source="Player’s Handbook (2024)" id="ID_HB_CLASS_FEATURE_MYSTIC_ART_MISTY_VISIONS">
-		<supports>PHB24 Mystic Art</supports>
+		<supports>Mystic Art</supports>
 		<requirements>[level:duskblade:2],!ID_WOTC_PHB_CLASS_FEATURE_MYSTIC_ART_MISTY_VISIONS</requirements>
 		<prerequisite>Level 2+ Duskblade</prerequisite>
 		<description>
@@ -493,7 +493,7 @@
 	</element>
 
 	<element name="One with Shadows" type="Class Feature" source="Player’s Handbook (2024)" id="ID_HB_CLASS_FEATURE_MYSTIC_ART_ONE_WITH_SHADOWS">
-		<supports>PHB24 Mystic Art</supports>
+		<supports>Mystic Art</supports>
 		<requirements>[level:duskblade:5],!ID_WOTC_PHB_CLASS_FEATURE_MYSTIC_ART_ONE_WITH_SHADOWS</requirements>
 		<prerequisite>Level 5+ Duskblade</prerequisite>
 		<description>
@@ -512,7 +512,7 @@
 	</element>
 
 	<element name="Otherworldly Leap" type="Class Feature" source="Player’s Handbook (2024)" id="ID_HB_CLASS_FEATURE_MYSTIC_ART_OTHERWORLDLY_LEAP">
-		<supports>PHB24 Mystic Art</supports>
+		<supports>Mystic Art</supports>
 		<requirements>[level:duskblade:2],!ID_WOTC_PHB_CLASS_FEATURE_MYSTIC_ART_OTHERWORLDLY_LEAP</requirements>
 		<prerequisite>Level 2+ Duskblade</prerequisite>
 		<description>
@@ -531,7 +531,7 @@
 	</element>
 
 	<element name="Pact of the Blade" type="Class Feature" source="Player’s Handbook (2024)" id="ID_HB_CLASS_FEATURE_MYSTIC_ART_PACT_OF_THE_BLADE">
-		<supports>PHB24 Mystic Art</supports>
+		<supports>Mystic Art</supports>
 		<description>
 			<p>As a Bonus Action, you can conjure a pact weapon in your hand—a Simple or Martial Melee weapon of your choice with which you bond—or create a bond with a magic weapon you touch; you can’t bond with a magic weapon if someone else is attuned to it or another Duskblade is bonded with it. Until the bond ends, you have proficiency with the weapon, and you can use it as a Spellcasting Focus.</p>
 			<p class="indent">Whenever you attack with the bonded weapon, you can use your Charisma modifier for the attack and damage rolls instead of using Strength or Dexterity; and you can cause the weapon to deal Necrotic, Psychic, or Radiant damage or its normal damage type.</p>
@@ -545,7 +545,7 @@
 	</element>
 
 	<element name="Pact of the Chain" type="Class Feature" source="Player’s Handbook (2024)" id="ID_HB_CLASS_FEATURE_MYSTIC_ART_PACT_OF_THE_CHAIN">
-		<supports>PHB24 Mystic Art</supports>
+		<supports>Mystic Art</supports>
 		<description>
 			<p>You learn the <i>Find Familiar</i> spell and can cast it as a Magic action without expending a spell slot.</p>
 			<p class="indent">When you cast the spell, you choose one of the normal forms for your familiar or one of the following special forms: <b>Imp</b>, <b>Pseudodragon</b>, <b>Quasit</b>, <b>Skeleton</b>, <b>Slaad Tadpole</b>, <b>Sphinx of Wonder</b>, <b>Sprite</b>, or <b>Venomous Snake</b> (see appendix B for the familiar’s stat block).</p>
@@ -565,7 +565,7 @@
 	</element>
 
 	<element name="Pact of the Tome" type="Class Feature" source="Player’s Handbook (2024)" id="ID_HB_CLASS_FEATURE_MYSTIC_ART_PACT_OF_THE_TOME">
-		<supports>PHB24 Mystic Art</supports>
+		<supports>Mystic Art</supports>
 		<description>
 			<p>Stitching together strands of shadow, you conjure forth a book in your hand at the end of a Short or Long Rest. This <i>Book of Shadows</i> (you determine its appearance) contains eldritch magic that only you can access, granting you the benefits below. The book disappears if you conjure another book with this feature or if you die.</p>
 			<p class="indent"><em><strong>Cantrips and Rituals.</strong></em> When the book appears, choose three cantrips, and choose two level 1 spells that have the Ritual tag. The spells can be from any class’s spell list, and they must be spells you don’t already have prepared. While the book is on your person, you have the chosen spells prepared, and they function as Duskblade spells for you.</p>
@@ -581,7 +581,7 @@
 	</element>
 
 	<element name="Repelling Blast" type="Class Feature" source="Player’s Handbook (2024)" id="ID_HB_CLASS_FEATURE_MYSTIC_ART_REPELLING_BLAST">
-		<supports>PHB24 Mystic Art</supports>
+		<supports>Mystic Art</supports>
 		<requirements>[level:duskblade:2],!ID_WOTC_PHB_CLASS_FEATURE_MYSTIC_ART_REPELLING_BLAST</requirements>
 		<prerequisite>Level 2+ Duskblade, a Duskblade Cantrip That Deals Damage via an Attack Roll</prerequisite>
 		<description>
@@ -601,7 +601,7 @@
 	</element>
 
 	<element name="Thirsting Blade" type="Class Feature" source="Player’s Handbook (2024)" id="ID_HB_CLASS_FEATURE_MYSTIC_ART_THIRSTING_BLADE">
-		<supports>PHB24 Mystic Art</supports>
+		<supports>Mystic Art</supports>
 		<requirements>([level:duskblade:5],ID_HB_CLASS_FEATURE_MYSTIC_ART_PACT_OF_THE_BLADE),!ID_WOTC_PHB_CLASS_FEATURE_MYSTIC_ART_THIRSTING_BLADE</requirements>
 		<prerequisite>Level 5+ Duskblade, Pact of the Blade Invocation</prerequisite>
 		<description>
@@ -612,7 +612,7 @@
 	</element>
 	<!-- a subelement of the Thirsting Blade so it can be replaced with Devouring Blade -->
 	<element name="Thirsting Blade" type="Class Feature" source="Player’s Handbook (2024)" id="ID_HB_CLASS_FEATURE_MYSTIC_ART_THIRSTING_BLADE_SUBELEMENT">
-		<supports>PHB24 Thirsting Blade Invocation</supports>
+		<supports>Thirsting Blade Invocation</supports>
 		<compendium display="false" />
 		<sheet>
 			<description>You can attack twice with your pact weapon when you take the Attack action.</description>
@@ -620,7 +620,7 @@
 	</element>
 
 	<element name="Visions of Distant Realms" type="Class Feature" source="Player’s Handbook (2024)" id="ID_HB_CLASS_FEATURE_MYSTIC_ART_VISIONS_OF_DISTANT_REALMS">
-		<supports>PHB24 Mystic Art</supports>
+		<supports>Mystic Art</supports>
 		<requirements>[level:duskblade:9],!ID_WOTC_PHB_CLASS_FEATURE_MYSTIC_ART_VISIONS_OF_DISTANT_REALMS</requirements>
 		<prerequisite>Level 9+ Duskblade</prerequisite>
 		<description>
@@ -639,7 +639,7 @@
 	</element>
 
 	<element name="Whispers of the Grave" type="Class Feature" source="Player’s Handbook (2024)" id="ID_HB_CLASS_FEATURE_MYSTIC_ART_WHISPERS_OF_THE_GRAVE">
-		<supports>PHB24 Mystic Art</supports>
+		<supports>Mystic Art</supports>
 		<requirements>[level:duskblade:7],!ID_WOTC_PHB_CLASS_FEATURE_MYSTIC_ART_WHISPERS_OF_THE_GRAVE</requirements>
 		<prerequisite>Level 7+ Duskblade</prerequisite>
 		<description>
@@ -658,7 +658,7 @@
 	</element>
 
 	<element name="Witch Sight" type="Class Feature" source="Player’s Handbook (2024)" id="ID_HB_CLASS_FEATURE_MYSTIC_ART_WITCH_SIGHT">
-		<supports>PHB24 Mystic Art</supports>
+		<supports>Mystic Art</supports>
 		<requirements>[level:duskblade:15],!ID_WOTC_PHB_CLASS_FEATURE_MYSTIC_ART_WITCH_SIGHT</requirements>
 		<prerequisite>Level 15+ Duskblade</prerequisite>
 		<description>
