@@ -189,17 +189,17 @@
 	<element name="Level 1: Weapon Mastery" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_DUSKBLADE_WEAPON_MASTERY">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_WEAPON_MASTERY</requirements>
 		<description>
-			<p>Your training with weapons allows you to use the mastery properties of two kinds of Simple or Martial weapons of your choice. Whenever you finish a Long Rest, you can practice weapon drills and change one of those weapon choices.</p>
+			<p>Your training with weapons allows you to use the mastery properties of two kinds of Simple or Martial weapons of your choice with which you have proficiency. Whenever you finish a Long Rest, you can change the kinds of weapons you chose.</p>
 		</description>
 		<sheet alt="Weapon Mastery">
-			<description>Whenever you finish a Long Rest, you can change one of the weapons you previously chosen for a different one. </description>
+			<description>Whenever you finish a Long Rest, you can change the kinds of weapons you chose. </description>
 		</sheet>
 		<rules>
 			<select type="Class Feature" name="Weapon Mastery (Duskblade 1)" level="1" supports="Weapon Mastery" number="2"/>
 		</rules>
 	</element>
 
-	<element name="Level 2: Duskblade Ward" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_DUSKBLADE_MYSTIC_ARTS">
+	<element name="Level 1: Mystic Arts" type="Class Feature" source="Homebrew" id="ID_HB_CLASS_FEATURE_DUSKBLADE_MYSTIC_ARTS">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DUSKBLADE_MYSTIC_ARTS</requirements>
 		<description>
 			<p>Starting at 2nd level, your training as a Duskblade has allowed you to learn a series of special techniques that can be used to protect your allies and improve your offensive capabilities. As a bonus action, you activate this ward for the next minute or until you are Incapacitated. While this ward is active, you and allies within 10 feet of you cannot be Frightened. In addition, damage dealt to allies within 10 feet of you is halved.</p>
