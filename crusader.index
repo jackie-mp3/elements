@@ -13,7 +13,7 @@
 		<file name="crusader.xml" url="https://raw.githubusercontent.com/jackie-mp3/elements/refs/heads/master/crusader/crusader.xml" />
 
 		<!-- Subclasses -->
-		<file name="crusader-blademaster.xml" url="https://raw.githubusercontent.com/jackie-mp3/elements/refs/heads/master/crusader/crusader-theblademaster.xml" />
+		<file name="crusader-blademaster.xml" url="https://raw.githubusercontent.com/jackie-mp3/elements/refs/heads/master/crusader/crusader-blademaster.xml" />
 		<file name="crusader-divinewarrior.xml" url="https://raw.githubusercontent.com/jackie-mp3/elements/refs/heads/master/crusader/crusader-divinewarrior.xml" />
 		<file name="crusader-giantwarden.xml" url="https://raw.githubusercontent.com/jackie-mp3/elements/refs/heads/master/crusader/crusader-giantwarden.xml" />
 		<file name="crusader-psychicblade.xml" url="https://raw.githubusercontent.com/jackie-mp3/elements/refs/heads/master/crusader/crusader-psychicblade.xml" />
