@@ -4,7 +4,7 @@
     <description>The Skill Definitions for Each Class</description>
     <author url="https://www.urbandictionary.com/define.php?term=GOAT">Guzufu</author>
     <update version="0.0.1">
-      <file name="skills.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/master/misc/skills.xml"/>
+      <file name="skills.xml" url="https://raw.githubusercontent.com/jackie-mp3/aurorastuff/refs/heads/user/misc/skills.xml"/>
   </update>
 </info>
   	<element name="Acrobatics" type="Proficiency" source="Aurora Legacy Essentials" id="ID_PROFICIENCY_SKILL_ACROBATICS">
