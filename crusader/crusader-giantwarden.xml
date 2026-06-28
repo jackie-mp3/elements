@@ -5,7 +5,7 @@
 		<description>The Giant Warden subclass for the Crusader.</description>
 		<author url="https://GOAT.com">Guzufu</author>
 		<update version="0.0.1">
-			<file name="crusader-giantwarden.xml" url="https://raw.githubusercontent.com/jackie-mp3/elements/refs/heads/master/crusader/crusader-giantwarden.xml" />
+			<file name="crusader-giantwarden.xml" url="https://raw.githubusercontent.com/jackie-mp3/elements/refs/heads/user/crusader/crusader-giantwarden.xml" />
 		</update>
 	</info>
 
