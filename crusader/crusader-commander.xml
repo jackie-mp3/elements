@@ -5,7 +5,7 @@
 		<description>The Commander subclass for the Crusader.</description>
 		<author url="https://GOAT.com">Guzufu</author>
 		<update version="0.0.1">
-			<file name="crusader-commander.xml" url="https://raw.githubusercontent.com/jackie-mp3/elements/refs/heads/master/crusader/crusader-commander.xml" />
+			<file name="crusader-commander.xml" url="https://raw.githubusercontent.com/jackie-mp3/elements/refs/heads/user/crusader/crusader-commander.xml" />
 		</update>
 	</info>
 
